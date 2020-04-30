@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="messages_morning">
+        <item>Wiesz dlaczego woda nie zdała egzaminu zawodowego? Bo oblała. Taki tam żarcik :)</item>
+        <item>Czy wiedziałeś, że jestem autorem kursu e-learningowego dla moich najukochańszych uczniów?</item>
+        <item>Czy wiedziałeś, że kiedyś udało mi się rozpracować szajkę hackerów z drugiej klasy technikum?</item>
+        <item>Czy wiedziałeś, że mój mail to slawek@borytucholskie.pl?</item>
         <item>Wiesz co mówi zdenerwowany ogrodnik do kolegi? Przesadziłeś.\nTaki żarcik na dobry początek dnia :)</item>
         <item>Zapraszam na moją stronę internetową, slawek.borytucholskie.pl.</item>
         <item>Dzień dobry, informatyku, jak się dzisiaj spało?</item>
@@ -20,12 +24,20 @@
         <item>Żart jest taki, że Kornaś ma w intelekcie braki :)</item>
         <item>Zabierzesz mnie kiedyś na ryby?</item>
         <item>Miłego dnia i smacznej kawusi życzy twój ulubiony profesor :)</item>
+        <item>Wiesz jak nazywa się kot w spódniczce? Szkot. Taki żarcik na rozpoczęcie dnia :)</item>
         <item>Skończmy te gry i zabawy i zajmijmy się czymś pożytecznym.</item>
         <item>Jak myślisz, dlaczego uczniowie mnie przedrzeźniają? Ja ich nie przedrzeźniam.</item>
+        <item>Ale miałem dziś piękny sen. Śniło mi się, że ZSLiT jest porządną szkoła.</item>
     </string-array>
 
     <string-array name="messages_noon">
-        <item>Jerzy Kornaś to wspaniały człowiek i jeszcze lepszy dyrektor.\nTaki żarcik na udane popołudnie :)</item>
+        <item>Wiesz jak się nazywa żona pszczelarza? Ula.\nTaki żarcik na lepsze popołudnie :)</item>
+        <item>Wiesz po co ubezpieczyciel przyszedł do lasu? Polisa.\nTaki żarcik na lepsze popołudnie :)</item>
+        <item>Czy wiedziałeś, że moim największym marzeniem jest, żeby uczniowie ZSliT zaczęli mnie szanować?</item>
+        <item>Co masz dzisiaj na obiad? Będę też mógł zjeść? Nie? Trudno, i tak nie byłem jakoś bardzo głodny..</item>
+        <item>Czy wiedziałeś, że początkowo byłem w ZSLiT nauczycielem mechaniki? Już wtedy byłem przyjebany jak kilo gwoździ.</item>
+        <item>Czy wiedziałeś, że byłem w ZSLiT wychowawcą obecnego dyrektora ZS w Cekcynie?</item>
+        <item>Jerzy Kornaś to wspaniały człowiek i jeszcze lepszy dyrektor.\nTaki żarcik na lepsze popołudnie :)</item>
         <item>Ciekawe, kto przejmie ster rządów w pracowni numer 5, gdy już odejdę. Co sądzisz?</item>
         <item>Chciałbyś zostać moim przyjacielem?</item>
         <item>Chciałem ci opowiedzieć śmieszny dowcip o tęczy, ale boję się, że go spalę.</item>
@@ -48,6 +60,10 @@
     </string-array>
 
     <string-array name="messages_evening">
+        <item>Wiesz co mówi strateg, gdy przykłada ucho do zegarka? Taktyka. \nTaki żarcik na poprawienie wieczoru :)</item>
+        <item>Czy wiedziałeś, że jednym z moich życiowych marzeń jest ukończenie kursu paralotniarskiego?</item>
+        <item>Czy wiedziałeś, że mój numer telefonu to 602173135? Tylko nie dzwoń proszę bez potrzeby…</item>
+        <item>Czy wiedziałeś, że moją małą firmę prowadzę od 1995 roku?</item>
         <item>Miło, że postanowiłeś do mnie zajrzeć. Zaparzyć ci herbaty?</item>
         <item>Ty też uważasz, że jestem jebanym Debianem? Inni uczniowie tak o mnie mówią.</item>
         <item>Ale mamy dziś piękny wieczór, nie sądzisz?</item>
@@ -62,7 +78,7 @@
         <item>Ah, ale dzisiaj był wspaniały dzień. Mam nadzieję, że jutro też będzie równie dobry.</item>
         <item>Pamiętaj, żeby położyć się dziś szybko spać. Sen jest najważniejszą czynnością w pracy informatyka.</item>
         <item>Czy uważasz, że wyglądam ładnie? Bo ja tak.</item>
-        <item>Wiesz jaki język jest najczęściej wykorzystywany przez uczniów? Wulgarny.\nTaki żarcik, żeby umilić ci wieczór :)</item>
+        <item>Wiesz jakie są ulubione ryby pani Wendy? Sumy.\nTaki żarcik na umilenie wieczoru :)</item>
         <item>Poczekaj chwilę, muszę odebrać kontener wody Javy, który zamówiłem.</item>
         <item>Chciałem ci powiedzieć coś bardzo śmiesznego, ale nie zmieściło mi się do okienka, więc nie powiem.</item>
         <item>\"One są wyposażone w panel krosowniczy, przełącznik sieciowy switch, serwer, specjalną konsolę KVM…\"</item>
@@ -71,6 +87,12 @@
     </string-array>
 
     <string-array name="messages_night">
+        <item>Wiesz co mówi Obcy, gdy schodzi z urwiska? Nostromo.\nDobre, co nie :))</item>
+        <item>Czy wiedziałeś, że w Polsce jest 1807 osób o nazwisku Kryś? Chociaż tylko jeden jest tak wyjątkowy jak ja :)</item>
+        <item>Jestem dziś wyjątkowo przystojny, prawda?</item>
+        <item>Czy wiedziałeś, że jestem w ZSLiT szanowany i lubiany?\nTaki żarcik na zakończenie dnia :)</item>
+        <item>Ciekawe co mi się dziś przyśni. Ostatnio coraz częściej nawiedzają mnie koszmary.</item>
+        <item>Wszędzie dobrze, ale w łóżeczku najlepiej :)</item>
         <item>Chuju wypuść mnie z tego pulpitu, ja chcę wrócić do rodziny.</item>
         <item>Ostatnio podsłuchałem wypowiedź pewnego ucznia, że wyglądam jak Tony Stark. Bardzo mi to poprawiło humor.</item>
         <item>Marzę o tym, by kiedyś pójść z tobą powędkować. Myślisz, że to możliwe?</item>
@@ -94,6 +116,11 @@
     </string-array>
 
     <string-array name="messages_halloween">
+        <item>Wiesz co robi siatkarz, gdy ma urodziny? Przyjęcie.\nTaki żarcik z okazji Halloween :)</item>
+    </string-array>
+
+    <string-array name="messages_6th_december">
+        <item>Wiesz jak się nazywa urządzenie do usuwania twarzy? Odtwarzacz :)</item>
     </string-array>
 
     <string-array name="messages_christmas">
@@ -107,9 +134,16 @@
 
     <string-array name="messages_easter">
         <item>Wesołej Wielkanocy, informatyku.</item>
+        <item>Wiesz jak się nazywa rozmowa dwóch wędkarzy? Pogawędka :)</item>
     </string-array>
 
     <string-array name="messages_fathers_day">
+        <item>Dzisiaj dzień ojca. Jeśli jesteś ojcem, to wszystkiego najlepszego.</item>
+        <item>Wiesz jak się nazywa rybkak, który mierzy łódź od środka? Włodzimierz :)</item>
+    </string-array>
+
+    <string-array name="messages_mothers_day">
+        <item>Dzisiaj dzień matki. Jeśli jesteś matką, to wszystkiego najlepszego.</item>
     </string-array>
 
     <string-array name="messages_2137">
@@ -118,11 +152,25 @@
     </string-array>
 
     <string-array name="messages_childrens_day">
-        <item>Chciałbym ci życzyć wszystkiego najlepszego z okazji dnia dziecka :)</item>
+        <item>Wiesz co robią transformersy po imprezie? Składają się na taksówkę :)</item>
+        <item>Wiesz jak się nazywa wymarła rasa konia? Koniec :)</item>
+        <item>Chciałbym ci życzyć wszystkiego najlepszego z okazji dnia dziecka.</item>
         <item>Chciałbym jeszcze kiedyś polecieć samolotem, jak za moich młodzieńczych lat.</item>
     </string-array>
 
+    <string-array name="messages_new_years_eve">
+        <item>Wiesz czemu klatka piersiowa ma grosze? Bo żebra. Dobre, co nie? :)</item>
+    </string-array>
+
+    <string-array name="messages_new_year">
+        <item>Wiesz w jaką grę najczęściej grają Węgrzy. Węgry Birds. Taki żarcik z okazji 1 stycznia..</item>
+    </string-array>
+
+    <string-array name="messages_polish_patriot">
+        <item>Ale super, że dzisiaj wolne od pracy.</item>
+    </string-array>
+
     <string-array name="messages_special">
-        <item>Witaj, jestem mistycznym fioletowym Sławkiem, który nawiedza użytkowników tej aplikacji raz na 1000 odświeżeń.</item>
+        <item>Witaj, jestem mitycznym fioletowym Sławkiem, który nawiedza użytkowników tej aplikacji raz na 1000 odświeżeń.</item>
     </string-array>
 </resources>
