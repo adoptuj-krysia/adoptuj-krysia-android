@@ -31,6 +31,8 @@
     </string-array>
 
     <string-array name="messages_noon">
+        <item>Czemu uczniowie oszukują na moich sprawdzianach? Przecież ja ich nie oszukuję.</item>
+        <item>Ostatnio cała klasa wysłała mi sprawdzian i wszyscy mieli 100% dobrych odpowiedzi. Dziwne, prawda?</item>
         <item>Wiesz jak się nazywa żona pszczelarza? Ula.\nTaki żarcik na lepsze popołudnie :)</item>
         <item>Wiesz po co ubezpieczyciel przyszedł do lasu? Polisa.\nTaki żarcik na lepsze popołudnie :)</item>
         <item>Czy wiedziałeś, że moim największym marzeniem jest, żeby uczniowie ZSliT zaczęli mnie szanować?</item>
@@ -60,6 +62,7 @@
     </string-array>
 
     <string-array name="messages_evening">
+        <item>Wiesz jak się nazywa bardzo trudny test? Protest.\nTaki żarcik na poprawienie humoru :)</item>
         <item>Wiesz co mówi strateg, gdy przykłada ucho do zegarka? Taktyka. \nTaki żarcik na poprawienie wieczoru :)</item>
         <item>Czy wiedziałeś, że jednym z moich życiowych marzeń jest ukończenie kursu paralotniarskiego?</item>
         <item>Czy wiedziałeś, że mój numer telefonu to 602173135? Tylko nie dzwoń proszę bez potrzeby…</item>
@@ -112,6 +115,7 @@
         <item>01000100 01100101 01100010 01101001 01100001 01101110</item>
         <item>Jestem tak dobry w spaniu, że mogę to robić z zamkniętymi oczami.</item>
         <item>O tej godzinie nie powinieneś korzystać z telefonu, tylko iść spać.</item>
+        <item>Odłóż mnie, proszę. Nie widzisz która godzina?</item>
         <item>Czy wiedziałeś, że kiedyś wystąpiłem w WeekendFM? Szkoda, że stało się to obiektem drwin moich uczniów.</item>
     </string-array>
 
