@@ -1,6 +1,7 @@
 package pl.tuchola.zslit.krychu.logic
 import android.content.Context
 import pl.tuchola.zslit.krychu.R
+import pl.tuchola.zslit.krychu.utils.EasterDate
 import java.util.*
 
 class WidgetEntryFactory(private val context: Context) {
@@ -39,12 +40,21 @@ class WidgetEntryFactory(private val context: Context) {
         R.drawable.friend_santa_4, R.drawable.friend_santa_5, R.drawable.friend_santa_6
     )
 
+    private val easterImages = listOf(
+        R.drawable.friend_easter_1, R.drawable.friend_easter_2, R.drawable.friend_easter_3,
+        R.drawable.friend_easter_4
+    )
+
     fun getWidgetEntry() : WidgetEntry {
         val calendar = Calendar.getInstance()
         val currentHour = calendar.get(Calendar.HOUR_OF_DAY)
         val currentMinute = calendar.get(Calendar.MINUTE)
         val currentDay = calendar.get(Calendar.DAY_OF_MONTH)
         val currentMonth = calendar.get(Calendar.MONTH)
+        val currentYear = calendar.get(Calendar.YEAR)
+
+        val easterCalendar = Calendar.getInstance()
+        easterCalendar.time = EasterDate(currentYear).getEasterSundayDate()
 
         val images: List<Int>
         val strings : Int
@@ -66,6 +76,13 @@ class WidgetEntryFactory(private val context: Context) {
             (currentDay in 24..26 && currentMonth == Calendar.DECEMBER) -> {
                 images = santaImages
                 strings = R.array.messages_christmas
+            }
+
+            //ładuje moduł świąt wielkanocnych
+            (easterCalendar.get(Calendar.MONTH) == currentMonth &&
+            easterCalendar.get(Calendar.DAY_OF_MONTH) == currentDay)  -> {
+                images = easterImages
+                strings = R.array.messages_easter
             }
 
             //ładuje moduł poranka
