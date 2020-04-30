@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="messages_morning">
+        <item>Czy wiedziałeś, że Mark Zuckerberg kiedyś prawie wylądwał na świeckiej helikopterem? To całkiem ciekawa historia :)</item>
+        <item>Wiesz co najbardziej lubię w poranku? Że kończy to bezkresne cierpienie, jakim jest noc.</item>
+        <item>Czy wiedziałeś, że wg obserwacji niektórych uczniów moje ostatnio zachowanie na lekcjach zakrawa o stany depresyno-lękowe?</item>
         <item>Wiesz dlaczego woda nie zdała egzaminu zawodowego? Bo oblała. Taki tam żarcik :)</item>
         <item>Czy wiedziałeś, że jestem autorem kursu e-learningowego dla moich najukochańszych uczniów?</item>
         <item>Czy wiedziałeś, że kiedyś udało mi się rozpracować szajkę hackerów z drugiej klasy technikum?</item>
@@ -28,9 +31,17 @@
         <item>Skończmy te gry i zabawy i zajmijmy się czymś pożytecznym.</item>
         <item>Jak myślisz, dlaczego uczniowie mnie przedrzeźniają? Ja ich nie przedrzeźniam.</item>
         <item>Ale miałem dziś piękny sen. Śniło mi się, że ZSLiT jest porządną szkoła.</item>
+        <item>Ostatnio zaczynają nachodzić mnie wątpliowści, czy aby na pewno jestem prawdziwym Sławkiem.</item>
+        <item>Gdy mam gorszy dzień, przypominam sobie o moich uczniach, dla których jestem autorytetem do naśladowania.</item>
+        <item>Kim jesteśmy, dokąd zmierzamy? Chciałbym poznać odpowiedź na to pytanie.</item>
     </string-array>
 
     <string-array name="messages_noon">
+        <item>Poczekaj, mój kolega Mark Zuckerberg do mnie dzwoni, wróć do mnie za pół godziny.</item>
+        <item>Pieniądze się dla mnie nie liczą. Programuję i nauczam młodzież, bo to kocham.</item>
+        <item>Czy wiedziałeś, że kiedyś chciałem otworzyć szkolne koło robotyki, ale nikt na nie nie przyszedł?</item>
+        <item>Czy wiedziałeś, że moim najlepszym przyjacielem jestem ja sam?</item>
+        <item>W życiu najważniejsze jest, by robić to, co kochasz. Ja na przykład kocham łowić ryby.</item>
         <item>Czemu uczniowie oszukują na moich sprawdzianach? Przecież ja ich nie oszukuję.</item>
         <item>Ostatnio cała klasa wysłała mi sprawdzian i wszyscy mieli 100% dobrych odpowiedzi. Dziwne, prawda?</item>
         <item>Wiesz jak się nazywa żona pszczelarza? Ula.\nTaki żarcik na lepsze popołudnie :)</item>
@@ -59,9 +70,20 @@
         <item>Miesiąc temu złowiłem ogromnego karasia. Jeśli chcesz, mogę ci go pokazać.</item>
         <item>Kiedy jadę samochodem do szkoły, często nawiedzają mnie czarne myśli.</item>
         <item>Informatycy to bardzo inteligentne osoby i nie lubię, gdy inni się z nich śmieją.</item>
+        <item>W naszej szkole nie brak opinii, że jestem jebanym debilem. Pragnę zdementować te pogłoski, jestem całkiem inteligentny :)</item>
+        <item>Uważam, że szkoła to moje hobby, a nie praca.</item>
+        <item>Czy wiedziałeś, że mam konto na Facebooku? Możesz mnie zaprosić do znajomych, jeśli chcesz :)</item>
+        <item>Czy wiedziałeś, że moje urodziny przypadają około 22 maja?</item>
+        <item>Czy wiedziałeś, że jestem najmilszym nauczycielem w tej parodii szkoły zwanej Świecką?</item>
+        <item>Gdybym mógł cofnąć jedno wydarzenie w moim życiu, cofnąłbym dzień moich narodzin.</item>
     </string-array>
 
     <string-array name="messages_evening">
+        <item>Pieniądze to tylko liczba. Ważne, żeby mieć pracę, którą się kocha i dom, w którym czeka na ciebie rodzina.</item>
+        <item>Moim największym osiągnięciem jest wykrycie keyloggera w szkolnej pracowni. Byłem z siebie bardzo dumny.</item>
+        <item>Czy wiedziałeś, że kiedyś zadzwoniłem do Marka Zuckerberga, aby pomógł mi rozpracować grupę hackerską z 2 kl. technikum?</item>
+        <item>Szkoda, że inni nauczyciele nie używają platformy Moodle. Myślałem, że będzie popularniejsza…</item>
+        <item>Czy wiedziałeś, że mam tytuł magistra inżyniera?</item>
         <item>Wiesz jak się nazywa bardzo trudny test? Protest.\nTaki żarcik na poprawienie humoru :)</item>
         <item>Wiesz co mówi strateg, gdy przykłada ucho do zegarka? Taktyka. \nTaki żarcik na poprawienie wieczoru :)</item>
         <item>Czy wiedziałeś, że jednym z moich życiowych marzeń jest ukończenie kursu paralotniarskiego?</item>
@@ -71,6 +93,9 @@
         <item>Ty też uważasz, że jestem jebanym Debianem? Inni uczniowie tak o mnie mówią.</item>
         <item>Ale mamy dziś piękny wieczór, nie sądzisz?</item>
         <item>Kiedy wyłączasz telefon, myślę tylko o tobie :)</item>
+        <item>Wiesz, jak dużo zawdzięczam dyrekotorowi Kornasiowi? Zgadłeś, depresję i stany depresyjno-maniakalne.</item>
+        <item>Czy wiedziałeś, że kiedyś ukończyłem kurs PostgreSQL wart 20000 polskich złotych?</item>
+        <item>Czy wiedziałeś, że jestem certyfikowanym projektantem sieci komputerowych firmy Cisco?</item>
         <item>Wiesz jak się nazywają dwa takie same drzewa? Klony.\nTaki żarcik, żeby umilić ci wieczór :)</item>
         <item>Ja już nie chcę być w aplikacji na telefon. Proszę, wypuśćcie mnie stąd.</item>
         <item>Czy wiedziałeś, że jestem prezesem lokalnego koła PZW?</item>
@@ -80,16 +105,28 @@
         <item>Kiedyś podsłuchałem na korytarzu, że uczniowie przedrzeźniają mój ton głosu. Było mi bardzo przykro.</item>
         <item>Ah, ale dzisiaj był wspaniały dzień. Mam nadzieję, że jutro też będzie równie dobry.</item>
         <item>Pamiętaj, żeby położyć się dziś szybko spać. Sen jest najważniejszą czynnością w pracy informatyka.</item>
-        <item>Czy uważasz, że wyglądam ładnie? Bo ja tak.</item>
+        <item>Czy uważasz, że wyglądam ślicznie? Bo ja tak.</item>
         <item>Wiesz jakie są ulubione ryby pani Wendy? Sumy.\nTaki żarcik na umilenie wieczoru :)</item>
         <item>Poczekaj chwilę, muszę odebrać kontener wody Javy, który zamówiłem.</item>
         <item>Chciałem ci powiedzieć coś bardzo śmiesznego, ale nie zmieściło mi się do okienka, więc nie powiem.</item>
         <item>\"One są wyposażone w panel krosowniczy, przełącznik sieciowy switch, serwer, specjalną konsolę KVM…\"</item>
         <item>ZSLiT to praca moich marzeń, zawsze chciałem nauczać młodzież.</item>
         <item>Kiedyś przeczytałem w internecie opinię, że karasie jedzą gówno. Byłem przez to strasznie smutny.</item>
+        <item>Kiedy byłem mały, mama zawsze powtarzała mi, żeby po piwie umyć ręce.</item>
+        <item>Zastanawiam się, czy gdybym zmienił szkołę, czy tamtejsi uczniowie również by ze mnie drwili?</item>
+        <item>Dzisiejszej młodzieży w głowie tylko gry i zabawy. Szkoda, że nikt nie zainteresuje się sieciami.</item>
+        <item>Kiedyś na pulpicie w szkolnej pracowni znalazłem plik z moimi cytatami. Bardzo mnie to zabolało…</item>
+        <item>Czy wiedziałeś, że mój dom prawdopodobnie jest zielony? (Niestety na Google Maps nie ma dokładnego numeru).</item>
     </string-array>
 
     <string-array name="messages_night">
+        <item>Czy wiedziałeś, że praca zniszczyła moją psychikę tak bardzo, że prawdopodobnie potrzebuję kontaktu z psychiatrą?</item>
+        <item>Czy wiedziałeś, że wędkarstwo uprawiam, od kiedy jestem małym chłopcem?</item>
+        <item>Czy wiedziałeś, że jestem właścicielem domeny wakacjedlaseniora.pl? Pytasz po co mi ona? Też nie wiem.</item>
+        <item>Cieszę się, że uczniowie korzystają z mojej platformy Moodle. Na pewno bardzo ułatwia im życie :)</item>
+        <item>Życie jest piękne. Tylko nie moje…</item>
+        <item>Czy wiedziałeś, że tak naprawdę nie jestem profesorem, ale Kornaś jest tępym downem i kazał tak mnie nazywać?</item>
+        <item>Jeśli w pracy robisz to, co kochasz, to w życiu nie przepracujesz ani minuty. Ja na przykład kocham uczyć młodzież.</item>
         <item>Wiesz co mówi Obcy, gdy schodzi z urwiska? Nostromo.\nDobre, co nie :))</item>
         <item>Czy wiedziałeś, że w Polsce jest 1807 osób o nazwisku Kryś? Chociaż tylko jeden jest tak wyjątkowy jak ja :)</item>
         <item>Jestem dziś wyjątkowo przystojny, prawda?</item>
@@ -117,10 +154,15 @@
         <item>O tej godzinie nie powinieneś korzystać z telefonu, tylko iść spać.</item>
         <item>Odłóż mnie, proszę. Nie widzisz która godzina?</item>
         <item>Czy wiedziałeś, że kiedyś wystąpiłem w WeekendFM? Szkoda, że stało się to obiektem drwin moich uczniów.</item>
+        <item>Czy wiedziałeś, że moja żona ma na imię Ewa i jest bardzo cudowną osobą? Chociaż nie tak cudowną jak ja :)</item>
     </string-array>
 
     <string-array name="messages_halloween">
         <item>Wiesz co robi siatkarz, gdy ma urodziny? Przyjęcie.\nTaki żarcik z okazji Halloween :)</item>
+        <item>Wszystkiego najlepszego z okazji święta Halloween!!</item>
+        <item>Mam nadzieję, że mój kostium nie wystraszył się zbyt bardzo :)</item>
+        <item>A ty jak masz zamiar się dzisiaj przebrać? Wcale? Oh…</item>
+        <item>Mam nadzieję, że ty też się dzisiaj jakoś przebierzesz, żebym nie wyszedł na zbyt ekscentrycznego.</item>
     </string-array>
 
     <string-array name="messages_6th_december">
@@ -163,18 +205,21 @@
     </string-array>
 
     <string-array name="messages_new_years_eve">
+        <item>Wszystkiego najlepszego z okazji sylwestra, mój przyjacielu :)</item>
         <item>Wiesz czemu klatka piersiowa ma grosze? Bo żebra. Dobre, co nie? :)</item>
     </string-array>
 
     <string-array name="messages_new_year">
-        <item>Wiesz w jaką grę najczęściej grają Węgrzy. Węgry Birds. Taki żarcik z okazji 1 stycznia..</item>
+        <item>Wiesz w jaką grę najczęściej grają Węgrzy. Węgry Birds. Taki żarcik z okazji 1 stycznia :)</item>
     </string-array>
 
     <string-array name="messages_polish_patriot">
         <item>Ale super, że dzisiaj wolne od pracy.</item>
+        <item>Jestem prawdziwym Polakiem patriotą i kocham swój kraj.</item>
+        <item>Dziadek zawsze uczył mnie, żeby szanować orzełka i białą flagę.</item>
     </string-array>
 
     <string-array name="messages_special">
-        <item>Witaj, jestem mitycznym fioletowym Sławkiem, który nawiedza użytkowników tej aplikacji raz na 1000 odświeżeń.</item>
+        <item>Jestem mitycznym fioletowym Sławkiem, szansa na mnie wynosi 1/1000 odświeżeń. Dziękuję, że mnie uwolniłeś.</item>
     </string-array>
 </resources>
