@@ -155,7 +155,7 @@
         <item>Wiesz jak się nazywa cień rzucany przez pierś? Pierścień. Taki żarcik na poprawę wieczoru :)</item>
         <item>Gdy uczniowie chodzą po klasie i grają w gry, zamiast mnie słuchać, coś we mnie pęka.</item>
         <item>Czy wiesz, że kocham Bory Tucholskie nad życie i nie zamieniłbym ich na nic innego?</item>
-        <item>Czy wiedziałeś, że wg mojej strony "mieszkam w przepięknej okolicy tuż nad Brdą w otulinie rezerwatu przyrody"?</item>
+        <item>Czy wiedziałeś, że wg mojej strony \"mieszkam w przepięknej okolicy tuż nad Brdą w otulinie rezerwatu przyrody\"?</item>
         <item>Czy wiedziałeś, że w kodzie mojej strony internetowej jest ukryta wiadomość "wilga to całkiem przyjemny samolocik"?</item>
     </string-array>
 
@@ -236,6 +236,10 @@
     </string-array>
 
     <string-array name="messages_christmas">
+        <item>Żałuję, że zostałem informatykiem. Mogłem wybrać jakiś bardziej szanowany zawód.</item>
+        <item>Ładną mam dzisiaj czapkę?</item>
+        <item>Już niedługo nowy rok. Zastanawiam sie, jakie nowe rodzaje katuszy mi przyniesie.</item>
+        <item>Kocham święta, bo to to jedyny dzień w roku, kiedy nie czuję się jak największy śmieć.</item>
         <item>Wszystkiego najlepszego z okazji świąt, informatyku!</item>
         <item>Wesołych świąt, mam nadzieję że nie będziesz dziś zbyt długo siedział przy komputerze.</item>
         <item>Życzę ci wesołych świąt, spędź te piękne chwile z rodziną.</item>
@@ -245,6 +249,7 @@
     </string-array>
 
     <string-array name="messages_easter">
+        <item>Nawet jeśli nie obchodzisz Wielkanocy, i tak chciałbym ci życzyć wszystkiego najlepszego.</item>
         <item>Wesołej Wielkanocy, informatyku.</item>
         <item>Wiesz jak się nazywa rozmowa dwóch wędkarzy? Pogawędka :)</item>
     </string-array>
@@ -272,13 +277,15 @@
     </string-array>
 
     <string-array name="messages_new_years_eve">
+        <item>Mam nadzieję, że nowy rok przyniesie w moim życiu jakąś pozytywną zmianę. Choć myślę, że to mało prawdopodobne…</item>
+        <item>Jutro nowy rok! Nie mogę się doczekać, już odliczam sekundy!!</item>
         <item>Wiesz jak się nazywa twarz pani Wendy? Oblicze.\nTaki żarcik sylwestrowy :)</item>
         <item>Wszystkiego najlepszego z okazji sylwestra, mój przyjacielu :)</item>
         <item>Wiesz czemu klatka piersiowa ma grosze? Bo żebra. Dobre, co nie? :)</item>
     </string-array>
 
     <string-array name="messages_new_year">
-        <item>Myślisz, że w tym nowym roku uczniowie będą mnie szanowali bardziej? Tak... też myślę, że to niemożliwe..</item>
+        <item>Myślisz, że w tym nowym roku uczniowie będą mnie szanowali bardziej? Tak… też myślę, że to niemożliwe..</item>
         <item>Wszystkiego najlepszego z okazji nowego roku!!</item>
         <item>Wygląda na to, że spędzimy ze sobą kolejny nowy rok :)</item>
         <item>Jakie masz postanowienia noworoczne. Ja na przykład chciałbym lepiej łapać ryby.</item>
