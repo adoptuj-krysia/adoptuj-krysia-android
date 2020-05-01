@@ -2,6 +2,7 @@
     <string name="app_name">Adoptuj Krysia</string>
     <string name="app_header">Sławomir Kryś - twój osobisty przyjaciel</string>
     <string name="app_weather_header">Niezbędnik wędkarza - pogoda w Plaskoszu</string>
+    <string name="app_info_header">Informacje o projekcie Adoptuj Krysia™</string>
 
     <string name="widget_default_text">Proszę poczekać, trwa ładowanie wypowiedzi.</string>
 
@@ -21,6 +22,8 @@
     <string name="fishing_opportunity_good">Ooo, wygląda na to, że mamy świetną pogodę na ryby :)</string>
     <string name="fishing_opportunity_bad">Wygląda na to, że pogoda na ryby jest raczej średnia :(</string>
     <string name="fishing_opportunity_unknown">Ciekawe, czy mamy dziś dobrą pogodę na ryby :)</string>
+
+    <string name="info_app_version">Zainstalowana wersja aplikacji: %s</string>
 
     <string name="apk_friend_touched">Prosimy nie dotykać eksponatu.</string>
     <string name="apk_friend_touched_weather">Nie wkurwiaj wędkarza.</string>
@@ -48,6 +51,7 @@
 
     <string name="nav_home">Strona główna</string>
     <string name="nav_weather">Niezbędnik wędkarza™</string>
+    <string name="nav_info">O programie</string>
 
     <string name="log_main_activity_launched">Okno aplikacji Android zostało uruchomione</string>
     <string name="log_widget_refreshed_user">Użytkownik poprosił o ręczne odświeżenie widżetu</string>
@@ -57,6 +61,7 @@
     <string name="log_device_boot_completed">System Android został uruchomiony ponownie</string>
     <string name="log_fragment_main">Otwieram stronę główną aplikacji.</string>
     <string name="log_fragment_weather">Otwieram niezbędnik wędkarza.</string>
+    <string name="log_fragment_information">Otwieram okno informacji o aplikacji.</string>
 
     <string name="widget_friend_upset">
         Spłoszyłeś Sławka i się na ciebie obraził. Nie powinieneś go dotykać tak często.

@@ -46,6 +46,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             (R.id.nav_item_weather) -> {
                 supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, WeatherFragment()).commit()
             }
+
+            (R.id.nav_item_info) -> {
+                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, InformationFragment()).commit()
+            }
         }
         main_drawer_layout.closeDrawer(GravityCompat.START)
         return true
