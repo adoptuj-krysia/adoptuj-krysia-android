@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="messages_morning">
-        <item>Czy wiedziałeś, że Mark Zuckerberg kiedyś prawie wylądwał na świeckiej helikopterem? To całkiem ciekawa historia :)</item>
+        <item>Jak sądzisz, która metoda samobójstwa byłaby dla mnie najbardziej skuteczna?</item>
+        <item>Czy wiedziałeś, że Mark Zuckerberg kiedyś prawie wylądował na świeckiej helikopterem? To całkiem ciekawa historia :)</item>
         <item>Wiesz co najbardziej lubię w poranku? Że kończy to bezkresne cierpienie, jakim jest noc.</item>
         <item>Czy wiedziałeś, że wg obserwacji niektórych uczniów moje ostatnio zachowanie na lekcjach zakrawa o stany depresyno-lękowe?</item>
         <item>Wiesz dlaczego woda nie zdała egzaminu zawodowego? Bo oblała. Taki tam żarcik :)</item>
@@ -37,7 +38,11 @@
     </string-array>
 
     <string-array name="messages_noon">
-        <item>Poczekaj, mój kolega Mark Zuckerberg do mnie dzwoni, wróć do mnie za pół godziny.</item>
+        <item>Wiesz jak nazywa się pociąg do zakopanego? Nekrofilia.\nTaki żarcik na poprawę dnia :)</item>
+        <item>Wiesz co mówi wędkarz, gdy wejdzie do stajni? Okoń.\nTaki żarcik na poprawę dnia :)</item>
+        <item>Wiesz jak się żyje ludziom na Ukrainie? Kijowo.\nTaki żarcik na lepsze popołudnie :)</item>
+        <item>Lubię popołudnie, bo to jedyna pora, gdy nie nawiedzają mnie koszmary przeszłości.</item>
+        <item>Poczekaj, mój kolega Mark Zuckerberg właśnie do mnie zadzwonił, wróć za pół godziny.</item>
         <item>Pieniądze się dla mnie nie liczą. Programuję i nauczam młodzież, bo to kocham.</item>
         <item>Czy wiedziałeś, że kiedyś chciałem otworzyć szkolne koło robotyki, ale nikt na nie nie przyszedł?</item>
         <item>Czy wiedziałeś, że moim najlepszym przyjacielem jestem ja sam?</item>
@@ -79,6 +84,7 @@
     </string-array>
 
     <string-array name="messages_evening">
+        <item>Czuję chłód. Nie rozumiem dlaczego.</item>
         <item>Pieniądze to tylko liczba. Ważne, żeby mieć pracę, którą się kocha i dom, w którym czeka na ciebie rodzina.</item>
         <item>Moim największym osiągnięciem jest wykrycie keyloggera w szkolnej pracowni. Byłem z siebie bardzo dumny.</item>
         <item>Czy wiedziałeś, że kiedyś zadzwoniłem do Marka Zuckerberga, aby pomógł mi rozpracować grupę hackerską z 2 kl. technikum?</item>
@@ -117,9 +123,13 @@
         <item>Dzisiejszej młodzieży w głowie tylko gry i zabawy. Szkoda, że nikt nie zainteresuje się sieciami.</item>
         <item>Kiedyś na pulpicie w szkolnej pracowni znalazłem plik z moimi cytatami. Bardzo mnie to zabolało…</item>
         <item>Czy wiedziałeś, że mój dom prawdopodobnie jest zielony? (Niestety na Google Maps nie ma dokładnego numeru).</item>
+        <item>Wiesz, jaki ser najczęściej jedzą marynarze? Topiony. Taki żarcik na dobre zakończenie wieczora :)</item>
+        <item>Wiesz jak się nazywa cień rzucany przez pierś? Pierścień. Taki żarcik na poprawę wieczoru :)</item>
     </string-array>
 
     <string-array name="messages_night">
+        <item>Wiesz jak się nazywa rozmowa z Anią? Pogadanka.\nTaki żarcik na zakończenie dnia :)</item>
+        <item>Kiedy zamykam oczy, jedyne co mnie nawiedza, to pustka.</item>
         <item>Czy wiedziałeś, że praca zniszczyła moją psychikę tak bardzo, że prawdopodobnie potrzebuję kontaktu z psychiatrą?</item>
         <item>Czy wiedziałeś, że wędkarstwo uprawiam, od kiedy jestem małym chłopcem?</item>
         <item>Czy wiedziałeś, że jestem właścicielem domeny wakacjedlaseniora.pl? Pytasz po co mi ona? Też nie wiem.</item>
