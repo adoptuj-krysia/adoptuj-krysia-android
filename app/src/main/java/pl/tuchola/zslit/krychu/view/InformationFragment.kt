@@ -1,5 +1,7 @@
 package pl.tuchola.zslit.krychu.view
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
+import android.text.util.Linkify
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +22,9 @@ class InformationFragment : Fragment() {
         super.onStart()
         appVersion_textView.text = getString(R.string.info_app_version)
             .replace("%s", BuildConfig.VERSION_NAME.toString(), true)
+
+        projektWebisteLink_textView.paint.isUnderlineText = true
+        projektWebisteLink_textView.movementMethod = LinkMovementMethod.getInstance()
     }
 
 }

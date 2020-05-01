@@ -24,6 +24,12 @@
     <string name="fishing_opportunity_unknown">Ciekawe, czy mamy dziś dobrą pogodę na ryby :)</string>
 
     <string name="info_app_version">Zainstalowana wersja aplikacji: %s</string>
+    <string name="info_welcome_message">
+        Dziękuję za zainteresowanie się projektem Adoptuj Krysia. Jeśli chcesz dowiedzieć się
+        więcej na temat projektu, zapraszam pod adres widoczny poniżej. Znajduje się tam również
+        kod źródłowy aplikacji oraz skrócona dokumentacja techniczna.
+    </string>
+    <string name="info_website_link">https://adoptuj-krysia.github.io/</string>
 
     <string name="apk_friend_touched">Prosimy nie dotykać eksponatu.</string>
     <string name="apk_friend_touched_weather">Nie wkurwiaj wędkarza.</string>
