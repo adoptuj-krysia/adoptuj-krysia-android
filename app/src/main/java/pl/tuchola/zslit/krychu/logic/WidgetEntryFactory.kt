@@ -66,7 +66,7 @@ class WidgetEntryFactory(private val context: Context) {
                 strings = R.array.messages_2137
             }
 
-            //ładuje moduł mistycznego fioletowego Sławka
+            //ładuje moduł mitycznego fioletowego Sławka
             ((1..1000).random() == 1000) -> {
                 images = specialImages
                 strings = R.array.messages_special
