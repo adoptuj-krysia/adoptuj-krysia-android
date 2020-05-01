@@ -44,7 +44,6 @@ class MainWidgetProvider : AppWidgetProvider() {
         //Użytkownik poprosił o ręczne odświeżenie
         if (ACTION_REFRESH_REQUESTED == intent?.action) {
             ActivityLog(context!!).writeLine(context.getString(R.string.log_widget_refreshed_user))
-
             UserUpdateRequest(context).callUpdateRequest()
         }
     }

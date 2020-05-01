@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.fragment_information.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.io.ActivityLog
 import pl.tuchola.zslit.krychu.BuildConfig;
+import pl.tuchola.zslit.krychu.utils.Boast
 
 class InformationFragment : Fragment() {
 
@@ -23,8 +24,9 @@ class InformationFragment : Fragment() {
         appVersion_textView.text = getString(R.string.info_app_version)
             .replace("%s", BuildConfig.VERSION_NAME.toString(), true)
 
-        projektWebisteLink_textView.paint.isUnderlineText = true
-        projektWebisteLink_textView.movementMethod = LinkMovementMethod.getInstance()
+        friendInfoPhoto_imageView.setOnClickListener {
+            Boast.showLongMessage(getString(R.string.apk_friend_touched_info), context!!)
+        }
     }
 
 }

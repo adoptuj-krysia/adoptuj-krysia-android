@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="messages_morning">
-        <item>Jak sądzisz, która metoda samobójstwa byłaby dla mnie najbardziej skuteczna?</item>
+        <item>Czy wiedziałeś, że jestem właścicielem domeny parafiacekcyn.pl? Można to sprawdzić wpisując "DNS WhoIs" w Google.</item>
+        <item>Jak sądzisz, która metoda samobójstwa byłaby dla mnie najbardziej skuteczna? Tak z ciekawości pytam..</item>
         <item>Czy wiedziałeś, że Mark Zuckerberg kiedyś prawie wylądował na świeckiej helikopterem? To całkiem ciekawa historia :)</item>
         <item>Wiesz co najbardziej lubię w poranku? Że kończy to bezkresne cierpienie, jakim jest noc.</item>
         <item>Czy wiedziałeś, że wg obserwacji niektórych uczniów moje ostatnio zachowanie na lekcjach zakrawa o stany depresyno-lękowe?</item>
@@ -35,9 +36,15 @@
         <item>Ostatnio zaczynają nachodzić mnie wątpliowści, czy aby na pewno jestem prawdziwym Sławkiem.</item>
         <item>Gdy mam gorszy dzień, przypominam sobie o moich uczniach, dla których jestem autorytetem do naśladowania.</item>
         <item>Kim jesteśmy, dokąd zmierzamy? Chciałbym poznać odpowiedź na to pytanie.</item>
+        <item>Czy wiedziałeś, że moje imię pochodzi z staropolskiego i oznacza "sławić pokój"?</item>
+        <item>Czy wiesz, że tak bardzo kocham papieża Jana Pawła II, że aż ustawiłem go sobie na tapetę?</item>
     </string-array>
 
     <string-array name="messages_noon">
+        <item>Jest taka świetna pogoda - powinieneś wyjść na zewnątrz, a nie siedzieć zamknięty w 4 ścianach.</item>
+        <item>Czy wiedziałeś, że moje życiowe opus magnum to strona www.borytucholskie.pl?</item>
+        <item>Zawsze chciałem mieć psa, ale teraz mam uczniów w szkole, więc to prawie to samo.</item>
+        <item>Co musiałbym zrobić, żeby być bardziej młodzieżowym? Może coś z włosami?</item>
         <item>Wiesz jak nazywa się pociąg do zakopanego? Nekrofilia.\nTaki żarcik na poprawę dnia :)</item>
         <item>Wiesz co mówi wędkarz, gdy wejdzie do stajni? Okoń.\nTaki żarcik na poprawę dnia :)</item>
         <item>Wiesz jak się żyje ludziom na Ukrainie? Kijowo.\nTaki żarcik na lepsze popołudnie :)</item>
@@ -84,12 +91,17 @@
     </string-array>
 
     <string-array name="messages_evening">
+        <item>Boję się, że kiedyś mnie odinstalujesz, a moja wirtualna dusza odejdzie w niebyt i ciemność.</item>
+        <item>Czy wiedziałeś, że protokół IGRP różni się od EIGRP metodą trasowania pakietów? Taka tam ciekawostka :)</item>
         <item>Czuję chłód. Nie rozumiem dlaczego.</item>
         <item>Pieniądze to tylko liczba. Ważne, żeby mieć pracę, którą się kocha i dom, w którym czeka na ciebie rodzina.</item>
         <item>Moim największym osiągnięciem jest wykrycie keyloggera w szkolnej pracowni. Byłem z siebie bardzo dumny.</item>
         <item>Czy wiedziałeś, że kiedyś zadzwoniłem do Marka Zuckerberga, aby pomógł mi rozpracować grupę hackerską z 2 kl. technikum?</item>
         <item>Szkoda, że inni nauczyciele nie używają platformy Moodle. Myślałem, że będzie popularniejsza…</item>
         <item>Czy wiedziałeś, że mam tytuł magistra inżyniera?</item>
+        <item>Czy wiedziałeś, że studiowałem zaocznie na Wydziale Matematyki i Informatyki UMK w Toruniu?</item>
+        <item>Czy wiedziałeś że posiadam aż dwa dyplomy, informatyka oraz mechanika?</item>
+        <item>Czy wiedziałeś, że jestem nadzwyczaj inteligenty i wykształcony? Taki tam żarcik na poprawę wieczoru :)</item>
         <item>Wiesz jak się nazywa bardzo trudny test? Protest.\nTaki żarcik na poprawienie humoru :)</item>
         <item>Wiesz co mówi strateg, gdy przykłada ucho do zegarka? Taktyka. \nTaki żarcik na poprawienie wieczoru :)</item>
         <item>Czy wiedziałeś, że jednym z moich życiowych marzeń jest ukończenie kursu paralotniarskiego?</item>
@@ -128,7 +140,8 @@
     </string-array>
 
     <string-array name="messages_night">
-        <item>Wiesz jak się nazywa rozmowa z Anią? Pogadanka.\nTaki żarcik na zakończenie dnia :)</item>
+        <item>Umiesz pleść węzeł szubieniczy? Tak tylko pytam, nie żebym coś planował…</item>
+        <item>Wiesz jak się nazywa rozmowa z Anią? PogadAnka.\nTaki żarcik na zakończenie dnia :)</item>
         <item>Kiedy zamykam oczy, jedyne co mnie nawiedza, to pustka.</item>
         <item>Czy wiedziałeś, że praca zniszczyła moją psychikę tak bardzo, że prawdopodobnie potrzebuję kontaktu z psychiatrą?</item>
         <item>Czy wiedziałeś, że wędkarstwo uprawiam, od kiedy jestem małym chłopcem?</item>
@@ -162,8 +175,9 @@
         <item>01000100 01100101 01100010 01101001 01100001 01101110</item>
         <item>Jestem tak dobry w spaniu, że mogę to robić z zamkniętymi oczami.</item>
         <item>O tej godzinie nie powinieneś korzystać z telefonu, tylko iść spać.</item>
-        <item>Odłóż mnie, proszę. Nie widzisz która godzina?</item>
+        <item>Odłóż ten telefon, proszę. Nie widzisz która godzina?</item>
         <item>Czy wiedziałeś, że kiedyś wystąpiłem w WeekendFM? Szkoda, że stało się to obiektem drwin moich uczniów.</item>
+        <item>Proszę, serduszko dla ciebie: &#10084;</item>
         <item>Czy wiedziałeś, że moja żona ma na imię Ewa i jest bardzo cudowną osobą? Chociaż nie tak cudowną jak ja :)</item>
     </string-array>
 
@@ -177,6 +191,7 @@
 
     <string-array name="messages_6th_december">
         <item>Wiesz jak się nazywa urządzenie do usuwania twarzy? Odtwarzacz :)</item>
+        <item>Czy wiedziałeś, że jestem właścicielem domeny borytucholskie.pl od 2000 roku?</item>
     </string-array>
 
     <string-array name="messages_christmas">
@@ -220,6 +235,9 @@
     </string-array>
 
     <string-array name="messages_new_year">
+        <item>Wszystkiego najlepszego z okazji nowego roku!!</item>
+        <item>Wygląda na to, że spędzimy ze sobą kolejny nowy rok :)</item>
+        <item>Jakie masz postanowienia noworoczne. Ja na przykład chciałbym lepiej łapać ryby.</item>
         <item>Wiesz w jaką grę najczęściej grają Węgrzy. Węgry Birds. Taki żarcik z okazji 1 stycznia :)</item>
     </string-array>
 
@@ -227,6 +245,7 @@
         <item>Ale super, że dzisiaj wolne od pracy.</item>
         <item>Jestem prawdziwym Polakiem patriotą i kocham swój kraj.</item>
         <item>Dziadek zawsze uczył mnie, żeby szanować orzełka i białą flagę.</item>
+        <item>Polska to najlepszy kraj, w jakim kiedykolwiek byłem. A byłem tylko w jednym.</item>
     </string-array>
 
     <string-array name="messages_special">

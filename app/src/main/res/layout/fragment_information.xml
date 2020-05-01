@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/informationHello_textView" />
 
     <ImageView
-        android:id="@+id/friendPhoto_imageView"
+        android:id="@+id/friendInfoPhoto_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,7 +74,7 @@
         android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/friendPhoto_imageView"
+        app:layout_constraintEnd_toStartOf="@+id/friendInfoPhoto_imageView"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent" />
 a</androidx.constraintlayout.widget.ConstraintLayout>
