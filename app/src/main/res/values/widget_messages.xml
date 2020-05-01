@@ -213,6 +213,13 @@
     </string-array>
 
     <string-array name="messages_halloween">
+        <item>Jako przebranie na Halloween powinienem się po prostu uśmiechnąć, i tak nikt by mnie nie rozpoznał.</item>
+        <item>Niektórzy ludzie w Internecie twierdzą, że Halloween to święto pogańskie. Pogański to oni mają ryj.</item>
+        <item>Tak naprawdę nie jestem przebrany, to tylko przerobiony obrazek w twoim telefonie.</item>
+        <item>Uważasz, że jestem straszny? Nie? Trudno, w następnym roku postaram się bardziej.</item>
+        <item>Jako dziecko zawsze chciałem wyjść z kolegami na Halloween, ale moi rodzice byli katolikami i mi nie pozwalali.</item>
+        <item>W przyszłym roku na Halloween przebiore się za informatyka.</item>
+        <item>Halloween, to ja mam codziennie przed lustrem.</item>
         <item>Wiesz co robi siatkarz, gdy ma urodziny? Przyjęcie.\nTaki żarcik z okazji Halloween :)</item>
         <item>Wszystkiego najlepszego z okazji święta Halloween!!</item>
         <item>Mam nadzieję, że mój kostium nie wystraszył się zbyt bardzo :)</item>
@@ -221,7 +228,10 @@
     </string-array>
 
     <string-array name="messages_6th_december">
-        <item>Wiesz jak się nazywa urządzenie do usuwania twarzy? Odtwarzacz :)</item>
+        <item>Nie mogę się doczekać 24 grudnia. To cudowny dzień, jedyny taki w roku.</item>
+        <item>Wesołych mikołajek, informatyku, może przynajmniej jeden z nas będzie miał dziś dobry dzień.</item>
+        <item>Wesołych mikołajek życzy profesor Kryś :)</item>
+        <item>Wiesz jak się nazywa urządzenie do usuwania twarzy? Odtwarzacz. Taki żarcik mikołajkowy :)</item>
         <item>Czy wiedziałeś, że jestem właścicielem domeny borytucholskie.pl od 2000 roku?</item>
     </string-array>
 
@@ -246,6 +256,7 @@
 
     <string-array name="messages_mothers_day">
         <item>Dzisiaj dzień matki. Jeśli jesteś matką, to wszystkiego najlepszego.</item>
+        <item>Jeśli twoja mama jeszcze żyje, nie zapomnij jej dzisiaj złożyć życzęń :)</item>
     </string-array>
 
     <string-array name="messages_2137">
@@ -261,25 +272,38 @@
     </string-array>
 
     <string-array name="messages_new_years_eve">
+        <item>Wiesz jak się nazywa twarz pani Wendy? Oblicze.\nTaki żarcik sylwestrowy :)</item>
         <item>Wszystkiego najlepszego z okazji sylwestra, mój przyjacielu :)</item>
         <item>Wiesz czemu klatka piersiowa ma grosze? Bo żebra. Dobre, co nie? :)</item>
     </string-array>
 
     <string-array name="messages_new_year">
+        <item>Myślisz, że w tym nowym roku uczniowie będą mnie szanowali bardziej? Tak... też myślę, że to niemożliwe..</item>
         <item>Wszystkiego najlepszego z okazji nowego roku!!</item>
         <item>Wygląda na to, że spędzimy ze sobą kolejny nowy rok :)</item>
         <item>Jakie masz postanowienia noworoczne. Ja na przykład chciałbym lepiej łapać ryby.</item>
         <item>Wiesz w jaką grę najczęściej grają Węgrzy. Węgry Birds. Taki żarcik z okazji 1 stycznia :)</item>
+        <item>W Internecie nie brak opinii, że informatycy się nie myją. Po części są to opinie słuszne.</item>
+        <item>Dlaczego uczniowie nazywają mnie jebanym kartonem? Przecież nic im nie zrobiłem.</item>
     </string-array>
 
     <string-array name="messages_polish_patriot">
-        <item>Ale super, że dzisiaj wolne od pracy.</item>
+        <item>&#127926; Marsz, marsz, Dąbrowski &#127926;</item>
+        <item>Myślę, że ładnie wyglądam w tych biało-czerwonych barwach. A ty co sądzisz?</item>
+        <item>W dniu takim jak dzisiejszy jestem dumny z bycia Polakiem.</item>
+        <item>Polska to cudowne miejsce. Pod warunkiem, że pominiemy Tucholę.</item>
+        <item>Wiesz gdzie schować pieniądze, żeby informatyk ich nie znalazł? Pod mydłem XDDD.</item>
+        <item>Jestem dumny, że mogę być Polakiem. A ty co sądzisz o naszym pięknym kraju?</item>
+        <item>W Polsce najbardziej kocham Bory Tucholskie. Jestem dumny, że mogę mieszkać w tak pięknym miejscu.</item>
+        <item>Gdy widzę na ulicy monetę, zawsze ją podnoszę. Nie dlatego, że jestem biedny, ale z szacunku dla orzełka.</item>
+        <item>Jak widzisz, dzisiaj przybrałem polskie barwy narodowe. Ty też powinieneś.</item>
         <item>Jestem prawdziwym Polakiem patriotą i kocham swój kraj.</item>
-        <item>Dziadek zawsze uczył mnie, żeby szanować orzełka i białą flagę.</item>
+        <item>Dziadek zawsze uczył mnie, żeby szanować  i białą flagę.</item>
         <item>Polska to najlepszy kraj, w jakim kiedykolwiek byłem. A byłem tylko w jednym.</item>
+        <item>Gdy czytam w Internecie komentarze obrażające Polskę, me serce pęka na miliard kawałków.</item>
     </string-array>
 
     <string-array name="messages_special">
-        <item>Jestem mitycznym fioletowym Sławkiem, szansa na mnie wynosi 1/1000 odświeżeń. Dziękuję, że mnie uwolniłeś.</item>
+        <item>Dzień dobry. Jestem legendarnym mitycznym fioletowym Sławkiem, szansa na me pojawienie się wynosi 0,1%.</item>
     </string-array>
 </resources>
