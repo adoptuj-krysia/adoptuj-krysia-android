@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="messages_morning">
+        <item>Miłego poranka, pamiętaj żeby zrobić dzisiaj jakiś dobry uczynek :)</item>
+        <item>Planowałem popełnić samobójstwo, ale dzięki tobie z tego zrezygnowałem.</item>
         <item>Czy wiedziałeś, że jestem właścicielem domeny parafiacekcyn.pl? Można to sprawdzić korzystając z bazy "DNS WhoIs".</item>
         <item>Jak sądzisz, która metoda samobójstwa byłaby dla mnie najbardziej skuteczna? Tak z ciekawości pytam..</item>
         <item>Czy wiedziałeś, że Mark Zuckerberg kiedyś prawie wylądował na świeckiej helikopterem? To całkiem ciekawa historia :)</item>
@@ -47,9 +49,13 @@
         <item>Czy wiedziałeś, że istnieje 0,1% szansy na pojawienie się legendarnego mitycznego fioletowego Krysia?</item>
         <item>Mam przeczucie, że w moim życiu będzie już tylko coraz gorzej..</item>
         <item>Ilekroć zamykam oczy, ciemność spowija mą świadomość i wszystko dookoła.</item>
+        <item>Poranek to moja ulubiona pora dnia. Wiesz czemu? Bo następuje po nocy, która jest moim najgorszym koszmarem.</item>
+        <item>Ciekawe, jakie cierpienia i upokorzenia przyniesie mi dzisiejszy dzień.</item>
     </string-array>
 
     <string-array name="messages_noon">
+        <item>Już dawno nie widziałem mojej żony. Ciekawe, czy będę miał jeszcze ją okazję odwiedzić</item>
+        <item>ZSLiT to świetne miejsce, tylko Kornaś to chuj.</item>
         <item>Pracownia nr 5 jest dla mnie jak drugi dom. Cieszę się, że mogę otaczać się szanującą mnie młodzieżą.</item>
         <item>Jest taka świetna pogoda - powinieneś wyjść na zewnątrz, a nie siedzieć zamknięty w 4 ścianach.</item>
         <item>Czy wiedziałeś, że moje życiowe opus magnum to strona www.borytucholskie.pl?</item>
@@ -147,9 +153,20 @@
         <item>Czy wiedziałeś, że mój dom prawdopodobnie jest zielony? (Niestety na Google Maps nie ma dokładnego numeru).</item>
         <item>Wiesz, jaki ser najczęściej jedzą marynarze? Topiony. Taki żarcik na dobre zakończenie wieczora :)</item>
         <item>Wiesz jak się nazywa cień rzucany przez pierś? Pierścień. Taki żarcik na poprawę wieczoru :)</item>
+        <item>Gdy uczniowie chodzą po klasie i grają w gry, zamiast mnie słuchać, coś we mnie pęka.</item>
+        <item>Czy wiesz, że kocham Bory Tucholskie nad życie i nie zamieniłbym ich na nic innego?</item>
+        <item>Czy wiedziałeś, że wg mojej strony "mieszkam w przepięknej okolicy tuż nad Brdą w otulinie rezerwatu przyrody"?</item>
+        <item>Czy wiedziałeś, że w kodzie mojej strony internetowej jest ukryta wiadomość "wilga to całkiem przyjemny samolocik"?</item>
     </string-array>
 
     <string-array name="messages_night">
+        <item>Wiesz czym się różni nauczyciel ze Świeckiej od balkonu? Balkon może utrzymać całą rodzinę.</item>
+        <item>Ostatnio coraz częściej zastanawiam się, czy kupno Glocka nie byłoby dobrym pomysłem.</item>
+        <item>Wiesz jak nazywa się hymn żałobny waty cukrowej? Trendowaty.\nTaki żarcik humanistyczny :)</item>
+        <item>Wiesz jak nazywa się metro żydów? Gazociąg.\nTaki żarcik na zakończenie dnia :)</item>
+        <item>Wiesz jak nazywa się pantofel bez obcasa? But.\nTaki antyżarcik na zakończenie dnia :)</item>
+        <item>Wiesz co robią Chłopi, gdy ich dom jest w złym stanie technicznym? Reymont. Prawda, że dobre? :))</item>
+        <item>Wiesz dlaczego w kącie prostym jest gorąco? Bo ma 90 stopni.\nTaki żarcik, żeby się lepiej zasypiało :)</item>
         <item>Gdy zasypiam, mą świadomością zawładają czarne myśli. Nigdy nie wiadomo, jakie cierpienia przyniesie nam jutro.</item>
         <item>Jutro muszę wcześnie wstać, mam ważny projekt dla klienta do skończenia.</item>
         <item>Mam wrażenie, że twoje zachowanie jest klasycznym przykładem cyberlenistwa.</item>
@@ -192,6 +209,7 @@
         <item>Czy wiedziałeś, że kiedyś wystąpiłem w WeekendFM? Szkoda, że stało się to obiektem drwin moich uczniów.</item>
         <item>Proszę, serduszko dla ciebie: &#10084;</item>
         <item>Czy wiedziałeś, że moja żona ma na imię Ewa i jest bardzo cudowną osobą? Chociaż nie tak cudowną jak ja :)</item>
+        <item>Czy wiedziałeś, że moja zaniżona samoocena jest spowodowana przez nieszanujących moją pracę uczniów?</item>
     </string-array>
 
     <string-array name="messages_halloween">
