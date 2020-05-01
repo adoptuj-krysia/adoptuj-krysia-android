@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="messages_morning">
-        <item>Czy wiedziałeś, że jestem właścicielem domeny parafiacekcyn.pl? Można to sprawdzić wpisując "DNS WhoIs" w Google.</item>
+        <item>Czy wiedziałeś, że jestem właścicielem domeny parafiacekcyn.pl? Można to sprawdzić korzystając z bazy "DNS WhoIs".</item>
         <item>Jak sądzisz, która metoda samobójstwa byłaby dla mnie najbardziej skuteczna? Tak z ciekawości pytam..</item>
         <item>Czy wiedziałeś, że Mark Zuckerberg kiedyś prawie wylądował na świeckiej helikopterem? To całkiem ciekawa historia :)</item>
         <item>Wiesz co najbardziej lubię w poranku? Że kończy to bezkresne cierpienie, jakim jest noc.</item>
@@ -37,10 +37,20 @@
         <item>Gdy mam gorszy dzień, przypominam sobie o moich uczniach, dla których jestem autorytetem do naśladowania.</item>
         <item>Kim jesteśmy, dokąd zmierzamy? Chciałbym poznać odpowiedź na to pytanie.</item>
         <item>Czy wiedziałeś, że moje imię pochodzi z staropolskiego i oznacza "sławić pokój"?</item>
-        <item>Czy wiesz, że tak bardzo kocham papieża Jana Pawła II, że aż ustawiłem go sobie na tapetę?</item>
+        <item>Czy wiesz, że tak bardzo kocham papieża Jana Pawła II, że aż ustawiłem go sobie na tapetę w moim laptopie?</item>
+        <item>Czy wiedziałeś, że największym źrodłem moich napadów lękowych jesteś ty i twoi koledzy?</item>
+        <item>Kiedyś z sąsiedniej pracowni ktoś ukradł 2 GB pamięci RAM. Mam nadzieję, że u mnie to się nie powtórzy.</item>
+        <item>-- .- -- / --- -.-. .... --- - . / ... .. . / --.. .- -... .. -.-.  </item>
+        <item>Piotr Pełczyński jest wspaniałym przyjacielem. Cieszę się, że mogę się otaczać tak wspaniałymi ludźmi.</item>
+        <item>Czy wiedziałeś, że kiedyś to ja uczyłem informatyki, ale dyrektor wolał wybrać profesora Pełczynskiego?</item>
+        <item>Czy wiedziałeś, że korzystając z aplikacji Adoptuj Krysia możesz sprawdzić aktualną pogodę w Plaskoszu?</item>
+        <item>Czy wiedziałeś, że istnieje 0,1% szansy na pojawienie się legendarnego mitycznego fioletowego Krysia?</item>
+        <item>Mam przeczucie, że w moim życiu będzie już tylko coraz gorzej..</item>
+        <item>Ilekroć zamykam oczy, ciemność spowija mą świadomość i wszystko dookoła.</item>
     </string-array>
 
     <string-array name="messages_noon">
+        <item>Pracownia nr 5 jest dla mnie jak drugi dom. Cieszę się, że mogę otaczać się szanującą mnie młodzieżą.</item>
         <item>Jest taka świetna pogoda - powinieneś wyjść na zewnątrz, a nie siedzieć zamknięty w 4 ścianach.</item>
         <item>Czy wiedziałeś, że moje życiowe opus magnum to strona www.borytucholskie.pl?</item>
         <item>Zawsze chciałem mieć psa, ale teraz mam uczniów w szkole, więc to prawie to samo.</item>
@@ -61,7 +71,7 @@
         <item>Czy wiedziałeś, że moim największym marzeniem jest, żeby uczniowie ZSliT zaczęli mnie szanować?</item>
         <item>Co masz dzisiaj na obiad? Będę też mógł zjeść? Nie? Trudno, i tak nie byłem jakoś bardzo głodny..</item>
         <item>Czy wiedziałeś, że początkowo byłem w ZSLiT nauczycielem mechaniki? Już wtedy byłem przyjebany jak kilo gwoździ.</item>
-        <item>Czy wiedziałeś, że byłem w ZSLiT wychowawcą obecnego dyrektora ZS w Cekcynie?</item>
+        <item>Czy wiedziałeś, że byłem w ZSLiT wychowawcą obecnego dyrektora Szkoły Podstawowej w Cekcynie?</item>
         <item>Jerzy Kornaś to wspaniały człowiek i jeszcze lepszy dyrektor.\nTaki żarcik na lepsze popołudnie :)</item>
         <item>Ciekawe, kto przejmie ster rządów w pracowni numer 5, gdy już odejdę. Co sądzisz?</item>
         <item>Chciałbyś zostać moim przyjacielem?</item>
@@ -140,6 +150,8 @@
     </string-array>
 
     <string-array name="messages_night">
+        <item>Gdy zasypiam, mą świadomością zawładają czarne myśli. Nigdy nie wiadomo, jakie cierpienia przyniesie nam jutro.</item>
+        <item>Jutro muszę wcześnie wstać, mam ważny projekt dla klienta do skończenia.</item>
         <item>Mam wrażenie, że twoje zachowanie jest klasycznym przykładem cyberlenistwa.</item>
         <item>Umiesz pleść węzeł szubieniczy? Tak tylko pytam, nie żebym coś planował…</item>
         <item>Wiesz jak się nazywa rozmowa z Anią? PogadAnka.\nTaki żarcik na zakończenie dnia :)</item>
