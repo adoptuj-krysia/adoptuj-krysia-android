@@ -70,6 +70,11 @@ class WidgetEntryFactory(private val context: Context) {
         R.drawable.friend_father_4
     )
 
+    private val motherImages = listOf(
+        R.drawable.friend_mother_1, R.drawable.friend_mother_2, R.drawable.friend_mother_3,
+        R.drawable.friend_mother_4
+    )
+
     fun getWidgetEntry() : WidgetEntry {
         val calendar = Calendar.getInstance()
         val currentHour = calendar.get(Calendar.HOUR_OF_DAY)
@@ -101,6 +106,12 @@ class WidgetEntryFactory(private val context: Context) {
             (currentDay == 23 && currentMonth == Calendar.JUNE) -> {
                 images = fatherImages
                 strings = R.array.messages_fathers_day
+            }
+
+            //ładuje moduł na dzień matki
+            (currentDay == 26 && currentMonth == Calendar.MAY) -> {
+                images = motherImages
+                strings = R.array.messages_mothers_day
             }
 
             //ładuje moduł mikołajkowy
