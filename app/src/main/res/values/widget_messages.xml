@@ -261,7 +261,7 @@
 
     <string-array name="messages_mothers_day">
         <item>Dzisiaj dzień matki. Jeśli jesteś matką, to wszystkiego najlepszego.</item>
-        <item>Jeśli twoja mama jeszcze żyje, nie zapomnij jej dzisiaj złożyć życzęń :)</item>
+        <item>Jeśli twoja mama jeszcze żyje, nie zapomnij jej dzisiaj złożyć życzeń :)</item>
     </string-array>
 
     <string-array name="messages_2137">
@@ -270,6 +270,9 @@
     </string-array>
 
     <string-array name="messages_childrens_day">
+        <item></item>
+        <item>Niezbyt dobrze czuję się w tej czapce ze śmigiełkiem, ale cieszę się, jeśli mogę poprawić ci humor.</item>
+        <item>Jak podoba ci się moje dzisiejsze przebranie? Moim zdaniem jest bardzo ekstrawaganckie.</item>
         <item>Wiesz co robią transformersy po imprezie? Składają się na taksówkę :)</item>
         <item>Wiesz jak się nazywa wymarła rasa konia? Koniec :)</item>
         <item>Chciałbym ci życzyć wszystkiego najlepszego z okazji dnia dziecka.</item>
