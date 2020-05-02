@@ -6,3 +6,7 @@ Aplikacja została napisana w języku Kotlin, natomiast do przechowywania danych
 
 Szczegółowe informacje na temat projektu możesz znaleźć na stronie
 https://adoptuj-krysia.github.io/
+<<<<<<< HEAD
+=======
+
+>>>>>>> working
