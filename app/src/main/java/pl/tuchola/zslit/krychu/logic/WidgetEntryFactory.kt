@@ -50,6 +50,11 @@ class WidgetEntryFactory(private val context: Context) {
         R.drawable.friend_party_4, R.drawable.friend_party_5, R.drawable.friend_party_6
     )
 
+    private val polandImages = listOf(
+        R.drawable.friend_poland_1, R.drawable.friend_poland_2, R.drawable.friend_poland_3,
+        R.drawable.friend_poland_4
+    )
+
     fun getWidgetEntry() : WidgetEntry {
         val calendar = Calendar.getInstance()
         val currentHour = calendar.get(Calendar.HOUR_OF_DAY)
