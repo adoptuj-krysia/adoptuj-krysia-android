@@ -35,7 +35,7 @@
         <item>Skończmy te gry i zabawy i zajmijmy się czymś pożytecznym.</item>
         <item>Jak myślisz, dlaczego uczniowie mnie przedrzeźniają? Ja ich nie przedrzeźniam.</item>
         <item>Ale miałem dziś piękny sen. Śniło mi się, że ZSLiT jest porządną szkoła.</item>
-        <item>Ostatnio zaczynają nachodzić mnie wątpliowści, czy aby na pewno jestem prawdziwym Sławkiem.</item>
+        <item>Ostatnio zaczynają nachodzić mnie wątpliowści, czy aby na pewno jestem prawdziwym &#83;ławkiem.</item>
         <item>Gdy mam gorszy dzień, przypominam sobie o moich uczniach, dla których jestem autorytetem do naśladowania.</item>
         <item>Kim jesteśmy, dokąd zmierzamy? Chciałbym poznać odpowiedź na to pytanie.</item>
         <item>Czy wiedziałeś, że moje imię pochodzi z staropolskiego i oznacza "sławić pokój"?</item>
@@ -45,8 +45,8 @@
         <item>-- .- -- / --- -.-. .... --- - . / ... .. . / --.. .- -... .. -.-.  </item>
         <item>Piotr Pełczyński jest wspaniałym przyjacielem. Cieszę się, że mogę się otaczać tak wspaniałymi ludźmi.</item>
         <item>Czy wiedziałeś, że kiedyś to ja uczyłem informatyki, ale dyrektor wolał wybrać profesora Pełczynskiego?</item>
-        <item>Czy wiedziałeś, że korzystając z aplikacji Adoptuj Krysia możesz sprawdzić aktualną pogodę w Plaskoszu?</item>
-        <item>Czy wiedziałeś, że istnieje 0,1% szansy na pojawienie się legendarnego mitycznego fioletowego Krysia?</item>
+        <item>Czy wiedziałeś, że korzystając z aplikacji Adoptuj &#75;rysia możesz sprawdzić aktualną pogodę w Plaskoszu?</item>
+        <item>Czy wiedziałeś, że istnieje 0,1% szansy na pojawienie się legendarnego mitycznego fioletowego &#75;rysia?</item>
         <item>Mam przeczucie, że w moim życiu będzie już tylko coraz gorzej..</item>
         <item>Ilekroć zamykam oczy, ciemność spowija mą świadomość i wszystko dookoła.</item>
         <item>Poranek to moja ulubiona pora dnia. Wiesz czemu? Bo następuje po nocy, która jest moim najgorszym koszmarem.</item>
@@ -181,7 +181,7 @@
         <item>Czy wiedziałeś, że tak naprawdę nie jestem profesorem, ale Kornaś jest tępym downem i kazał tak mnie nazywać?</item>
         <item>Jeśli w pracy robisz to, co kochasz, to w życiu nie przepracujesz ani minuty. Ja na przykład kocham uczyć młodzież.</item>
         <item>Wiesz co mówi Obcy, gdy schodzi z urwiska? Nostromo.\nDobre, co nie :))</item>
-        <item>Czy wiedziałeś, że w Polsce jest 1807 osób o nazwisku Kryś? Chociaż tylko jeden jest tak wyjątkowy jak ja :)</item>
+        <item>Czy wiedziałeś, że w Polsce jest 1807 osób o nazwisku &#75;ry&#347;? Chociaż tylko jeden jest tak wyjątkowy jak ja :)</item>
         <item>Jestem dziś wyjątkowo przystojny, prawda?</item>
         <item>Czy wiedziałeś, że jestem w ZSLiT szanowany i lubiany?\nTaki żarcik na zakończenie dnia :)</item>
         <item>Ciekawe co mi się dziś przyśni. Ostatnio coraz częściej nawiedzają mnie koszmary.</item>
@@ -270,7 +270,7 @@
     </string-array>
 
     <string-array name="messages_childrens_day">
-        <item></item>
+        <item>Z okazji dnia dziecka mam dla ciebie mały prezencik, oto kwiatek dla ciebie: &#x1f33c;</item>
         <item>Niezbyt dobrze czuję się w tej czapce ze śmigiełkiem, ale cieszę się, jeśli mogę poprawić ci humor.</item>
         <item>Jak podoba ci się moje dzisiejsze przebranie? Moim zdaniem jest bardzo ekstrawaganckie.</item>
         <item>Wiesz co robią transformersy po imprezie? Składają się na taksówkę :)</item>
@@ -314,6 +314,6 @@
     </string-array>
 
     <string-array name="messages_special">
-        <item>Dzień dobry. Jestem legendarnym mitycznym fioletowym Sławkiem, szansa na me pojawienie się wynosi 0,1%.</item>
+        <item>Dzień dobry. Jestem legendarnym mitycznym fioletowym S&#322;awkiem, szansa na me pojawienie się wynosi 0,1%.</item>
     </string-array>
 </resources>

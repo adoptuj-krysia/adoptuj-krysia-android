@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Adoptuj Krysia</string>
-    <string name="app_header">Sławomir Kryś - twój osobisty przyjaciel</string>
+    <string name="app_header">&#83;&#322;awomir &#75;ry&#347; - twój osobisty przyjaciel</string>
     <string name="app_weather_header">Niezbędnik wędkarza - pogoda w Plaskoszu</string>
-    <string name="app_info_header">Informacje o projekcie Adoptuj Krysia™</string>
+    <string name="app_info_header">Informacje o projekcie Adoptuj &#75;rysia™</string>
 
     <string name="widget_default_text">Proszę poczekać, trwa ładowanie wypowiedzi.</string>
 
-    <string name="hint_widget_image">Wizerunek Sławomira Krysia w garniturze.</string>
+    <string name="hint_widget_image">Wizerunek &#83;&#322;awomira &#75;rysia w garniturze.</string>
     <string name="hint_open_drawer">Otwórz menu</string>
     <string name="hint_close_drawer">Zamknij menu</string>
 
@@ -26,7 +26,7 @@
 
     <string name="info_app_version">Zainstalowana wersja aplikacji: %s</string>
     <string name="info_welcome_message">
-        Dziękuję za zainteresowanie się projektem Adoptuj Krysia. Jeśli chcesz dowiedzieć się
+        Dziękuję za zainteresowanie się projektem Adoptuj &#75;rysia. Jeśli chcesz dowiedzieć się
         więcej na temat projektu, zapraszam pod adres widoczny poniżej. Znajduje się tam również
         kod źródłowy aplikacji oraz skrócona dokumentacja techniczna.
     </string>
@@ -38,14 +38,14 @@
     <string name="apk_friend_touched_info">Proszę mnie tak nie dotykać, w twoim wieku to już nie wypada.</string>
 
     <string name="apk_welcome_message">
-        Dziękuję za zainstalowanie aplikacji Adoptuj Krysia. Dzięki tej aplikacji, otrzymujesz dostęp
+        Dziękuję za zainstalowanie aplikacji Adoptuj &#75;rysia. Dzięki tej aplikacji, otrzymujesz dostęp
         do unikalnego, niepowtarzalnego widgetu na pulpit. Przetestuj widżet i zostań właścicielem
-        twojego osobistego Sławka Krysia już teraz.
+        twojego osobistego &#83;&#322;awka &#75;rysia już teraz.
     </string>
     <string name="apk_welcome_message2">
-        Aby wywołać Sławka, przejdź na pulpit twojego telefonu i dodaj nowy widżet.
-        Sławomir Kryś aktualizuje swoje wiadomości raz na pół godziny. Aktualizację możesz
-        przyśpieszyć klikając na twarz Sławka, ale nie rób tego zbyt często, bo twój przyjaciel się obrazi.
+        Aby wywołać &#83;&#322;awka, przejdź na pulpit twojego telefonu i dodaj nowy widżet.
+        &#83;&#322;awomir &#75;ry&#347; aktualizuje swoje wiadomości raz na pół godziny. Aktualizację możesz
+        przyśpieszyć klikając na twarz &#83;&#322;awka, ale nie rób tego zbyt często, bo twój przyjaciel się obrazi.
     </string>
     <string name="apk_welcome_friend">
         Dzień dobry, dziękuję\nże mnie zainstalowałeś :)
@@ -53,7 +53,7 @@
 
     <string name="apk_weather_welcome">
         Witaj w Niezbędniku Wędkarza™. Dzięki niemu, dowiesz się jaka jest obecnie pogoda w Plaskoszu,
-        czyli ojczyźnie Sławka Krysia. Kliknij przycisk poniżej i sprawdź pogodę w Plaskoszu już teraz.
+        czyli ojczyźnie &#83;&#322;awka &#75;rysia. Kliknij przycisk poniżej i sprawdź pogodę w Plaskoszu już teraz.
     </string>
     <string name="apk_weather_welcome_friend">
         Mam nadzieję, że\ndobra dziś pogoda:)
@@ -74,7 +74,7 @@
     <string name="log_fragment_information">Otwieram okno informacji o aplikacji.</string>
 
     <string name="widget_friend_upset">
-        Spłoszyłeś Sławka i się na ciebie obraził. Nie powinieneś go dotykać tak często.
+        Spłoszyłeś S&#322;awka i się na ciebie obraził. Nie powinieneś go dotykać tak często.
     </string>
 
 </resources>
