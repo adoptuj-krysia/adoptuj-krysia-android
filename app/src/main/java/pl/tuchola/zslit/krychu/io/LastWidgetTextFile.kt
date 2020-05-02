@@ -8,15 +8,21 @@ class LastWidgetTextFile(private val context: Context) {
         File(context.getExternalFilesDir(null)!!.absolutePath + "/last_widget_text.txt")
 
     fun writeLastText(lastText: String) {
-        lastTextFile.parentFile?.mkdirs()
-        lastTextFile.writeText(lastText)
+        try {
+            lastTextFile.parentFile?.mkdirs()
+            lastTextFile.writeText(lastText)
+        } catch(e: Exception) {}
     }
 
     fun getLastText() : String? {
-        return if(!lastTextFile.exists())
+        return try {
+            if(!lastTextFile.exists())
+                null
+            else
+                lastTextFile.readText()
+        } catch(e: Exception) {
             null
-        else
-            lastTextFile.readText()
+        }
     }
 
 }
