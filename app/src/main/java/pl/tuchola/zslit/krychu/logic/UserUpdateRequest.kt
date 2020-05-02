@@ -38,8 +38,8 @@ class UserUpdateRequest(private val context: Context) {
         diffMinutes = TimeUnit.MILLISECONDS.toMinutes(diffMinutes)
 
         if(diffMinutes <= INTERVAL_MINUTES && refreshCount > REFRESH_LIMIT) {
-            //declineRequest()
-            acceptRequest() //tylko do celów testowania
+            declineRequest()
+            //acceptRequest() //tylko do celów testowania
         } else if(diffMinutes >= INTERVAL_MINUTES) {
             refreshCount = 1
             LastUpdateFile(context).writeData(refreshCount)
