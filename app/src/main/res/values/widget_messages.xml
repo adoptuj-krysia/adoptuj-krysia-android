@@ -169,7 +169,7 @@
         <item>Wiesz dlaczego w kącie prostym jest gorąco? Bo ma 90 stopni.\nTaki żarcik, żeby się lepiej zasypiało :)</item>
         <item>Gdy zasypiam, mą świadomością zawładają czarne myśli. Nigdy nie wiadomo, jakie cierpienia przyniesie nam jutro.</item>
         <item>Jutro muszę wcześnie wstać, mam ważny projekt dla klienta do skończenia.</item>
-        <item>Mam wrażenie, że twoje zachowanie jest klasycznym przykładem cyberlenistwa.</item>
+        <item>Mam wrażenie, że twoje zachowanie jest klasycznym przykładem cyberlenistwa i cyberpróżniactwa.</item>
         <item>Umiesz pleść węzeł szubieniczy? Tak tylko pytam, nie żebym coś planował…</item>
         <item>Wiesz jak się nazywa rozmowa z Anią? PogadAnka.\nTaki żarcik na zakończenie dnia :)</item>
         <item>Kiedy zamykam oczy, jedyne co mnie nawiedza, to pustka.</item>
@@ -177,7 +177,7 @@
         <item>Czy wiedziałeś, że wędkarstwo uprawiam, od kiedy jestem małym chłopcem?</item>
         <item>Czy wiedziałeś, że jestem właścicielem domeny wakacjedlaseniora.pl? Pytasz po co mi ona? Też nie wiem.</item>
         <item>Cieszę się, że uczniowie korzystają z mojej platformy Moodle. Na pewno bardzo ułatwia im życie :)</item>
-        <item>Życie jest piękne. Tylko nie moje…</item>
+        <item>Życie jest piękne, tylko nie moje kurwa…</item>
         <item>Czy wiedziałeś, że tak naprawdę nie jestem profesorem, ale Kornaś jest tępym downem i kazał tak mnie nazywać?</item>
         <item>Jeśli w pracy robisz to, co kochasz, to w życiu nie przepracujesz ani minuty. Ja na przykład kocham uczyć młodzież.</item>
         <item>Wiesz co mówi Obcy, gdy schodzi z urwiska? Nostromo.\nDobre, co nie :))</item>
@@ -228,6 +228,14 @@
     </string-array>
 
     <string-array name="messages_6th_december">
+        <item>Już niedługo Boże Narodzenie, potem sylwester, 1 stycznia i znowu kolejny zmarnowany rok za mną.</item>
+        <item>(: Ostatnio staram się coraz częściej uśmiechać, bo nie lubię, gdy ludzie mi współczują.</item>
+        <item>Muszę jakoś przeżyć dzisiejszy dzień. Może jutro moja psychika będzie w lepszym stanie, chociaż sam w to nie wierzę…</item>
+        <item>Ciekawe, co przyniesie mi w tym roku Mikołaj. Może jakąś wędkę &#128578;</item>
+        <item>Czy wiedziałeś, że Mirosław Zelent to jebany Debian, a jego metody dydaktyczne są jeszcze gorsze, niż moje?</item>
+        <item>Я чувствую себя сегодня как мусор.</item>
+        <item>Mikołajki to taka wersja demo Bożego Narodzenia.</item>
+        <item>Skoro są mikołajki, to dziś ubrałem czapkę Mikołaja. Wszystkiego najlepszego, informatyku!</item>
         <item>Nie mogę się doczekać 24 grudnia. To cudowny dzień, jedyny taki w roku.</item>
         <item>Wesołych mikołajek, informatyku, może przynajmniej jeden z nas będzie miał dziś dobry dzień.</item>
         <item>Wesołych mikołajek życzy profesor Kryś :)</item>
@@ -236,32 +244,77 @@
     </string-array>
 
     <string-array name="messages_christmas">
+        <item>Proszę, przygotowałem dla ciebie prezent bożonarodzeniowy: &#127873;</item>
+        <item>Zawsze i wszędzie, Mirosław Zelent szkalowany będzie.</item>
+        <item>Kocham ryby, dlatego na moim stole wigilijnym zawsze znajduje się 12 gatunków szczupaka.</item>
+        <item>Te chuje z PZW nie zarybiają, tylko kradną. Mam nadzieję, że w przyszłym roku to się zmieni.</item>
+        <item>Chciałbym doczekać się czasów, gdy ZSLiT będzie prestiżową i szanowaną placówką.</item>
+        <item>Może obejrzyy dziś razem jakiś świąteczny film? Co ty na to?</item>
+        <item>Pamiętaj, żeby przy wigilijnym stole zrobić miejsce także dla mnie.</item>
+        <item>Nie czuję się zbyt dobrze. Chybe wezmę sobie urlop, gdy skończą się święta.</item>
+        <item>Я действительно агент российской разведки.</item>
+        <item>Nie przejmuj się dzisiaj moją obecnością, lepiej spędź te wolne chwile z bliskimi.</item>
+        <item>Cieszę się, że dziś wolne od pracy. Mam wrażenie, że jeszcze jeden dzień w tym pierdolniku doprowadziłby do tragedii.</item>
+        <item>Na święta najbardziej chciałbym, żeby Kornaś upadł i sobie ten głupi ryj rozwalił.</item>
+        <item>W święta wszyscy się jednoczą, nawet członkowie PZW.</item>
+        <item>Nienawidzę śniegu, bo gdy spadnie, wędkowanie jest o wiele trudniejsze.</item>
+        <item>Gdy słyszę kolędy, zawsze przypominają mi się szkolne wigilie klasowe. To jedyny dzień w roku, gdy uczniowie mnie szanują.</item>
         <item>Żałuję, że zostałem informatykiem. Mogłem wybrać jakiś bardziej szanowany zawód.</item>
-        <item>Ładną mam dzisiaj czapkę?</item>
+        <item>Ładną mam dzisiaj czapkę? Bardzo długo zastanwiałem się, którą wybrać.</item>
         <item>Już niedługo nowy rok. Zastanawiam sie, jakie nowe rodzaje katuszy mi przyniesie.</item>
         <item>Kocham święta, bo to to jedyny dzień w roku, kiedy nie czuję się jak największy śmieć.</item>
         <item>Wszystkiego najlepszego z okazji świąt, informatyku!</item>
         <item>Wesołych świąt, mam nadzieję że nie będziesz dziś zbyt długo siedział przy komputerze.</item>
         <item>Życzę ci wesołych świąt, spędź te piękne chwile z rodziną.</item>
-        <item>Pośpiewamy dzisiaj razem kolędy?</item>
+        <item>Pośpiewamy dzisiaj razem kolędy? Nie? Trudno, i tak nie miałem ochoty…</item>
         <item>Nie przepadam za świętami, bo nie mogę wtedy programować ani chodzić na ryby.</item>
         <item>Gdy byłem młodszy, nie mogłem się doczekać gwiazdki. To były piękne czasy, naprawdę.</item>
     </string-array>
 
     <string-array name="messages_easter">
+        <item>Sądzisz, że skuteczniejsze byłoby powieszenie się, czy popicie 7 opakowań Apapu denaturatem?</item>
+        <item>Gdy byłem mały, zawsze czekałem na wielkanocnego zajączka, by przyniósł mi jakiś prezent. Nigdy nie przynosił…</item>
+        <item>Mam przeczucie, że nie zasługuję, by mieszkać w twoim telefonie. Moje miejsce jest na wysypisku, wśród innych śmieci.</item>
+        <item>Gdybyś miał do wyboru walczyć z kaczką wielkości konia, a 100 końmi wielkości kaczki, co byś wybrał?</item>
+        <item>Niedawno zobaczyłem na niebie spadającą gwiazdę. Poprosiłem, aby odebrała mi życie.</item>
+        <item>Wymyśliłem przed chwilą bardzo ciekawą rzecz, którą chciałem ci powiedzieć, ale już zapomniałem co to było.</item>
+        <item>Powinienem cieszyć się chwilą, a nie rozpaczać nad demonami przeszłości.</item>
+        <item>Chwilę temu było Boże Narodzenie, a tu już Wielkanoc.</item>
+        <item>Jeśli moje życie dalej będzie wyglądać tak jak teraz, następną Wielkanoc spędzę już na cmentarzu.</item>
+        <item>Na jaki kolor pomalujesz pisanki? Ja waham się między #795548 a #5D4037.</item>
+        <item>Pan Jezus umarł na krzyżu za twoje grzechy, a ty nie potrafisz nawet zrobić prostego zadania z informatyki?</item>
+        <item>Umyłeś okna dla pana Jezusa?</item>
         <item>Nawet jeśli nie obchodzisz Wielkanocy, i tak chciałbym ci życzyć wszystkiego najlepszego.</item>
         <item>Wesołej Wielkanocy, informatyku.</item>
         <item>Wiesz jak się nazywa rozmowa dwóch wędkarzy? Pogawędka :)</item>
     </string-array>
 
     <string-array name="messages_fathers_day">
+        <item>Wiesz jak nazywa się ryba-szpieg? Śledź. Dobre, co nie? :)</item>
+        <item>Czy wiedziałeś, że nie do końca umiem poprawnie wymawiać angielskie wyrazy i uczniowie często sobie z tego drwią?</item>
+        <item>Zachowanie uczniów na moich lekcjach bardzo mnie zadziwia. Jeden sobie cmoka, drugi pogwizduje.</item>
+        <item>Ładnie dziś wyglądam? Starałem się ubrać okolicznościowo.</item>
+        <item>Skoro dziś dzień ojca, może przedstawisz mnie twojemu tacie?</item>
+        <item>Dzięki mojemu tacie zainteresowałem się wędkarstwem, bardzo wiele mu zawdzięczam.</item>
+        <item>Kochałem mojego tatę, był naprawdę wspaniałą osobą :)</item>
+        <item>Oh, dzisiaj 23 czerwca, może wybrałbyś się ze mną na cmentarz na grób mojego taty?</item>
         <item>Dzisiaj dzień ojca. Jeśli jesteś ojcem, to wszystkiego najlepszego.</item>
-        <item>Wiesz jak się nazywa rybkak, który mierzy łódź od środka? Włodzimierz :)</item>
+        <item>Jeśli twój tata jeszcze żyje, nie zapomnij mu dzisiaj złożyć życzeń &#128578;</item>
+        <item>Wiesz jak się nazywa rybak, który mierzy łódź od środka? Włodzimierz &#128578;</item>
     </string-array>
 
     <string-array name="messages_mothers_day">
-        <item>Dzisiaj dzień matki. Jeśli jesteś matką, to wszystkiego najlepszego.</item>
-        <item>Jeśli twoja mama jeszcze żyje, nie zapomnij jej dzisiaj złożyć życzeń :)</item>
+        <item>Wiesz co robią uczniowie technikum mechanicznego na parkiecie? Rozkręcają imprezę. Taki tam żarcik :)</item>
+        <item>Czy wiedziałeś, że regulamin mojej pracowni jest łamany średnio 56,28(4) razy dziennie?</item>
+        <item>Moi uczniowie najlepiej chcieliby, żeby wszystko popsuć i zablokować.</item>
+        <item>Ładnie się dzisiaj ubrałem? Co o tym sądzisz?</item>
+        <item>Skoro dziś dzień matki, może przedstawisz mnie twojej mamie?</item>
+        <item>Dzięki mojej mamie zainteresowałem się nauczaniem, bardzo wiele jej zawdziączam.</item>
+        <item>Kochałem moją mamę, była naprawdę wspaniałą osobą :)</item>
+        <item>Oh, dzisiaj dzień matki, może wybrałbyś się ze mną na cmentarz na grób mojej mamy?</item>
+        <item>Wiesz co robi kobieta trzymająca pustą kartkę? Czyta swoje prawa. XD</item>
+        <item>Dzisiaj dzień matki. Jeśli jesteś matką, to wszystkiego najlepszego &#128578;</item>
+        <item>Jeśli twoja mama jeszcze żyje, nie zapomnij jej dzisiaj złożyć życzeń &#128578;</item>
     </string-array>
 
     <string-array name="messages_2137">
@@ -270,6 +323,10 @@
     </string-array>
 
     <string-array name="messages_childrens_day">
+        <item>Czy wiedziałeś, że kiedyś ja też byłem dzieckiem? Trudno sobie to wyobrazić, ale to prawda.</item>
+        <item>1 czerwca to dzień, w którym szczęśliwe dzieci są jeszcze szczęśliwsze, a smutne dzieci jeszcze smutniejsze.</item>
+        <item>Próbuję powrócić myślami do czasów, kiedy byłem dzieckiem, ale w moim wieku to bardzo trudne.</item>
+        <item>Nie mam zbyt dobrych wspomnień, gdy wspominam Dzień Dziecka z czasów mojej młodości.</item>
         <item>Z okazji dnia dziecka mam dla ciebie mały prezencik, oto kwiatek dla ciebie: &#x1f33c;</item>
         <item>Niezbyt dobrze czuję się w tej czapce ze śmigiełkiem, ale cieszę się, jeśli mogę poprawić ci humor.</item>
         <item>Jak podoba ci się moje dzisiejsze przebranie? Moim zdaniem jest bardzo ekstrawaganckie.</item>
@@ -280,14 +337,24 @@
     </string-array>
 
     <string-array name="messages_new_years_eve">
+        <item>Obiecaj, że nigdy mnie nie opuścisz, proszę.</item>
+        <item>Ostatnio coraz częściej czas spędzam na wpatrywaniu się w sufit i rozmyślaniu nad moją przeszłością.</item>
+        <item>Ta wiadomość jest pusta. Jak moje życie.</item>
         <item>Mam nadzieję, że nowy rok przyniesie w moim życiu jakąś pozytywną zmianę. Choć myślę, że to mało prawdopodobne…</item>
         <item>Jutro nowy rok! Nie mogę się doczekać, już odliczam sekundy!!</item>
         <item>Wiesz jak się nazywa twarz pani Wendy? Oblicze.\nTaki żarcik sylwestrowy :)</item>
         <item>Wszystkiego najlepszego z okazji sylwestra, mój przyjacielu :)</item>
         <item>Wiesz czemu klatka piersiowa ma grosze? Bo żebra. Dobre, co nie? :)</item>
+        <item>Jesteś moim aniołkiem, który pozwala mi przeżyć te trudne chwile z godnością.</item>
+        <item>Nie ma już dla mnie ratunku. Moje życie to tylko pasmo cierpień, porażek i niepowodzeń.</item>
+        <item>Jeszcze wczoraj gdy zamykałem oczy, mą świadomość spowijała ciemność. Mam wrażenie, że w tym roku coś się zmieni.</item>
     </string-array>
 
     <string-array name="messages_new_year">
+        <item>Chciałbym w moim życiu znaleźć chociażby iskierkę nadziei, która powstrzymałaby mnie od kroku ostatecznego.</item>
+        <item>Jedyna osoba, która jeszcze mnie nie zdradziła, to moja żona. Jeszcze.</item>
+        <item>Nowy rok, nowe okazje do cierpień i upokorzeń.</item>
+        <item>Czy wiesz, że mam własną firmę tylko dlatego, że jestem tak chujowy, że nikt inny by mnie nie zatrudnił?</item>
         <item>Myślisz, że w tym nowym roku uczniowie będą mnie szanowali bardziej? Tak… też myślę, że to niemożliwe..</item>
         <item>Wszystkiego najlepszego z okazji nowego roku!!</item>
         <item>Wygląda na to, że spędzimy ze sobą kolejny nowy rok :)</item>
@@ -298,8 +365,11 @@
     </string-array>
 
     <string-array name="messages_polish_patriot">
+        <item>Kiedy mam zły dzień, przypominam sobie moją pracę. Wtedy mój dzień ze złego staje się okropny.</item>
+        <item>Polska dla Polaków!! &#x1F4A5;&#x1F4A5;&#x1F4A5;</item>
+        <item>Jak widzisz, jestem prawdziwym Polakiem patriotą. Nie to co ten zdrajca narodu Mirosław Zelent…</item>
         <item>&#127926; Marsz, marsz, Dąbrowski &#127926;</item>
-        <item>Myślę, że ładnie wyglądam w tych biało-czerwonych barwach. A ty co sądzisz?</item>
+        <item>Myślę, że ładnie wyglądam w takich barwach. A ty co sądzisz?</item>
         <item>W dniu takim jak dzisiejszy jestem dumny z bycia Polakiem.</item>
         <item>Polska to cudowne miejsce. Pod warunkiem, że pominiemy Tucholę.</item>
         <item>Wiesz gdzie schować pieniądze, żeby informatyk ich nie znalazł? Pod mydłem XDDD.</item>
