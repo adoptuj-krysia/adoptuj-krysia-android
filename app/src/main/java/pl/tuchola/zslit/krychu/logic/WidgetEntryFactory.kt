@@ -3,6 +3,7 @@ import android.content.Context
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.utils.EasterDate
 import java.util.*
+import java.util.Calendar.*
 
 class WidgetEntryFactory(private val context: Context) {
 
@@ -93,6 +94,15 @@ class WidgetEntryFactory(private val context: Context) {
             easterCalendar.get(Calendar.DAY_OF_MONTH) == currentDay)  -> {
                 images = easterImages
                 strings = R.array.messages_easter
+            }
+
+            //ładuje moduł patriotyczny
+            (currentDay == 11 && currentMonth == NOVEMBER) ||
+            (currentDay == 1 && currentMonth == MAY) ||
+            (currentDay == 3 && currentMonth == MAY) ||
+            (currentDay == 1 && currentMonth == AUGUST) -> {
+                images = polandImages
+                strings = R.array.messages_polish_patriot
             }
 
             //ładuje moduł poranka
