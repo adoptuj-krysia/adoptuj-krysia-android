@@ -13,6 +13,11 @@
     <string name="error_internet_connection">Niestety, nie mogę się połączyć z serwerem pogody. Sprawdź twoje połączenie sieciowe.</string>
     <string name="error_weather_api">Niestety, serwer pogody odrzucił moje połączenie.</string>
 
+    <string-array name="weather_rain_words">
+        <item>śnieg</item>
+        <item>deszcz</item>
+        <item>opad</item>
+    </string-array>
     <string name="weather_check_button">Sprawdź pogodę w Plaskoszu</string>
     <string name="weather_wind_speed">Prędkość wiatru: %s m/s</string>
     <string name="weather_temperature">Temperatura: %s °C</string>
@@ -20,7 +25,8 @@
     <string name="weather_description">Rodzaj pogody: %s</string>
     <string name="weather_unrecognized">(???)</string>
     <string name="fishing_opportunity_good">Ooo, wygląda na to, że mamy świetną pogodę na ryby :)</string>
-    <string name="fishing_opportunity_bad">Wygląda na to, że pogoda na ryby jest raczej średnia :(</string>
+    <string name="fishing_opportunity_rain">Opady niezbyt sprzyjają potencjalnym połowom :(</string>
+    <string name="fishing_opportunity_temperature">Mam wrażenie, że jest zbyt zimno na łowienie ryb :(</string>
     <string name="fishing_opportunity_unknown">Ciekawe, czy mamy dziś dobrą pogodę na ryby :)</string>
 
     <string name="info_app_version">Zainstalowana wersja aplikacji: %s</string>

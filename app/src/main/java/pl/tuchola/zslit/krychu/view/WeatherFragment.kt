@@ -9,10 +9,7 @@ import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.R.string
 import pl.tuchola.zslit.krychu.io.ActivityLog
 import pl.tuchola.zslit.krychu.utils.Boast
-import pl.tuchola.zslit.krychu.weather.FishingOpportunity
-import pl.tuchola.zslit.krychu.weather.OpenWeatherProvider
-import pl.tuchola.zslit.krychu.weather.Weather
-import pl.tuchola.zslit.krychu.weather.WeatherFetchingError
+import pl.tuchola.zslit.krychu.weather.*
 import java.text.DecimalFormat
 
 
@@ -91,13 +88,18 @@ class WeatherFragment : Fragment() {
             weatherDescription_textView.text = strDescription
         }
 
-        when {
-            weather == null ->
-                weatherFishing_textView.text = getString(R.string.fishing_opportunity_unknown)
-            FishingOpportunity(weather).isWeatherGoodForFishing() ->
-                weatherFishing_textView.text = getString(R.string.fishing_opportunity_good)
-            else ->
-                weatherFishing_textView.text = getString(R.string.fishing_opportunity_bad)
+        if(weather == null) {
+            weatherFishing_textView.text = getString(R.string.fishing_opportunity_unknown)
+        }
+        else {
+            when(FishingOpportunityCalculator(weather, context!!).getFishingOpportunity()) {
+                FishingOpportunity.BAD_TEMPERATURE ->
+                    weatherFishing_textView.text = getString(R.string.fishing_opportunity_temperature)
+                FishingOpportunity.BAD_RAIN ->
+                    weatherFishing_textView.text = getString(R.string.fishing_opportunity_rain)
+                else ->
+                    weatherFishing_textView.text = getString(R.string.fishing_opportunity_good)
+            }
         }
     }
 
