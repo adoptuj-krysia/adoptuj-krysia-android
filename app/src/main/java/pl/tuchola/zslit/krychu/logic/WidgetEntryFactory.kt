@@ -3,7 +3,6 @@ import android.content.Context
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.utils.EasterDate
 import java.util.*
-import java.util.Calendar.*
 
 class WidgetEntryFactory(private val context: Context) {
 
@@ -56,6 +55,21 @@ class WidgetEntryFactory(private val context: Context) {
         R.drawable.friend_poland_4
     )
 
+    private val childImages = listOf(
+        R.drawable.friend_children_1, R.drawable.friend_children_2, R.drawable.friend_children_3,
+        R.drawable.friend_children_4
+    )
+
+    private val halloweenImages = listOf(
+        R.drawable.friend_halloween_1, R.drawable.friend_halloween_2, R.drawable.friend_halloween_3,
+        R.drawable.friend_halloween_4, R.drawable.friend_halloween_5
+    )
+
+    private val fatherImages = listOf(
+        R.drawable.friend_father_1, R.drawable.friend_father_2, R.drawable.friend_father_3,
+        R.drawable.friend_father_4
+    )
+
     fun getWidgetEntry() : WidgetEntry {
         val calendar = Calendar.getInstance()
         val currentHour = calendar.get(Calendar.HOUR_OF_DAY)
@@ -71,22 +85,40 @@ class WidgetEntryFactory(private val context: Context) {
         val strings : Int
 
         when {
-            //ładuje moduł 2137
-            (currentHour == 21 && currentMinute == 37) -> {
-                images = papaImages
-                strings = R.array.messages_2137
-            }
-
             //ładuje moduł mitycznego fioletowego Sławka
             ((1..1000).random() == 1000) -> {
                 images = specialImages
                 strings = R.array.messages_special
             }
 
+            //ładuje moduł 2137
+            (currentHour == 21 && currentMinute == 37) -> {
+                images = papaImages
+                strings = R.array.messages_2137
+            }
+
+            //ładuje moduł na dzień ojca
+            (currentDay == 23 && currentMonth == Calendar.JUNE) -> {
+                images = fatherImages
+                strings = R.array.messages_fathers_day
+            }
+
+            //ładuje moduł mikołajkowy
+            (currentDay == 6 && currentMonth == Calendar.DECEMBER) -> {
+                images = santaImages
+                strings = R.array.messages_6th_december
+            }
+
             //ładuje moduł świąt BN
             (currentDay in 24..26 && currentMonth == Calendar.DECEMBER) -> {
                 images = santaImages
                 strings = R.array.messages_christmas
+            }
+
+            //ładuje moduł halloweenowy
+            (currentDay == 31 && currentMonth == Calendar.OCTOBER) -> {
+                images = halloweenImages
+                strings = R.array.messages_halloween
             }
 
             //ładuje moduł świąt wielkanocnych
@@ -97,12 +129,30 @@ class WidgetEntryFactory(private val context: Context) {
             }
 
             //ładuje moduł patriotyczny
-            (currentDay == 11 && currentMonth == NOVEMBER) ||
-            (currentDay == 1 && currentMonth == MAY) ||
-            (currentDay == 3 && currentMonth == MAY) ||
-            (currentDay == 1 && currentMonth == AUGUST) -> {
+            (currentDay == 11 && currentMonth == Calendar.NOVEMBER) ||
+            (currentDay == 1 && currentMonth == Calendar.MAY) ||
+            (currentDay == 3 && currentMonth == Calendar.MAY) ||
+            (currentDay == 1 && currentMonth == Calendar.AUGUST) -> {
                 images = polandImages
                 strings = R.array.messages_polish_patriot
+            }
+
+            //ładuje modul sylwestrowy
+            (currentDay == 31 && currentMonth == Calendar.DECEMBER) -> {
+                images = partyImages
+                strings = R.array.messages_new_years_eve
+            }
+
+            //ładuje moduł noworoczny
+            (currentDay == 1 && currentMonth == Calendar.JANUARY) -> {
+                images = partyImages
+                strings = R.array.messages_new_year
+            }
+
+            //ładuje moduł dnia dziecka
+            (currentDay == 1 && currentMonth == Calendar.JUNE) -> {
+                images = childImages
+                strings = R.array.messages_childrens_day
             }
 
             //ładuje moduł poranka
