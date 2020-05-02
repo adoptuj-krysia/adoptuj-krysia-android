@@ -13,11 +13,6 @@
     <string name="error_internet_connection">Niestety, nie mogę się połączyć z serwerem pogody. Sprawdź twoje połączenie sieciowe.</string>
     <string name="error_weather_api">Niestety, serwer pogody odrzucił moje połączenie.</string>
 
-    <string-array name="weather_rain_words">
-        <item>śnieg</item>
-        <item>deszcz</item>
-        <item>opad</item>
-    </string-array>
     <string name="weather_check_button">Sprawdź pogodę w Plaskoszu</string>
     <string name="weather_wind_speed">Prędkość wiatru: %s m/s</string>
     <string name="weather_temperature">Temperatura: %s °C</string>

@@ -92,7 +92,7 @@ class WeatherFragment : Fragment() {
             weatherFishing_textView.text = getString(R.string.fishing_opportunity_unknown)
         }
         else {
-            when(FishingOpportunityCalculator(weather, context!!).getFishingOpportunity()) {
+            when(FishingOpportunityCalculator(weather).getFishingOpportunity()) {
                 FishingOpportunity.BAD_TEMPERATURE ->
                     weatherFishing_textView.text = getString(R.string.fishing_opportunity_temperature)
                 FishingOpportunity.BAD_RAIN ->
