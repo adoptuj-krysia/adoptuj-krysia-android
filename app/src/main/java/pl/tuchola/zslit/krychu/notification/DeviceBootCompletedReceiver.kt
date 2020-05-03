@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.view
+package pl.tuchola.zslit.krychu.notification
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,7 @@ class DeviceBootCompletedReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
         ActivityLog(context!!).writeLine(context.getString(R.string.log_device_boot_completed))
+        NotificationAlarmSetter(context.applicationContext).startAlarm()
     }
 
 }

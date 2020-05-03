@@ -1,4 +1,5 @@
 package pl.tuchola.zslit.krychu.view
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.io.ActivityLog
 import pl.tuchola.zslit.krychu.utils.Boast
+
 
 class HomeFragment : Fragment() {
 
@@ -22,5 +24,4 @@ class HomeFragment : Fragment() {
             Boast.showLongMessage(getString(R.string.apk_friend_touched), this.context!!)
         }
     }
-
 }

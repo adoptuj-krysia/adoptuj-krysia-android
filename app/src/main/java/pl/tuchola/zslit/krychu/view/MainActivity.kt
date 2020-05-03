@@ -8,7 +8,7 @@ import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.io.ActivityLog
-
+import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         setSupportActionBar(main_toolbar)
         nav_view.setNavigationItemSelectedListener(this)
+        NotificationAlarmSetter(this.applicationContext).startAlarm()
 
         val toggle = ActionBarDrawerToggle(this, main_drawer_layout, main_toolbar, R.string.hint_open_drawer, R.string.hint_close_drawer)
         main_drawer_layout.addDrawerListener(toggle)

@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.logic
+package pl.tuchola.zslit.krychu.notification
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -17,11 +17,12 @@ class NotificationManager(private val context: Context) {
 
     fun showNotification(notification: Notification) {
         with(NotificationManagerCompat.from(context)) {
+            createNotificationChannel()
             notify(NotificationID.id, notification)
         }
     }
 
-    fun createNotificationChannel() {
+    private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = context.getString(R.string.notification_channel_name)
             val descriptionText = context.getString(R.string.notification_channel_description)

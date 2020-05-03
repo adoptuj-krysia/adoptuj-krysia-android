@@ -72,9 +72,18 @@
     <string name="log_fragment_main">Otwieram stronę główną aplikacji.</string>
     <string name="log_fragment_weather">Otwieram niezbędnik wędkarza.</string>
     <string name="log_fragment_information">Otwieram okno informacji o aplikacji.</string>
+    <string name="log_notification_broadcast_received">Otrzymano prośbę o sprawdzenie powiadomień.</string>
+    <string name="log_notification_alarm_set_up">Utworzono zadanie sprawdzania dostępnych powiadomień.</string>
 
     <string name="widget_friend_upset">
         Spłoszyłeś S&#322;awka i się na ciebie obraził. Nie powinieneś go dotykać tak często.
     </string>
 
+    <string name="notification_channel_id">adoptuj_krysia_not1</string>
+    <string name="notification_channel_name">Życzenia okolicznościowe</string>
+    <string name="notification_channel_description">Życzenia od autora aplikacji (na przykład z okazji Bożego Narodzenia).</string>
+    <string name="notification_title">Życzenia - Adoptuj Krysia</string>
+    <string name="notification_body_christmas">Wszystkiego najlepszego z okazji świąt :)</string>
+    <string name="notification_body_easter">Wszystkiego najlepszego z okazji Wielkanocy :)</string>
+    <string name="notification_body_birthday">Dzisiaj Sławomir Kryś ma urodziny!!</string>
 </resources>

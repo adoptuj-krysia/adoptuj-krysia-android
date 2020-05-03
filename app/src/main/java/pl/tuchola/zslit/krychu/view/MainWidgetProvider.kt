@@ -11,6 +11,7 @@ import pl.tuchola.zslit.krychu.io.LastWidgetTextFile
 import pl.tuchola.zslit.krychu.io.ActivityLog
 import pl.tuchola.zslit.krychu.logic.UserUpdateRequest
 import pl.tuchola.zslit.krychu.logic.WidgetEntryFactory
+import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
 
 
 class MainWidgetProvider : AppWidgetProvider() {
@@ -20,6 +21,7 @@ class MainWidgetProvider : AppWidgetProvider() {
     }
 
     override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
+        NotificationAlarmSetter(context.applicationContext).startAlarm()
         for (appWidgetId in appWidgetIds) {
             val widgetEntry = WidgetEntryFactory(context).getWidgetEntry()
             val views = RemoteViews(context.packageName, R.layout.widget_main)
