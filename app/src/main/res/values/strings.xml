@@ -61,6 +61,7 @@
 
     <string name="nav_home">Strona główna</string>
     <string name="nav_weather">Niezbędnik wędkarza™</string>
+    <string name="nav_news">Świecka-News</string>
     <string name="nav_info">O programie</string>
 
     <string name="log_main_activity_launched">Okno aplikacji Android zostało uruchomione</string>

@@ -16,7 +16,6 @@ import java.text.DecimalFormat
 class WeatherFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        ActivityLog(context!!).writeLine(getString(string.log_fragment_weather))
         return inflater.inflate(R.layout.fragment_weather, container, false)
     }
 

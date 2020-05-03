@@ -14,7 +14,6 @@ import pl.tuchola.zslit.krychu.utils.Boast
 class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        ActivityLog(context!!).writeLine(getString(R.string.log_fragment_weather))
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 

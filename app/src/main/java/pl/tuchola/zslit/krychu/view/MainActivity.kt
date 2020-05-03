@@ -48,6 +48,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, WeatherFragment()).commit()
             }
 
+            (R.id.nav_item_news) -> {
+                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, NewsFragment()).commit()
+            }
+
             (R.id.nav_item_info) -> {
                 supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, InformationFragment()).commit()
             }
