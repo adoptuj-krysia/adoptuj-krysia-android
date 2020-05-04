@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
+import org.jsoup.Jsoup
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.view.FullNewsActivity
 
@@ -43,8 +45,8 @@ class NewsViewAdapter(private val news: Array<News>, private val context: Contex
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if(holder is NewsViewHolder) {
-            holder.newsHeader.text = news[position-1].header
-            holder.newsBody.text = news[position-1].bodyShort
+            holder.newsHeader.text = HtmlCompat.fromHtml(news[position-1].header, 0)
+            holder.newsBody.text = Jsoup.parse(news[position-1].bodyShort).text()
             holder.newsContainer.setOnClickListener {
                 val intent = Intent(context, FullNewsActivity::class.java)
                 intent.putExtra("NEWS_TO_SHOW", news[position-1])
