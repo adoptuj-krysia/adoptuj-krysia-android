@@ -53,6 +53,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".view.FullNewsActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 

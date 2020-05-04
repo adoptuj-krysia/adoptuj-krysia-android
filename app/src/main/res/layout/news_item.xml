@@ -26,9 +26,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autoLink="web"
         android:textStyle="bold"
-        android:text="Czytaj więcej: http://zslit-tuchola.pl/"
+        android:text="Kliknij tutaj, aby przeczytać całą treść newsa."
         android:id="@+id/newsReadMore_textView"/>
 
 

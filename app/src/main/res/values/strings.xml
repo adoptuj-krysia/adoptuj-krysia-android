@@ -2,6 +2,7 @@
     <string name="app_name">Adoptuj Krysia</string>
     <string name="app_header">&#83;&#322;awomir &#75;ry&#347; - twój osobisty przyjaciel </string>
     <string name="app_weather_header">Niezbędnik wędkarza - pogoda w Plaskoszu</string>
+    <string name="app_news_header">Świecka-News - twoje źródło informacji</string>
     <string name="app_info_header">Informacje o projekcie Adoptuj &#75;rysia™</string>
 
     <string name="widget_default_text">Proszę poczekać, trwa ładowanie wypowiedzi.</string>
@@ -78,6 +79,12 @@
 
     <string name="widget_friend_upset">
         Spłoszyłeś S&#322;awka i się na ciebie obraził. Nie powinieneś go dotykać tak często.
+    </string>
+
+    <string name="news_header_message">
+        Witaj w Świecka-News, sekcji wyświetlającej aktualne wiadomości pochodzące ze strony
+        ZSLiT Tuchola. Żeby nie było zbyt nudno, losowe słowa w treści newsa zostaną
+        zamienione wyrazem "Debian".
     </string>
 
     <string name="notification_channel_id">adoptuj_krysia_not1</string>

@@ -1,4 +1,4 @@
 package pl.tuchola.zslit.krychu.news
-import java.net.URL
+import java.io.Serializable
 
-data class News(public val header: String, public val body: String, public val readMore: URL)
+data class News(val newsIndex: Int, val header: String, val bodyShort: String, val bodyLong: String) : Serializable

@@ -1,12 +1,16 @@
 package pl.tuchola.zslit.krychu.news
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import pl.tuchola.zslit.krychu.R
+import pl.tuchola.zslit.krychu.view.FullNewsActivity
 
 
 class NewsViewAdapter(private val news: Array<News>, private val context: Context)
@@ -18,9 +22,9 @@ class NewsViewAdapter(private val news: Array<News>, private val context: Contex
     }
 
     class NewsViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+        val newsContainer : LinearLayout = itemView.findViewById<LinearLayout>(R.id.news_linearLayout)
         val newsHeader: TextView = itemView.findViewById<TextView>(R.id.newsHeader_textView)
         val newsBody: TextView = itemView.findViewById<TextView>(R.id.newsBody_textView)
-        val newsReadMore: TextView = itemView.findViewById<TextView>(R.id.newsReadMore_textView)
     }
 
     class HeaderViewHolder(private val view: View) : RecyclerView.ViewHolder(view)
@@ -40,8 +44,12 @@ class NewsViewAdapter(private val news: Array<News>, private val context: Contex
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if(holder is NewsViewHolder) {
             holder.newsHeader.text = news[position-1].header
-            holder.newsBody.text = news[position-1].body
-            holder.newsReadMore.text = news[position-1].readMore.toString()
+            holder.newsBody.text = news[position-1].bodyShort
+            holder.newsContainer.setOnClickListener {
+                val intent = Intent(context, FullNewsActivity::class.java)
+                intent.putExtra("NEWS_TO_SHOW", news[position-1])
+                context.startActivity(intent)
+            }
         }
     }
 
