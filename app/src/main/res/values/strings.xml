@@ -82,9 +82,16 @@
     </string>
 
     <string name="news_header_message">
-        Witaj w Świecka-News, sekcji wyświetlającej aktualne wiadomości pochodzące ze strony
-        ZSLiT Tuchola. Żeby nie było zbyt nudno, losowe słowa w treści newsa zostaną
-        zamienione wyrazem "Debian".
+        Witaj w Świecka-News, najlepszym przeglącie prasy po tej stronie kuli ziemskiej.
+        Wiadomości są na bieżąco pobierane ze strony naszej kochanej szkoły.
+        Żeby nie było zbyt nudno, losowe słowa w treści tekstu zostały zastąpione wyrazem \"Debian\".
+
+        \n\nUwaga! Ewentualne błędy w tekście newsa (na przykład losowo pozostawione znaczniki HTML) nie są błędami autora aplikacji.
+        Po prostu pewne osoby w naszej szkole są niedojebane mózgowo i formatowanie strony woła o pomstę do nieba.
+        Algorytm robi co może, żeby jakoś to ponaprawiać, ale nawet biblioteki Androida wysiadają przy takim syfie,
+        jakim jest strona ZSLiT. Pozdrawiam i życzę miłego dnia.
+
+        \n\nProszę o wyrozumiałość, gdyż moduł Świecka-News jest jeszcze w fazie eksperymentalnej.
     </string>
 
     <string name="notification_channel_id">adoptuj_krysia_not1</string>

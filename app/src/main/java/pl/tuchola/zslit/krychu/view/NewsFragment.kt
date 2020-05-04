@@ -27,11 +27,18 @@ class NewsFragment : Fragment() {
         super.onStart()
         if (news_recyclerView == null || context == null) return
 
+        val newsy = mutableListOf<News>()
+
         val onSuccess = fun(news: News) {
-            activity!!.runOnUiThread {
-                val debianified = NewsDebianifier(news).getDebianifiedNews()
-                news_recyclerView.adapter = NewsViewAdapter(arrayOf(debianified), context!!)
-                news_recyclerView.layoutManager = LinearLayoutManager(context)
+            if(news_recyclerView == null) return
+
+            newsy.add(NewsDebianifier(news).getDebianifiedNews())
+
+            if(newsy.count() == 9) {
+                activity!!.runOnUiThread {
+                    news_recyclerView.adapter = NewsViewAdapter(newsy.toTypedArray(), context!!)
+                    news_recyclerView.layoutManager = LinearLayoutManager(context)
+                }
             }
         }
 
@@ -41,8 +48,16 @@ class NewsFragment : Fragment() {
             }
         }
 
-        ZslitWebsiteScraper().resolveUrlToNews(URL("http://zslit-tuchola.pl/skarpetkowewyzwanie/"), onSuccess, onError)
-        ZslitWebsiteScraper().getNextNews()
+        val scraper = ZslitWebsiteScraper()
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
+        scraper.getNextNews(onSuccess, onError)
     }
 
 }

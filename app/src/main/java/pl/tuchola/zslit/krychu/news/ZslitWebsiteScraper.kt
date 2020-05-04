@@ -1,6 +1,7 @@
 package pl.tuchola.zslit.krychu.news
 import android.os.AsyncTask
 import android.util.Log
+import org.jsoup.HttpStatusException
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.safety.Whitelist
@@ -13,90 +14,77 @@ class ZslitWebsiteScraper() {
     companion object {
         private const val NEWS_PAGE = "http://zslit-tuchola.pl/blog/page/CURR__PAGE"
     }
+    private val currentPageLink
+        get() = NEWS_PAGE.replace("CURR__PAGE", currentPage.toString())
+    private val nextPageLink
+        get() = NEWS_PAGE.replace("CURR__PAGE", (currentPage+1).toString())
 
     private var currentPage: Int = 1
     private var articleLinksOnCurrentPage: List<URL>? = null
-    private var newsIndexOnCurrentPage: Int = 0
+    private var newsIndexOnCurrentPage: Int = -1
 
-    private val currentPageLink
-    get() = NEWS_PAGE.replace("CURR__PAGE", currentPage.toString())
-    private val nextPageLink
-    get() = NEWS_PAGE.replace("CURR_PAGE", (currentPage+1).toString())
 
     fun getNextNews(onSuccess: (News) -> Unit, onError: (ZslitConnectionError) -> Unit) {
-        if(articleLinksOnCurrentPage == null)
-            getNewsUrlOnCurrentPage({articleLinksOnCurrentPage = it}, {onError(it)})
+        AsyncTask.execute {
+            try {
+                if(articleLinksOnCurrentPage == null)
+                    articleLinksOnCurrentPage = getNewsUrlOnCurrentPage()
+                newsIndexOnCurrentPage++
 
-        if(articleLinksOnCurrentPage!!.elementAtOrNull(newsIndexOnCurrentPage) == null) {
-            var hasNextPage: Boolean
-
-
-        }
-
-
-    }
-
-    fun hasNextNews() {
-
-    }
-
-    fun hasNextPage(onSuccess: (Boolean) -> Unit, onError: (ZslitConnectionError) -> Unit) {
-        try {
-            AsyncTask.execute {
-                try {
-                    val doc = Jsoup.connect(nextPageLink).timeout(8000).execute()
-                    onSuccess(doc.statusCode() == 200)
-                } catch(e: Exception) {
-                    onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
-                    throw e
+                //jeśli obecna strona ma następnego newsa, to..
+                if(articleLinksOnCurrentPage!!.elementAtOrNull(newsIndexOnCurrentPage) != null) {
+                    var news = resolveUrlToNews(articleLinksOnCurrentPage!![newsIndexOnCurrentPage])
+                    onSuccess(news)
                 }
-            }
-        } catch(e: Exception) {
-            onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
-            throw e
-        }
-    }
-
-    fun getNewsUrlOnCurrentPage(onSuccess: (List<URL>) -> Unit, onError: (ZslitConnectionError) -> Unit) {
-        try {
-            AsyncTask.execute {
-                try {
-                    val doc = Jsoup.connect(currentPageLink).timeout(8000).get()
-                    val urls = ArrayList<URL>()
-                    doc.select(".read-more a").forEach {
-                        urls.add(URL(it.attr("abs:href")))
+                //jeśli obecna strona nie ma następnego newsa, to..
+                else {
+                    //jeśli następna strona jest dostępna, to..
+                    if(hasNextPage()) {
+                        currentPage++
+                        newsIndexOnCurrentPage = -1
+                        articleLinksOnCurrentPage = getNewsUrlOnCurrentPage()
+                        getNextNews(onSuccess, onError)
                     }
-                    onSuccess(urls)
-                } catch(e: Exception) {
-                    onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
-                    throw e
+                    //jeśli następna strona nie jest dostępna, to..
+                    else {
+                        onError(ZslitConnectionError.NO_NEWS_AVAILABLE)
+                    }
                 }
+            } catch(e: Exception) {
+                e.printStackTrace()
+                onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
             }
+        }
+    }
+
+    private fun hasNextPage() : Boolean {
+        return try {
+            val doc = Jsoup.connect(nextPageLink).timeout(8000).execute()
+            doc.statusCode() == 200
+        } catch(e: HttpStatusException) {
+            false
         } catch(e: Exception) {
-            onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
             throw e
         }
     }
 
-    fun resolveUrlToNews(articleLink: URL, onSuccess: (News) -> Unit, onError: (ZslitConnectionError) -> Unit) {
-        try {
-            AsyncTask.execute {
-                try {
-                    val doc = Jsoup.connect(articleLink.toString()).timeout(8000).get()
-                    val header = doc.select("h1.entry-title").first().text()
-                    val body = doc.select(".entry-content").first().html()
-                    val link = doc.body().select("img.attachment-large").attr("src")
-
-                    onSuccess(News(header, body!!, URL(link)))
-                } catch(e: Exception) {
-                    onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
-                    throw e
-                }
-            }
-        } catch(e: Exception) {
-            onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
-            throw e
+    private fun getNewsUrlOnCurrentPage() : List<URL> {
+        val doc = Jsoup.connect(currentPageLink).timeout(8000).get()
+        val urls = ArrayList<URL>()
+        doc.select(".read-more a").forEach {
+            urls.add(URL(it.attr("abs:href")))
         }
+        return urls
+    }
+
+    private fun resolveUrlToNews(articleLink: URL) : News {
+        val doc = Jsoup.connect(articleLink.toString()).timeout(8000).get()
+        val header = doc.select("h1.entry-title").first().text()
+        val bodyElement = doc.select(".entry-content").first()
+        bodyElement.select("img").remove()
+        val body = bodyElement.html().replace(Regex("(?=<!--)([\\s\\S]*?)-->"), "")
+        val link = doc.body().select("img.attachment-large").attr("src")
+        return News(header, body, URL(link))
     }
 
 }

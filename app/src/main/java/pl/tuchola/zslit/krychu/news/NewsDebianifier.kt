@@ -1,4 +1,5 @@
 package pl.tuchola.zslit.krychu.news
+import android.util.Log
 import kotlin.random.Random
 
 class NewsDebianifier(private val news: News) {
@@ -13,8 +14,9 @@ class NewsDebianifier(private val news: News) {
     }
 
     private fun debianifyHeader() : String {
-        val randomWord = news.header.split(' ').random(rand)
-        return news.header.replace(randomWord, DEBIANIFIER_WORD)
+        val onlyLongWords = news.header.split(' ').filter{it.length >= 4}
+        val randomWord = if(onlyLongWords.isEmpty()) " x " else onlyLongWords.random(rand)
+        return news.header.replaceFirst(randomWord, DEBIANIFIER_WORD)
     }
 
     private fun debianifyContent() : String {
@@ -27,10 +29,16 @@ class NewsDebianifier(private val news: News) {
                 var tryCount = -1
                 var randomWord: String
                 do {
-                    randomWord = splittedWords.random(rand);
-                } while(tryCount++ < 6 || randomWord.contains('>'))
+                    val onlyLongWords = splittedWords.filter{it -> it.length >= 4}
+                    randomWord = if(onlyLongWords.isEmpty())
+                        " x "
+                    else
+                        onlyLongWords.random(rand)
+                } while(tryCount++ < 6 && randomWord.contains('>') &&  randomWord.contains('<'))
 
-                sentence.replace(randomWord, DEBIANIFIER_WORD) + "."
+                if(randomWord.contains('<') || randomWord.contains('<')) continue
+
+                sentence.replaceFirst(randomWord, DEBIANIFIER_WORD) + "."
             } else {
                 "$sentence."
             }
