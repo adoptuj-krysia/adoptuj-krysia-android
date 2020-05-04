@@ -9,7 +9,7 @@ class NewsDebianifier(private val news: News) {
     }
 
     fun getDebianifiedNews() : News {
-        return News(news.newsIndex, debianifyHeader(), debianifyContent())
+        return News(debianifyHeader(), debianifyContent(), news.imageLink)
     }
 
     private fun debianifyHeader() : String {
@@ -30,11 +30,10 @@ class NewsDebianifier(private val news: News) {
                     randomWord = splittedWords.random(rand);
                 } while(tryCount++ < 6 || randomWord.contains('>'))
 
-                sentence.replace(randomWord, DEBIANIFIER_WORD)
+                sentence.replace(randomWord, DEBIANIFIER_WORD) + "."
             } else {
-                sentence
+                "$sentence."
             }
-            debianifiedContent += "."
         }
         return debianifiedContent
     }

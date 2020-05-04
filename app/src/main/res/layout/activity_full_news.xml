@@ -31,5 +31,13 @@
             android:id="@+id/fullNewsBody_textView"
             android:text="Pełna wersja wiadomości"/>
 
+        <ImageView
+            android:maxWidth="0dip"
+            android:scaleType="fitStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullNewsImage_imageView"
+            android:src="@drawable/news_no_image"/>
+
     </LinearLayout>
 </ScrollView>
