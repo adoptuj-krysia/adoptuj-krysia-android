@@ -1,10 +1,6 @@
 package pl.tuchola.zslit.krychu.view
-import android.app.Activity
-import android.os.Build
 import android.os.Bundle
-import android.view.Gravity
-import android.transition.Slide
-import android.view.animation.DecelerateInterpolator
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_full_news.*
@@ -12,13 +8,16 @@ import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.news.News
 
 
-class FullNewsActivity : Activity() {
+class FullNewsActivity : AppCompatActivity() {
 
     private var newsToShow : News? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_full_news)
+        setSupportActionBar(news_toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setDisplayShowHomeEnabled(true);
     }
 
     override fun onStart() {
@@ -36,5 +35,10 @@ class FullNewsActivity : Activity() {
                 Glide.with(this).load(newsToShow!!.imageLink).into(fullNewsImage_imageView);
             }
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

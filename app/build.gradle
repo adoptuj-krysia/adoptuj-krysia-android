@@ -35,6 +35,7 @@ dependencies {
     implementation "com.beust:klaxon:5.0.5"
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-rc01"
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     testImplementation 'junit:junit:4.12'
     implementation 'com.squareup.okhttp:okhttp:2.5.0'

@@ -4,40 +4,54 @@
     android:layout_width="match_parent">
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_marginTop="40dp"
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Świecka-News - pełna wersja newsa"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:id="@+id/news_toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="4dp" />
 
-        <TextView
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:id="@+id/fullNewsHeader_textView"
-            android:text="Nagłowek wiadomości" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/fullNewsBody_textView"
-            android:text="Pełna wersja wiadomości"/>
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Świecka-News - pełna wersja newsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-        <ImageView
-            android:maxWidth="0dip"
-            android:scaleType="fitStart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/fullNewsImage_imageView"
-            android:src="@drawable/news_no_image"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/fullNewsHeader_textView"
+                android:text="Nagłowek wiadomości" />
 
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullNewsBody_textView"
+                android:text="Pełna wersja wiadomości"/>
+
+            <ImageView
+                android:maxWidth="0dip"
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullNewsImage_imageView"
+                android:src="@drawable/news_no_image"/>
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

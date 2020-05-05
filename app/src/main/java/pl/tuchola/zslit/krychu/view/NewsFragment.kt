@@ -23,6 +23,11 @@ class NewsFragment : Fragment() {
         if (savedInstanceState != null)
             return
         initializeNews()
+        
+        newsFragment_refresher.setOnRefreshListener {
+            initializeNews()
+            newsFragment_refresher.isRefreshing = false
+        }
     }
 
     private fun initializeNews() {
@@ -46,7 +51,11 @@ class NewsFragment : Fragment() {
 
         val onError = fun(err: ZslitConnectionError) {
             activity!!.runOnUiThread {
-                Boast.showLongMessage(err.toString(), context!!)
+                when (err) {
+                    ZslitConnectionError.INTERNET_ERROR -> Boast.showLongMessage(getString(R.string.news_error_internet), context!!)
+                    ZslitConnectionError.INVALID_SERVER_RESPONSE -> Boast.showLongMessage(getString(R.string.news_error_zslit), context!!)
+                    ZslitConnectionError.UNRECOGNIZED_ERROR -> Boast.showLongMessage(getString(R.string.news_error_unrecognized), context!!)
+                }
                 adapter.setCannotLoadMore()
                 adapter.setOnLoadMoreListener(null)
                 adapter.setLoaded();
