@@ -1,4 +1,5 @@
 package pl.tuchola.zslit.krychu.view
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +10,7 @@ import kotlinx.android.synthetic.main.fragment_news.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.news.*
 import pl.tuchola.zslit.krychu.utils.Boast
-import java.net.URL
+
 
 class NewsFragment : Fragment() {
 
@@ -21,43 +22,41 @@ class NewsFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         if (savedInstanceState != null)
             return
+        initializeNews()
     }
 
-    override fun onStart() {
+    private fun initializeNews() {
         super.onStart()
         if (news_recyclerView == null || context == null) return
 
         val newsy = mutableListOf<News>()
+        val scraper = ZslitWebsiteScraper()
+        news_recyclerView.layoutManager = LinearLayoutManager(context)
+        val adapter = NewsViewAdapter(news_recyclerView, newsy, activity!!)
+        news_recyclerView.adapter = adapter
 
         val onSuccess = fun(news: News) {
             if(news_recyclerView == null) return
-
-            newsy.add(NewsDebianifier(news).getDebianifiedNews())
-
-            if(newsy.count() == 9) {
-                activity!!.runOnUiThread {
-                    news_recyclerView.adapter = NewsViewAdapter(newsy.toTypedArray(), context!!)
-                    news_recyclerView.layoutManager = LinearLayoutManager(context)
-                }
+            activity!!.runOnUiThread {
+                newsy.add(NewsDebianifier(news).getDebianifiedNews())
+                adapter.notifyDataSetChanged();
+                adapter.setLoaded();
             }
         }
 
         val onError = fun(err: ZslitConnectionError) {
             activity!!.runOnUiThread {
                 Boast.showLongMessage(err.toString(), context!!)
+                adapter.setCannotLoadMore()
+                adapter.setOnLoadMoreListener(null)
+                adapter.setLoaded();
             }
         }
 
-        val scraper = ZslitWebsiteScraper()
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
-        scraper.getNextNews(onSuccess, onError)
+        adapter.setOnLoadMoreListener(object : OnLoadMoreListener { override fun onLoadMore() {
+            scraper.getNextNews(onSuccess, onError)
+        }})
+
     }
 
 }

@@ -93,6 +93,10 @@
 
         \n\nProszę o wyrozumiałość, gdyż moduł Świecka-News jest jeszcze w fazie eksperymentalnej.
     </string>
+    <string name="news_loading">Proszę czekać, trwa łączenie z serwerem</string>
+    <string name="news_error_zslit">Błąd serwera naszej kochanej szkoły. No kurwa kto by pomyślał.</string>
+    <string name="news_error_internet">Nie mogę się połączyć z Internetem. Sprawdź swoje połączenie i odśwież.</string>
+    <string name="news_error_unrecognized">Wystąpił nieznany błąd, spróbuj odświeżyć stronę przez pociągnięcie okna.</string>
 
     <string name="notification_channel_id">adoptuj_krysia_not1</string>
     <string name="notification_channel_name">Życzenia okolicznościowe</string>

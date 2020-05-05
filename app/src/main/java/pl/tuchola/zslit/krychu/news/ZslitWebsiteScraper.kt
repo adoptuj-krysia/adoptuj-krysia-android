@@ -6,6 +6,7 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.safety.Whitelist
 import pl.tuchola.zslit.krychu.utils.Boast
+import java.io.IOException
 import java.net.URL
 
 
@@ -50,8 +51,12 @@ class ZslitWebsiteScraper() {
                         onError(ZslitConnectionError.NO_NEWS_AVAILABLE)
                     }
                 }
-            } catch(e: Exception) {
-                e.printStackTrace()
+            } catch(e: IOException) {
+                onError(ZslitConnectionError.INTERNET_ERROR)
+            } catch(e: NullPointerException) {
+                onError(ZslitConnectionError.INVALID_SERVER_RESPONSE)
+            }
+            catch(e: Exception) {
                 onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
             }
         }
