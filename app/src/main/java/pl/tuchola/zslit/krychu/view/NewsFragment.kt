@@ -1,5 +1,6 @@
 package pl.tuchola.zslit.krychu.view
 
+import android.opengl.Visibility
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,8 @@ import pl.tuchola.zslit.krychu.utils.Boast
 
 class NewsFragment : Fragment() {
 
+    private var canRefresh = false
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_news, container, false)
     }
@@ -23,9 +26,12 @@ class NewsFragment : Fragment() {
         if (savedInstanceState != null)
             return
         initializeNews()
-        
+
         newsFragment_refresher.setOnRefreshListener {
-            initializeNews()
+            if(canRefresh) {
+                firstEntryLoading_progressBar.visibility = View.VISIBLE
+                initializeNews()
+            }
             newsFragment_refresher.isRefreshing = false
         }
     }
@@ -43,14 +49,16 @@ class NewsFragment : Fragment() {
         val onSuccess = fun(news: News) {
             if(news_recyclerView == null) return
             activity!!.runOnUiThread {
+                firstEntryLoading_progressBar.visibility = View.INVISIBLE
                 newsy.add(NewsDebianifier(news).getDebianifiedNews())
-                adapter.notifyDataSetChanged();
-                adapter.setLoaded();
+                adapter.notifyDataSetChanged()
+                adapter.setLoaded()
             }
         }
 
         val onError = fun(err: ZslitConnectionError) {
             activity!!.runOnUiThread {
+                firstEntryLoading_progressBar.visibility = View.INVISIBLE
                 when (err) {
                     ZslitConnectionError.INTERNET_ERROR -> Boast.showLongMessage(getString(R.string.news_error_internet), context!!)
                     ZslitConnectionError.INVALID_SERVER_RESPONSE -> Boast.showLongMessage(getString(R.string.news_error_zslit), context!!)
@@ -59,6 +67,7 @@ class NewsFragment : Fragment() {
                 adapter.setCannotLoadMore()
                 adapter.setOnLoadMoreListener(null)
                 adapter.setLoaded();
+                canRefresh = true
             }
         }
 
