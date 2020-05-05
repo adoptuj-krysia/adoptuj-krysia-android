@@ -1,4 +1,6 @@
 package pl.tuchola.zslit.krychu.view
+
+import android.content.res.XmlResourceParser
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -9,6 +11,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.io.ActivityLog
 import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
+import pl.tuchola.zslit.krychu.utils.Boast
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

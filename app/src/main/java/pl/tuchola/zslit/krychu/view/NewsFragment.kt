@@ -1,6 +1,5 @@
 package pl.tuchola.zslit.krychu.view
 
-import android.opengl.Visibility
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_news.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.news.*
+import pl.tuchola.zslit.krychu.news.debianifier.DefaultDebianifier
 import pl.tuchola.zslit.krychu.utils.Boast
 
 
@@ -29,6 +29,7 @@ class NewsFragment : Fragment() {
 
         newsFragment_refresher.setOnRefreshListener {
             if(canRefresh) {
+                canRefresh = false
                 firstEntryLoading_progressBar.visibility = View.VISIBLE
                 initializeNews()
             }
@@ -50,7 +51,10 @@ class NewsFragment : Fragment() {
             if(news_recyclerView == null) return
             activity!!.runOnUiThread {
                 firstEntryLoading_progressBar.visibility = View.INVISIBLE
-                newsy.add(NewsDebianifier(news).getDebianifiedNews())
+                newsy.add(
+                    DefaultDebianifier(
+                        news
+                    ).getDebianifiedNews())
                 adapter.notifyDataSetChanged()
                 adapter.setLoaded()
             }
