@@ -25,9 +25,9 @@ class DebianifierSaxHandler: DefaultHandler() {
     override fun characters(ch: CharArray?, start: Int, length: Int) {
         if("string" in openTags && "activation-rules" in openTags && ch != null) {
             if("header-should-contain" in openTags)
-                headerShouldContain.add(String(ch))
+                headerShouldContain.add(String(ch, start, length))
             else if("body-should-contain" in openTags)
-                bodyShouldContain.add(String(ch))
+                bodyShouldContain.add(String(ch, start, length))
         }
     }
 

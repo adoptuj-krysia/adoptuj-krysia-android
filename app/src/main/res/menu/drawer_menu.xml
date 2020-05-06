@@ -14,6 +14,10 @@
             android:icon="@drawable/icon_news"
             android:title="@string/nav_news"/>
 
+        <item android:id="@+id/nav_item_settings"
+            android:icon="@drawable/icon_settings"
+            android:title="@string/nav_settigns"/>
+
         <item android:id="@+id/nav_item_info"
             android:icon="@drawable/icon_info"
             android:title="@string/nav_info"/>

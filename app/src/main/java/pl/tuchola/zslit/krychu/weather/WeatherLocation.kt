@@ -1,11 +1,16 @@
 package pl.tuchola.zslit.krychu.weather
-
 import java.util.*
 
-class WeatherLocation(var locationName: String = LOCATION_GPS) {
+class WeatherLocation(var locationName: String = DEFAULT_LOCATION) {
 
     companion object {
+        const val DEFAULT_LOCATION = "Plaskosz"
         const val LOCATION_GPS = "GPS"
+
+        val allowedLocations = arrayOf(
+            "Gostycyn", "Kęsowo", "Cekcyn", "Tuchola", "Plaskosz",
+            "Lubiewo", "Śliwice", "Bysław", "Bysławek", "GPS"
+        )
     }
 
     init {

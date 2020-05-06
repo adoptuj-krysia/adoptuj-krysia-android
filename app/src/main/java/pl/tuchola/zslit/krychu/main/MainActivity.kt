@@ -60,6 +60,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 ).commit()
             }
 
+            (R.id.nav_item_settings) -> {
+                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container,
+                    ConfigurationFragment()
+                ).commit()
+            }
+
             (R.id.nav_item_info) -> {
                 supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, InformationFragment()).commit()
             }

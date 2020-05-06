@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Adoptuj Krysia</string>
     <string name="app_header">&#83;&#322;awomir &#75;ry&#347; - twój osobisty przyjaciel </string>
-    <string name="app_weather_header">Niezbędnik wędkarza - pogoda w Plaskoszu</string>
+    <string name="app_weather_header">Niezbędnik wędkarza - aktualna pogoda</string>
     <string name="app_news_header">Świecka-News - twoje źródło informacji</string>
     <string name="app_info_header">Informacje o projekcie Adoptuj &#75;rysia™</string>
+    <string name="app_configuration_header">Konfiguracja programu</string>
 
     <string name="widget_default_text">Proszę poczekać, trwa ładowanie wypowiedzi.</string>
 
@@ -63,6 +64,7 @@
     <string name="nav_home">Strona główna</string>
     <string name="nav_weather">Niezbędnik wędkarza™</string>
     <string name="nav_news">Świecka-News</string>
+    <string name="nav_settigns">Ustawienia</string>
     <string name="nav_info">O programie</string>
 
     <string name="log_main_activity_launched">Okno aplikacji Android zostało uruchomione</string>
@@ -105,4 +107,27 @@
     <string name="notification_body_christmas">Wszystkiego najlepszego z okazji świąt :)</string>
     <string name="notification_body_easter">Wszystkiego najlepszego z okazji Wielkanocy :)</string>
     <string name="notification_body_birthday">Dzisiaj Sławomir Kryś ma urodziny!!</string>
+
+    <string name="configuration_friend_touched">No i co mnie dotykasz brudnymi rękami, dopiero co żona marynarkę mi wyprała.</string>
+    <string name="configuration_ans_positive">Tak, wyłącz chmurę</string>
+    <string name="configuration_ans_negative">Nie, zostaw chmurę</string>
+    <string name="configuration_confirm_header">Czy jesteś pewien?</string>
+    <string name="configuration_confirm_body">
+        Czy jesteś pewien, że chcesz wyłączyć debianifikację newsów w chmurze?
+        Może to pogorszyć jakość działania algorytmu Świecka-News.
+        Zaleca się pozostawienie tej opcji włączonej.
+    </string>
+    <string name="configuration_lubiewo_chosen">Niestety nie można zmienić lokalizacji na Lubiewo, autor powołuje się na klauzulę sumienia.</string>
+    <string name="configuration_friend">Mam nadzieję, że\nnic nie popsujesz :)</string>
+    <string name="configuration_debianification">Zezwalaj na debianifikację newsów w chmurze:</string>
+    <string name="configuration_location">Lokalizacja do pobierania pogody:</string>
+
+    <string name="debianification_explanation">
+        Nie zaleca się wyłączania powyższej opcji. Jeśli opcja powyżej jest włączona,
+        moduł Świecka-News daje o wiele lepsze rezultaty.
+    </string>
+    <string name="location_explanation">
+        Począwszy od wersji 1.2, moduł Niezbędnik Wędkarza™ może wyświetlać pogodę nie tylko w
+        Plaskoszu, ale w dowolnej wskazanej przez ciebie lokalizacji (oprócz Lubiewa, ono jest nieobsługiwane).
+    </string>
 </resources>

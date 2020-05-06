@@ -5,24 +5,22 @@ import pl.tuchola.zslit.krychu.weather.WeatherLocation
 
 class AppConfiguration(private val context: Context) {
 
+    private val preferences = PreferenceManager.getDefaultSharedPreferences(context)
+
     var weatherLocation: String
     get() {
-        val preferences = PreferenceManager.getDefaultSharedPreferences(context)
-        val loc = preferences.getString("weatherLocation", WeatherLocation.LOCATION_GPS)
-        return loc ?: WeatherLocation.LOCATION_GPS
+        val loc = preferences.getString("weatherLocation", WeatherLocation.DEFAULT_LOCATION)
+        return loc ?: WeatherLocation.DEFAULT_LOCATION
     }
     set(value) {
-        val preferences = PreferenceManager.getDefaultSharedPreferences(context)
         preferences.edit().putString("weatherLocation", value).apply()
     }
 
     var enablePatternDebianifying: Boolean
     get() {
-        val preferences = PreferenceManager.getDefaultSharedPreferences(context)
         return preferences.getBoolean("enablePatternDebianifying", true)
     }
     set(value) {
-        val preferences = PreferenceManager.getDefaultSharedPreferences(context)
         preferences.edit().putBoolean("enablePatternDebianifying", value).apply()
     }
 

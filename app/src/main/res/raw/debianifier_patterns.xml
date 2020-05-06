@@ -65,16 +65,18 @@
         </activation-rules>
         <execution-rules>
             <replace-header>
-                <replacement-rule from="uczniom ZSLiT" to="Debian ZSLiT"/>
+                <replacement-rule from="piłki siatkowej" to="piłki Debian"/>
             </replace-header>
             <replace-body>
-                <replacement-rule from="Skład drużyny nauczycieli:" to="&lt;br/&gt;Skład drużyny Debian:"/>
-                <replacement-rule from="Kożuch" to="Debian"/>
-                <replacement-rule from="Podgórski" to="Debian"/>
-                <replacement-rule from="Kotlenga Dariusz" to="Kotlenga Debian"/>
-                <replacement-rule from="rewanż" to="Debian"/>
-                <replacement-rule from="młodości" to="Debian"/>
-                <replacement-rule from="siatkarze-uczniowie" to="Debian-uczniowie"/>
+                <replacement-rule from="Konkursu" to="Debian"/>
+                <replacement-rule from="miejsce" to="Debian"/>
+                <replacement-rule from="Mądry uczeń" to="Mądry Debian"/>
+                <replacement-rule from="Bogumiła Grzelka" to="Debian Grzelka"/>
+                <replacement-rule from="Justyna Kania" to="Debian Kania"/>
+                <replacement-rule from="Monika Połom" to="Debian Monika"/>
+                <replacement-rule from="następujący uczniowie" to="następujący Debian"/>
+                <replacement-rule from="Nauczyciele" to="Debian"/>
+                <replacement-rule from="języka polskiego" to="języka Debian"/>
             </replace-body>
         </execution-rules>
     </pattern>
