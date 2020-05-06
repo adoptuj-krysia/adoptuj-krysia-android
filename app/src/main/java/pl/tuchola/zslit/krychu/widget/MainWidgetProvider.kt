@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.view
+package pl.tuchola.zslit.krychu.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -7,10 +7,8 @@ import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.io.LastWidgetTextFile
-import pl.tuchola.zslit.krychu.io.ActivityLog
-import pl.tuchola.zslit.krychu.logic.UserUpdateRequest
-import pl.tuchola.zslit.krychu.logic.WidgetEntryFactory
+import pl.tuchola.zslit.krychu.files.LastWidgetTextFile
+import pl.tuchola.zslit.krychu.files.ActivityLog
 import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
 
 
@@ -31,7 +29,8 @@ class MainWidgetProvider : AppWidgetProvider() {
             views.setImageViewResource(R.id.widgetImage_imageView, widgetEntry.imageID)
 
             val intent = Intent(context, MainWidgetProvider::class.java)
-            intent.action = ACTION_REFRESH_REQUESTED
+            intent.action =
+                ACTION_REFRESH_REQUESTED
             val pendingIntentButton = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
             views.setOnClickPendingIntent(R.id.widgetImage_imageView, pendingIntentButton)
 

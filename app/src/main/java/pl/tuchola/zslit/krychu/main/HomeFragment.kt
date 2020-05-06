@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.view
+package pl.tuchola.zslit.krychu.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_home.*
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.io.ActivityLog
 import pl.tuchola.zslit.krychu.utils.Boast
 
 

@@ -4,17 +4,14 @@ import kotlin.random.Random
 
 class DefaultDebianifier(private val news: News) {
 
-    private val rand = Random(news.bodyLong.hashCode().toLong() + news.bodyShort.hashCode().toLong())
+    private val rand = Random(news.body.hashCode().toLong() + news.bodyShort.hashCode().toLong())
     companion object {
         const val DEBIANIFIER_WORD = "Debian"
     }
 
-    fun getDebianifiedNews() : News {
-        return News(
-            debianifyHeader(),
-            debianifyContent(),
-            news.imageLink
-        )
+    fun debianifyNews() {
+        news.header = debianifyHeader()
+        news.body = debianifyContent()
     }
 
     private fun debianifyHeader() : String {
@@ -27,7 +24,7 @@ class DefaultDebianifier(private val news: News) {
 
     private fun debianifyContent() : String {
         var debianifiedContent = ""
-        val splittedSentences = news.bodyLong.split('.')
+        val splittedSentences = news.body.split('.')
         for(sentence in splittedSentences) {
             val splittedWords = sentence.split(' ').filter {it -> it != ""}
             debianifiedContent += if(splittedWords.size >= 3) {

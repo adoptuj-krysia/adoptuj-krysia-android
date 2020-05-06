@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.logic
+package pl.tuchola.zslit.krychu.widget
 import android.content.Context
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.utils.EasterDate

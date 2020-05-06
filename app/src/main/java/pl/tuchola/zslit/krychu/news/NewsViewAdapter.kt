@@ -8,12 +8,10 @@ import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
-import androidx.core.view.children
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.jsoup.Jsoup
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.view.FullNewsActivity
 
 
 class NewsViewAdapter(private val recyclerView: RecyclerView, private val news: List<News>, private val activity: Activity)
@@ -38,7 +36,7 @@ class NewsViewAdapter(private val recyclerView: RecyclerView, private val news: 
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
-                totalItemCount = linearLayoutManager.itemCount
+                totalItemCount = linearLayoutManager.itemCount + 1
                 lastVisibleItem = linearLayoutManager.findLastVisibleItemPosition()
                 if (!isLoading && totalItemCount <= lastVisibleItem + visibleThreshold) {
                     if (onLoadMoreListener != null && canLoadMore) {

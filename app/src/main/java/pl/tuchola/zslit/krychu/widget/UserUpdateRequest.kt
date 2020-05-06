@@ -1,11 +1,10 @@
-package pl.tuchola.zslit.krychu.logic
+package pl.tuchola.zslit.krychu.widget
 import android.content.Context
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.io.LastUpdateFile
-import pl.tuchola.zslit.krychu.io.ActivityLog
+import pl.tuchola.zslit.krychu.files.LastUpdateFile
+import pl.tuchola.zslit.krychu.files.ActivityLog
 import pl.tuchola.zslit.krychu.utils.Boast
 import pl.tuchola.zslit.krychu.utils.WidgetUpdateRequest
-import pl.tuchola.zslit.krychu.view.MainWidgetProvider
 import java.util.*
 import java.util.concurrent.TimeUnit
 
@@ -21,12 +20,12 @@ class UserUpdateRequest(private val context: Context) {
     }
 
     private fun acceptRequest() {
-        WidgetUpdateRequest(context!!, MainWidgetProvider::class.java).requestUpdate()
+        WidgetUpdateRequest(context, MainWidgetProvider::class.java).requestUpdate()
         ActivityLog(context).writeLine(context.getString(R.string.log_widget_refreshed_user_accept))
     }
 
     private fun declineRequest() {
-        Boast.showLongMessage(context!!.getString(R.string.widget_friend_upset), context)
+        Boast.showLongMessage(context.getString(R.string.widget_friend_upset), context)
         ActivityLog(context).writeLine(context.getString(R.string.log_widget_refreshed_user_decline))
     }
 

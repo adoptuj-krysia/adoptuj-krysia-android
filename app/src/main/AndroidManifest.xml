@@ -33,7 +33,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".view.MainWidgetProvider">
+        <receiver android:name=".widget.MainWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="pl.tuchola.zslit.krychu.APPWIDGET_UPDATE_USER_REQUESTED" />
@@ -44,7 +44,7 @@
                 android:resource="@xml/widget_main_info" />
         </receiver>
 
-        <activity android:name=".view.MainActivity"
+        <activity android:name=".main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize|keyboardHidden"
             tools:ignore="LockedOrientationActivity"
@@ -56,7 +56,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.FullNewsActivity"
+        <activity android:name=".news.FullNewsActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize|keyboardHidden"
             tools:ignore="LockedOrientationActivity"

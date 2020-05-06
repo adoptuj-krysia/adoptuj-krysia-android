@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.view
+package pl.tuchola.zslit.krychu.news
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,14 +8,16 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_news.*
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.news.*
-import pl.tuchola.zslit.krychu.news.debianifier.DefaultDebianifier
+import pl.tuchola.zslit.krychu.news.debianifier.DebianifierPatternCollection
+import pl.tuchola.zslit.krychu.news.debianifier.DebianifierSaxHandler
 import pl.tuchola.zslit.krychu.utils.Boast
+import javax.xml.parsers.SAXParserFactory
 
 
 class NewsFragment : Fragment() {
 
     private var canRefresh = false
+    private var debianification: DebianifierPatternCollection? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_news, container, false)
@@ -35,6 +37,14 @@ class NewsFragment : Fragment() {
             }
             newsFragment_refresher.isRefreshing = false
         }
+
+        val factory = SAXParserFactory.newInstance()
+        val saxParser = factory.newSAXParser()
+        val handler = DebianifierSaxHandler()
+        resources.openRawResource(R.raw.debianifier_patterns).use {
+            saxParser.parse(it, handler)
+        }
+        debianification = handler.getParsedCollection()
     }
 
     private fun initializeNews() {
@@ -51,10 +61,8 @@ class NewsFragment : Fragment() {
             if(news_recyclerView == null) return
             activity!!.runOnUiThread {
                 firstEntryLoading_progressBar.visibility = View.INVISIBLE
-                newsy.add(
-                    DefaultDebianifier(
-                        news
-                    ).getDebianifiedNews())
+                debianification?.debianifyNews(news)
+                newsy.add(news)
                 adapter.notifyDataSetChanged()
                 adapter.setLoaded()
             }

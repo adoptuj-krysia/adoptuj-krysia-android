@@ -1,6 +1,5 @@
-package pl.tuchola.zslit.krychu.view
+package pl.tuchola.zslit.krychu.main
 
-import android.content.res.XmlResourceParser
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -9,9 +8,10 @@ import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.io.ActivityLog
+import pl.tuchola.zslit.krychu.files.ActivityLog
+import pl.tuchola.zslit.krychu.news.NewsFragment
 import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
-import pl.tuchola.zslit.krychu.utils.Boast
+import pl.tuchola.zslit.krychu.weather.WeatherFragment
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -49,11 +49,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             (R.id.nav_item_weather) -> {
-                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, WeatherFragment()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container,
+                    WeatherFragment()
+                ).commit()
             }
 
             (R.id.nav_item_news) -> {
-                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container, NewsFragment()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container,
+                    NewsFragment()
+                ).commit()
             }
 
             (R.id.nav_item_info) -> {

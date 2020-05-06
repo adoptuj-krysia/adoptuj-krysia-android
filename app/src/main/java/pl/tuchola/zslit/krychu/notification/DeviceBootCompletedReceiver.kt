@@ -3,7 +3,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.io.ActivityLog
+import pl.tuchola.zslit.krychu.files.ActivityLog
 
 class DeviceBootCompletedReceiver : BroadcastReceiver() {
 

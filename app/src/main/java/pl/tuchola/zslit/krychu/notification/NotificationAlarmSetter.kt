@@ -6,7 +6,7 @@ import android.content.Context
 import android.content.Context.ALARM_SERVICE
 import android.content.Intent
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.io.ActivityLog
+import pl.tuchola.zslit.krychu.files.ActivityLog
 import java.util.*
 
 //Uruchamia alarm, który raz na 24 godziny wywołuje NotificationBroadcastReceiver

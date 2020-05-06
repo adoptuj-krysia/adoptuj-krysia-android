@@ -19,12 +19,10 @@ import java.net.UnknownHostException
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
-class OpenWeatherProvider : WeatherNetworkProvider {
+class OpenWeatherProvider(private val location: WeatherLocation) : WeatherNetworkProvider {
 
-    companion object {
-        private const val URL =
-            "https://api.openweathermap.org/data/2.5/weather?q=Tuchola&APPID=c8cd7a1d3d7a8ad8d251c6973336608e&lang=pl"
-    }
+    private val url =
+        "https://api.openweathermap.org/data/2.5/weather?q=${location.locationName}&APPID=c8cd7a1d3d7a8ad8d251c6973336608e&lang=pl"
 
     private fun jsonToWeather(json: String) : Weather? {
         return try {
@@ -53,7 +51,7 @@ class OpenWeatherProvider : WeatherNetworkProvider {
                 client.setReadTimeout(8, TimeUnit.SECONDS)
                 client.setWriteTimeout(8, TimeUnit.SECONDS)
 
-                val request = Request.Builder().url(URL).build()
+                val request = Request.Builder().url(this.url).build()
 
                 client.newCall(request).enqueue(object : Callback {
                     override fun onFailure(request: Request?, e: IOException?) {

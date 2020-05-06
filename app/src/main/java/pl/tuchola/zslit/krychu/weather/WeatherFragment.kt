@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.view
+package pl.tuchola.zslit.krychu.weather
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +7,8 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_weather.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.R.string
-import pl.tuchola.zslit.krychu.io.ActivityLog
+import pl.tuchola.zslit.krychu.files.AppConfiguration
 import pl.tuchola.zslit.krychu.utils.Boast
-import pl.tuchola.zslit.krychu.weather.*
 import java.text.DecimalFormat
 
 
@@ -23,6 +22,8 @@ class WeatherFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         if(savedInstanceState != null)
             return
+
+        Boast.showLongMessage(AppConfiguration(this.context!!).weatherLocation, context!!)
 
         writeWeather(null)
         weatherPhoto_imageView.setOnClickListener {
@@ -56,7 +57,7 @@ class WeatherFragment : Fragment() {
                 }
             }
 
-            OpenWeatherProvider().startFetchingWeather(onSuccess, onError)
+            OpenWeatherProvider(WeatherLocation()).startFetchingWeather(onSuccess, onError)
         }
     }
 
