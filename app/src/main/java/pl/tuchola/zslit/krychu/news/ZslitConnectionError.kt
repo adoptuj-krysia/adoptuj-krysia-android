@@ -1,8 +1,8 @@
 package pl.tuchola.zslit.krychu.news
 
 enum class ZslitConnectionError {
-    UNRECOGNIZED_ERROR,
+    INTERNET_ERROR,
     INVALID_SERVER_RESPONSE,
     NO_NEWS_AVAILABLE,
-    INTERNET_ERROR
+    UNRECOGNIZED_ERROR
 }

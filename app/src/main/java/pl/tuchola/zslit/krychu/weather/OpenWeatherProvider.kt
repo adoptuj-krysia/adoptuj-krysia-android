@@ -2,24 +2,22 @@ package pl.tuchola.zslit.krychu.weather
 
 import android.accounts.NetworkErrorException
 import android.os.AsyncTask
-import android.util.Log
-import android.view.View
-import com.beust.klaxon.*
+import com.beust.klaxon.JsonObject
+import com.beust.klaxon.Parser
+import com.beust.klaxon.lookup
 import com.squareup.okhttp.Callback
 import com.squareup.okhttp.OkHttpClient
 import com.squareup.okhttp.Request
 import com.squareup.okhttp.Response
-import kotlinx.android.synthetic.main.fragment_weather.*
-import pl.tuchola.zslit.krychu.utils.Boast
-import pl.tuchola.zslit.krychu.utils.KelvinTemperature
+import pl.tuchola.zslit.krychu.common.KelvinTemperature
+import pl.tuchola.zslit.krychu.common.NetworkDataProvider
+import pl.tuchola.zslit.krychu.common.NetworkError
 import java.io.IOException
-import java.lang.StringBuilder
-import java.net.URL
 import java.net.UnknownHostException
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
-class OpenWeatherProvider(private val location: WeatherLocation) : WeatherNetworkProvider {
+class OpenWeatherProvider(private val location: WeatherLocation) : NetworkDataProvider<Weather, NetworkError> {
 
     private val url =
         "https://api.openweathermap.org/data/2.5/weather?q=${location.locationName}&APPID=c8cd7a1d3d7a8ad8d251c6973336608e&lang=pl"
@@ -43,7 +41,7 @@ class OpenWeatherProvider(private val location: WeatherLocation) : WeatherNetwor
         }
     }
 
-    override fun startFetchingWeather(onSuccess: (Weather) -> Unit, onFailure: (WeatherFetchingError) -> Unit) {
+    override fun startFetching(onSuccess: (Weather) -> Unit, onError: (NetworkError) -> Unit) {
         AsyncTask.execute {
             try {
                 val client = OkHttpClient()
@@ -56,9 +54,9 @@ class OpenWeatherProvider(private val location: WeatherLocation) : WeatherNetwor
                 client.newCall(request).enqueue(object : Callback {
                     override fun onFailure(request: Request?, e: IOException?) {
                         if(e is UnknownHostException || e is NetworkErrorException)
-                            onFailure(WeatherFetchingError.NO_INTERNET_CONNECTION)
+                            onError(NetworkError.NO_INTERNET_CONNECTION)
                         else
-                            onFailure(WeatherFetchingError.UNRECOGNIZED_ERROR)
+                            onError(NetworkError.UNRECOGNIZED_ERROR)
                     }
 
                     override fun onResponse(response: Response?) {
@@ -67,18 +65,18 @@ class OpenWeatherProvider(private val location: WeatherLocation) : WeatherNetwor
                             if(weather != null)
                                 onSuccess(weather)
                             else
-                                onFailure(WeatherFetchingError.SERVER_INVALID_RESPONSE)
+                                onError(NetworkError.SERVER_INVALID_RESPONSE)
                         } else {
-                            onFailure(WeatherFetchingError.SERVER_INVALID_RESPONSE)
+                            onError(NetworkError.SERVER_INVALID_RESPONSE)
                         }
                     }
                 })
             }
             catch(e: TimeoutException) {
-                onFailure(WeatherFetchingError.CONNECTION_TIMEOUT)
+                onError(NetworkError.CONNECTION_TIMEOUT)
             }
             catch(e: Exception) {
-                onFailure(WeatherFetchingError.UNRECOGNIZED_ERROR)
+                onError(NetworkError.UNRECOGNIZED_ERROR)
             }
         }
     }

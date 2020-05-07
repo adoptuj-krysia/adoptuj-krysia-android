@@ -5,10 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_information.*
+import pl.tuchola.zslit.krychu.BuildConfig
 import pl.tuchola.zslit.krychu.R
+import pl.tuchola.zslit.krychu.common.Boast
 import pl.tuchola.zslit.krychu.files.ActivityLog
-import pl.tuchola.zslit.krychu.BuildConfig;
-import pl.tuchola.zslit.krychu.utils.Boast
 
 class InformationFragment : Fragment() {
 

@@ -1,6 +1,4 @@
-package pl.tuchola.zslit.krychu.utils
-import java.text.SimpleDateFormat
-import java.time.LocalDate
+package pl.tuchola.zslit.krychu.common
 import java.util.*
 
 class EasterDate(private val year: Int = Calendar.getInstance().get(Calendar.YEAR)) {

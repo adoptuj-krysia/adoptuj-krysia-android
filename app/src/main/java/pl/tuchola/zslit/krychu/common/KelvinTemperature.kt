@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.utils
+package pl.tuchola.zslit.krychu.common
 
 class KelvinTemperature(private val degrees: Double) {
     val celsius = degrees - 273.15

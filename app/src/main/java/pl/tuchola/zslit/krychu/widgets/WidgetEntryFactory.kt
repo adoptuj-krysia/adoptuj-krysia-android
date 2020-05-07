@@ -1,30 +1,33 @@
-package pl.tuchola.zslit.krychu.widget
+package pl.tuchola.zslit.krychu.widgets
 import android.content.Context
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.utils.EasterDate
+import pl.tuchola.zslit.krychu.common.EasterDate
 import java.util.*
 
 class WidgetEntryFactory(private val context: Context) {
 
     private val morningImages = listOf(
         R.drawable.friend_morning_1, R.drawable.friend_morning_2, R.drawable.friend_morning_3,
-        R.drawable.friend_morning_4, R.drawable.friend_morning_5, R.drawable.friend_morning_6, R.drawable.friend_morning_7
+        R.drawable.friend_morning_4, R.drawable.friend_morning_5, R.drawable.friend_morning_6,
+        R.drawable.friend_morning_7, R.drawable.friend_morning_8
     )
 
     private val eveningImages = listOf(
         R.drawable.friend_evening_1, R.drawable.friend_evening_2, R.drawable.friend_evening_3,
-        R.drawable.friend_evening_4, R.drawable.friend_evening_5, R.drawable.friend_evening_6, R.drawable.friend_evening_7
+        R.drawable.friend_evening_4, R.drawable.friend_evening_5, R.drawable.friend_evening_6,
+        R.drawable.friend_evening_7, R.drawable.friend_evening_8
     )
 
     private val nightImages = listOf(
         R.drawable.friend_night_1, R.drawable.friend_night_2, R.drawable.friend_night_3,
-        R.drawable.friend_night_4, R.drawable.friend_night_5, R.drawable.friend_night_6, R.drawable.friend_night_7
+        R.drawable.friend_night_4, R.drawable.friend_night_5, R.drawable.friend_night_6,
+        R.drawable.friend_night_7, R.drawable.friend_night_8
     )
 
     private val noonImages = listOf(
         R.drawable.friend_noon_1, R.drawable.friend_noon_2, R.drawable.friend_noon_3,
-        R.drawable.friend_noon_4, R.drawable.friend_noon_5, R.drawable.friend_noon_6, R.drawable.friend_noon_7,
-        R.drawable.friend_noon_8
+        R.drawable.friend_noon_4, R.drawable.friend_noon_5, R.drawable.friend_noon_6,
+        R.drawable.friend_noon_7, R.drawable.friend_noon_8
     )
 
     private val ganjaImages = listOf(

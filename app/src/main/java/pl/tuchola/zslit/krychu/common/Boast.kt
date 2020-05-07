@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.utils
+package pl.tuchola.zslit.krychu.common
 import android.content.Context
 import android.widget.Toast
 

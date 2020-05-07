@@ -7,8 +7,9 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_weather.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.R.string
+import pl.tuchola.zslit.krychu.common.Boast
+import pl.tuchola.zslit.krychu.common.NetworkError
 import pl.tuchola.zslit.krychu.files.AppConfiguration
-import pl.tuchola.zslit.krychu.utils.Boast
 import java.text.DecimalFormat
 
 
@@ -41,10 +42,10 @@ class WeatherFragment : Fragment() {
             weather_progressBar.visibility = View.VISIBLE
             checkWeather_button.isEnabled = false
 
-            val onError = fun(error: WeatherFetchingError) {
+            val onError = fun(error: NetworkError) {
                 activity?.runOnUiThread {
                     if(weather_progressBar != null) {
-                        if(error == WeatherFetchingError.SERVER_INVALID_RESPONSE)
+                        if(error == NetworkError.SERVER_INVALID_RESPONSE)
                             Boast.showLongMessage(getString(R.string.error_weather_api), context!!)
                         else
                             Boast.showLongMessage(getString(R.string.error_internet_connection), context!!)
@@ -64,7 +65,7 @@ class WeatherFragment : Fragment() {
                 }
             }
 
-            OpenWeatherProvider(WeatherLocation(weatherLocation)).startFetchingWeather(onSuccess, onError)
+            OpenWeatherProvider(WeatherLocation(weatherLocation)).startFetching(onSuccess, onError)
         }
     }
 

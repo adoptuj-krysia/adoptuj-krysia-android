@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.widget
+package pl.tuchola.zslit.krychu.widgets
 import android.content.Context
 import pl.tuchola.zslit.krychu.files.LastWidgetTextFile
 

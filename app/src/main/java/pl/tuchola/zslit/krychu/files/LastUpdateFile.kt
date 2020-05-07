@@ -1,7 +1,6 @@
 package pl.tuchola.zslit.krychu.files
 import android.content.Context
 import java.io.File
-import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
 

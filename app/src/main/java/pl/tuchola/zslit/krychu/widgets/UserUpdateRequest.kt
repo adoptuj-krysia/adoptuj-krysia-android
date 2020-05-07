@@ -1,10 +1,9 @@
-package pl.tuchola.zslit.krychu.widget
+package pl.tuchola.zslit.krychu.widgets
 import android.content.Context
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.files.LastUpdateFile
+import pl.tuchola.zslit.krychu.common.Boast
 import pl.tuchola.zslit.krychu.files.ActivityLog
-import pl.tuchola.zslit.krychu.utils.Boast
-import pl.tuchola.zslit.krychu.utils.WidgetUpdateRequest
+import pl.tuchola.zslit.krychu.files.LastUpdateFile
 import java.util.*
 import java.util.concurrent.TimeUnit
 
@@ -30,7 +29,8 @@ class UserUpdateRequest(private val context: Context) {
     }
 
     fun callUpdateRequest() {
-        var lastRefreshed = LastUpdateFile(context).getLastRefreshDate() ?: Date(1970, 1, 1)
+        @Suppress("DEPRECATION")
+        val lastRefreshed = LastUpdateFile(context).getLastRefreshDate() ?: Date(1970, 1, 1)
         var refreshCount = LastUpdateFile(context).getLastRefreshCount() ?: 0
 
         var diffMinutes = Date().time - lastRefreshed.time

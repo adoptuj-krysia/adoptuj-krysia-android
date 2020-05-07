@@ -1,5 +1,4 @@
 package pl.tuchola.zslit.krychu.news
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,11 +7,12 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_news.*
 import pl.tuchola.zslit.krychu.R
+import pl.tuchola.zslit.krychu.common.Boast
+import pl.tuchola.zslit.krychu.common.NetworkError
+import pl.tuchola.zslit.krychu.files.AppConfiguration
+import pl.tuchola.zslit.krychu.news.ZslitConnectionError.*
 import pl.tuchola.zslit.krychu.news.debianifier.DebianifierPatternCollection
-import pl.tuchola.zslit.krychu.news.debianifier.DebianifierSaxHandler
-import pl.tuchola.zslit.krychu.utils.Boast
-import javax.xml.parsers.SAXParserFactory
-
+import pl.tuchola.zslit.krychu.news.debianifier.DebianifierXmlProvider
 
 class NewsFragment : Fragment() {
 
@@ -27,24 +27,44 @@ class NewsFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         if (savedInstanceState != null)
             return
-        initializeNews()
 
         newsFragment_refresher.setOnRefreshListener {
             if(canRefresh) {
                 canRefresh = false
                 firstEntryLoading_progressBar.visibility = View.VISIBLE
-                initializeNews()
+                getNewsAndShowToUser()
             }
             newsFragment_refresher.isRefreshing = false
         }
 
-        val factory = SAXParserFactory.newInstance()
-        val saxParser = factory.newSAXParser()
-        val handler = DebianifierSaxHandler()
-        resources.openRawResource(R.raw.debianifier_patterns).use {
-            saxParser.parse(it, handler)
+        getNewsAndShowToUser()
+    }
+
+    private fun getNewsAndShowToUser() {
+        if(AppConfiguration(context!!).enablePatternDebianifying) {
+            fetchDebianifierAndIntialize()
+        } else {
+            debianification = DebianifierPatternCollection(arrayOf())
+            initializeNews()
         }
-        debianification = handler.getParsedCollection()
+    }
+
+    private fun fetchDebianifierAndIntialize() {
+        val onSuccess = fun(col: DebianifierPatternCollection) {
+            activity!!.runOnUiThread {
+                debianification = col
+                initializeNews()
+            }
+        }
+        val onError = fun(err: NetworkError) {
+            activity!!.runOnUiThread {
+                if(err != NetworkError.NO_INTERNET_CONNECTION)
+                    Boast.showLongMessage(getString(R.string.news_debianifier_xml_error), context!!)
+                debianification = DebianifierPatternCollection(arrayOf())
+                initializeNews()
+            }
+        }
+        DebianifierXmlProvider().startFetching(onSuccess, onError)
     }
 
     private fun initializeNews() {
@@ -72,9 +92,10 @@ class NewsFragment : Fragment() {
             activity!!.runOnUiThread {
                 firstEntryLoading_progressBar.visibility = View.INVISIBLE
                 when (err) {
-                    ZslitConnectionError.INTERNET_ERROR -> Boast.showLongMessage(getString(R.string.news_error_internet), context!!)
-                    ZslitConnectionError.INVALID_SERVER_RESPONSE -> Boast.showLongMessage(getString(R.string.news_error_zslit), context!!)
-                    ZslitConnectionError.UNRECOGNIZED_ERROR -> Boast.showLongMessage(getString(R.string.news_error_unrecognized), context!!)
+                    INTERNET_ERROR -> Boast.showLongMessage(getString(R.string.news_error_internet), context!!)
+                    INVALID_SERVER_RESPONSE -> Boast.showLongMessage(getString(R.string.news_error_zslit), context!!)
+                    UNRECOGNIZED_ERROR -> Boast.showLongMessage(getString(R.string.news_error_unrecognized), context!!)
+                    NO_NEWS_AVAILABLE -> {}
                 }
                 adapter.setCannotLoadMore()
                 adapter.setOnLoadMoreListener(null)
@@ -84,7 +105,7 @@ class NewsFragment : Fragment() {
         }
 
         adapter.setOnLoadMoreListener(object : OnLoadMoreListener { override fun onLoadMore() {
-            scraper.getNextNews(onSuccess, onError)
+            scraper.startFetching(onSuccess, onError)
         }})
 
     }

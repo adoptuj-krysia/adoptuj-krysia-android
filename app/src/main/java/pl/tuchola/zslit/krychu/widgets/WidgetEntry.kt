@@ -1,3 +1,3 @@
-package pl.tuchola.zslit.krychu.widget
+package pl.tuchola.zslit.krychu.widgets
 
 class WidgetEntry(val imageID: Int, val widgetMessage: String)

@@ -1,16 +1,13 @@
 package pl.tuchola.zslit.krychu.news
 import android.os.AsyncTask
-import android.util.Log
 import org.jsoup.HttpStatusException
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
-import org.jsoup.safety.Whitelist
-import pl.tuchola.zslit.krychu.utils.Boast
+import pl.tuchola.zslit.krychu.common.NetworkDataProvider
 import java.io.IOException
 import java.net.URL
 
 
-class ZslitWebsiteScraper() {
+class ZslitWebsiteScraper() : NetworkDataProvider<News, ZslitConnectionError> {
 
     companion object {
         private const val NEWS_PAGE = "http://zslit-tuchola.pl/blog/page/CURR__PAGE"
@@ -25,7 +22,7 @@ class ZslitWebsiteScraper() {
     private var newsIndexOnCurrentPage: Int = -1
 
 
-    fun getNextNews(onSuccess: (News) -> Unit, onError: (ZslitConnectionError) -> Unit) {
+    override fun startFetching(onSuccess: (News) -> Unit, onError: (ZslitConnectionError) -> Unit) {
         AsyncTask.execute {
             try {
                 if(articleLinksOnCurrentPage == null)
@@ -44,7 +41,7 @@ class ZslitWebsiteScraper() {
                         currentPage++
                         newsIndexOnCurrentPage = -1
                         articleLinksOnCurrentPage = getNewsUrlOnCurrentPage()
-                        getNextNews(onSuccess, onError)
+                        startFetching(onSuccess, onError)
                     }
                     //jeśli następna strona nie jest dostępna, to..
                     else {

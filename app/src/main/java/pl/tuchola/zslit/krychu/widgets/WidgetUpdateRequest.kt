@@ -1,5 +1,4 @@
-package pl.tuchola.zslit.krychu.utils
-
+package pl.tuchola.zslit.krychu.widgets
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.ComponentName

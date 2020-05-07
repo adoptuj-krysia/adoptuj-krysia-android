@@ -1,5 +1,4 @@
 package pl.tuchola.zslit.krychu.news.debianifier
-import android.util.Log
 import pl.tuchola.zslit.krychu.news.News
 
 class DebianifierPatternCollection(val patterns: Array<DebianifierPattern>) {

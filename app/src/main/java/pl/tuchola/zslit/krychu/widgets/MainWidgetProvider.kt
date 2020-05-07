@@ -1,5 +1,4 @@
-package pl.tuchola.zslit.krychu.widget
-
+package pl.tuchola.zslit.krychu.widgets
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
@@ -7,10 +6,9 @@ import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
 import pl.tuchola.zslit.krychu.R
-import pl.tuchola.zslit.krychu.files.LastWidgetTextFile
 import pl.tuchola.zslit.krychu.files.ActivityLog
+import pl.tuchola.zslit.krychu.files.LastWidgetTextFile
 import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
-
 
 class MainWidgetProvider : AppWidgetProvider() {
 

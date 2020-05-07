@@ -9,8 +9,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_configuration.*
 import pl.tuchola.zslit.krychu.R
+import pl.tuchola.zslit.krychu.common.Boast
 import pl.tuchola.zslit.krychu.files.AppConfiguration
-import pl.tuchola.zslit.krychu.utils.Boast
 import pl.tuchola.zslit.krychu.weather.WeatherLocation
 
 class ConfigurationFragment : Fragment() {
