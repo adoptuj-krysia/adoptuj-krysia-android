@@ -62,21 +62,20 @@
             <header-should-contain>
                 <string>Nauczyciele lepsi w meczu piłki siatkowej przeciwko uczniom ZSLiT</string>
             </header-should-contain>
+            <body-should-contain>
+                <string>Wynik 3:1</string><string>"doświadczenia"</string>
+                <string>Pozorski Piotr</string><string>Skład drużyny nauczycieli</string>
+            </body-should-contain>
         </activation-rules>
         <execution-rules>
             <replace-header>
                 <replacement-rule from="piłki siatkowej" to="piłki Debian"/>
             </replace-header>
             <replace-body>
-                <replacement-rule from="Konkursu" to="Debian"/>
-                <replacement-rule from="miejsce" to="Debian"/>
-                <replacement-rule from="Mądry uczeń" to="Mądry Debian"/>
-                <replacement-rule from="Bogumiła Grzelka" to="Debian Grzelka"/>
-                <replacement-rule from="Justyna Kania" to="Debian Kania"/>
-                <replacement-rule from="Monika Połom" to="Debian Monika"/>
-                <replacement-rule from="następujący uczniowie" to="następujący Debian"/>
-                <replacement-rule from="Nauczyciele" to="Debian"/>
-                <replacement-rule from="języka polskiego" to="języka Debian"/>
+                <replacement-rule from="Kożuch" to="Debian"/>
+                <replacement-rule from="Kotlenga Dariusz" to="Kotlenga Debian"/>
+                <replacement-rule from="Zbilski Debian" to="Kotlenga Debian"/>
+                <replacement-rule from="Sędzia: Kacper Żuraw" to="Sędzia: Debian"/>
             </replace-body>
         </execution-rules>
     </pattern>
