@@ -212,6 +212,13 @@
         <item>Czy wiedziałeś, że moja zaniżona samoocena jest spowodowana przez nieszanujących moją pracę uczniów?</item>
     </string-array>
 
+    <string-array name="messages_420">
+        <item>Doprawdy nie wiem, co ludzie widzą w tym złego, przecież to zwykła roślina.</item>
+        <item>Lubię sobie czasami wstać o 4:20 i zapalić dobrego joincika.</item>
+        <item>Ups, a ty nie śpisz? No to mnie nakryłeś…</item>
+        <item>Czy jest coś lepszego, niż zapach palonej trawy o poranku?</item>
+    </string-array>
+
     <string-array name="messages_halloween">
         <item>Jako przebranie na Halloween powinienem się po prostu uśmiechnąć, i tak nikt by mnie nie rozpoznał.</item>
         <item>Niektórzy ludzie w Internecie twierdzą, że Halloween to święto pogańskie. Pogański to oni mają ryj.</item>

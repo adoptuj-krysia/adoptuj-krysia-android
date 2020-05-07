@@ -9,7 +9,7 @@ class WeatherLocation(var locationName: String = DEFAULT_LOCATION) {
 
         val allowedLocations = arrayOf(
             "Gostycyn", "Kęsowo", "Cekcyn", "Tuchola", "Plaskosz",
-            "Lubiewo", "Śliwice", "Bysław", "Bysławek", "GPS"
+            "Lubiewo", "Śliwice", "Bysław", "Bysławek"
         )
     }
 

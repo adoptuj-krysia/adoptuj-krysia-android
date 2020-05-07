@@ -27,6 +27,10 @@ class WidgetEntryFactory(private val context: Context) {
         R.drawable.friend_noon_8
     )
 
+    private val ganjaImages = listOf(
+        R.drawable.friend_420_1, R.drawable.friend_420_2
+    )
+
     private val papaImages = listOf(
         R.drawable.friend_papa
     )
@@ -100,6 +104,12 @@ class WidgetEntryFactory(private val context: Context) {
             (currentHour == 21 && currentMinute == 37) -> {
                 images = papaImages
                 strings = R.array.messages_2137
+            }
+
+            //ładuje moduł 420
+            (currentHour == 4 && currentMinute in 20..25) -> {
+                images = ganjaImages
+                strings = R.array.messages_420
             }
 
             //ładuje moduł na dzień ojca

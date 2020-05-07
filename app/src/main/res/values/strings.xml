@@ -15,18 +15,19 @@
     <string name="error_internet_connection">Niestety, nie mogę się połączyć z serwerem pogody. Sprawdź twoje połączenie sieciowe.</string>
     <string name="error_weather_api">Niestety, serwer pogody odrzucił moje połączenie.</string>
 
-    <string name="weather_check_button">Sprawdź pogodę w Plaskoszu</string>
-    <string name="weather_wind_speed">Prędkość wiatru: %s m/s</string>
-    <string name="weather_temperature">Temperatura: %s °C</string>
-    <string name="weather_feels_like">Temperatura odczuwalna: %s °C</string>
-    <string name="weather_description">Rodzaj pogody: %s</string>
+    <string name="weather_check_button">Sprawdź pogodę w: %1$s</string>
+    <string name="weather_check_button_gps">Sprawdź pogodę na podst. GPS</string>
+    <string name="weather_wind_speed">Prędkość wiatru: %1$s m/s</string>
+    <string name="weather_temperature">Temperatura: %1$s °C</string>
+    <string name="weather_feels_like">Temperatura odczuwalna: %1$s °C</string>
+    <string name="weather_description">Rodzaj pogody: %1$s</string>
     <string name="weather_unrecognized">(???)</string>
     <string name="fishing_opportunity_good">Ooo, wygląda na to, że mamy świetną pogodę na ryby :)</string>
     <string name="fishing_opportunity_rain">Opady niezbyt sprzyjają potencjalnym połowom :(</string>
     <string name="fishing_opportunity_temperature">Mam wrażenie, że jest zbyt zimno na łowienie ryb :(</string>
     <string name="fishing_opportunity_unknown">Ciekawe, czy mamy dziś dobrą pogodę na ryby :)</string>
 
-    <string name="info_app_version">Zainstalowana wersja aplikacji: %s</string>
+    <string name="info_app_version">Zainstalowana wersja aplikacji: %1$s</string>
     <string name="info_welcome_message">
         Dziękuję za zainteresowanie się projektem Adoptuj &#75;rysia. Jeśli chcesz dowiedzieć się
         więcej na temat projektu, zapraszam pod adres widoczny poniżej. Znajduje się tam również
@@ -54,8 +55,9 @@
     </string>
 
     <string name="apk_weather_welcome">
-        Witaj w Niezbędniku Wędkarza™. Dzięki niemu, dowiesz się jaka jest obecnie pogoda w Plaskoszu,
-        czyli ojczyźnie &#83;&#322;awka &#75;rysia. Kliknij przycisk poniżej i sprawdź pogodę w Plaskoszu już teraz.
+        Witaj w Niezbędniku Wędkarza™. Dzięki niemu, dowiesz się jaka jest obecnie pogoda we wskazanym
+        przez ciebie miejscu. Miejsce do pobierania pogody możesz wybrać w ustawieniach, domyślnie
+        jest to Plaskosz, czyli ojczyzna  &#83;&#322;awka &#75;rysia.
     </string>
     <string name="apk_weather_welcome_friend">
         Mam nadzieję, że\ndobra dziś pogoda:)
@@ -117,7 +119,7 @@
         Może to pogorszyć jakość działania algorytmu Świecka-News.
         Zaleca się pozostawienie tej opcji włączonej.
     </string>
-    <string name="configuration_lubiewo_chosen">Niestety nie można zmienić lokalizacji na Lubiewo, autor powołuje się na klauzulę sumienia.</string>
+    <string name="configuration_lubiewo_chosen">Nie umiesz czytać? Pisze przecież na dole, że Lubiewo jest nieobsługiwane.</string>
     <string name="configuration_friend">Mam nadzieję, że\nnic nie popsujesz :)</string>
     <string name="configuration_debianification">Zezwalaj na debianifikację newsów w chmurze:</string>
     <string name="configuration_location">Lokalizacja do pobierania pogody:</string>

@@ -14,16 +14,23 @@ import java.text.DecimalFormat
 
 class WeatherFragment : Fragment() {
 
+    private var weatherLocation: String = WeatherLocation.DEFAULT_LOCATION
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_weather, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         if(savedInstanceState != null)
             return
 
-        Boast.showLongMessage(AppConfiguration(this.context!!).weatherLocation, context!!)
+        weatherLocation = AppConfiguration(this.context!!).weatherLocation
+        if(weatherLocation == WeatherLocation.LOCATION_GPS) {
+            checkWeather_button.text = getString(R.string.weather_check_button_gps)
+        } else {
+            checkWeather_button.text = getString(R.string.weather_check_button, weatherLocation)
+        }
 
         writeWeather(null)
         weatherPhoto_imageView.setOnClickListener {
@@ -57,28 +64,25 @@ class WeatherFragment : Fragment() {
                 }
             }
 
-            OpenWeatherProvider(WeatherLocation()).startFetchingWeather(onSuccess, onError)
+            OpenWeatherProvider(WeatherLocation(weatherLocation)).startFetchingWeather(onSuccess, onError)
         }
     }
 
     private fun writeWeather(weather: Weather?) {
-        var strWind = getString(R.string.weather_wind_speed)
-        var strTemp = getString(R.string.weather_temperature)
-        var strFeelTemp = getString(R.string.weather_feels_like)
-        var strDescription = getString(R.string.weather_description)
-
+        val strWind: String; val strFeelTemp: String;
+        val strTemp: String; val strDescription: String
         if(weather == null) {
             val strUnrecognized = getString(R.string.weather_unrecognized)
-            strWind = strWind.replace("%s", strUnrecognized, true)
-            strTemp = strTemp.replace("%s", strUnrecognized, true)
-            strFeelTemp = strFeelTemp.replace("%s", strUnrecognized, true)
-            strDescription = strDescription.replace("%s", strUnrecognized, true)
+            strWind = getString(R.string.weather_wind_speed, strUnrecognized)
+            strTemp = getString(R.string.weather_temperature, strUnrecognized)
+            strFeelTemp = getString(R.string.weather_feels_like, strUnrecognized)
+            strDescription = getString(R.string.weather_description, strUnrecognized)
         } else {
             val df = DecimalFormat("0.00")
-            strWind = strWind.replace("%s", df.format(weather.windSpeedKmph), true)
-            strTemp = strTemp.replace("%s", df.format(weather.temperatureCelcius), true)
-            strFeelTemp = strFeelTemp.replace("%s", df.format(weather.feelsLikeTemperatureCelcius), true)
-            strDescription = strDescription.replace("%s", weather.weatherDescription, true)
+            strWind = getString(R.string.weather_wind_speed, df.format(weather.windSpeedKmph))
+            strTemp = getString(R.string.weather_temperature, df.format(weather.temperatureCelcius))
+            strFeelTemp =  getString(R.string.weather_feels_like, df.format(weather.feelsLikeTemperatureCelcius))
+            strDescription = getString(R.string.weather_description, weather.weatherDescription)
         }
 
         if(weatherDescription_textView != null) {
