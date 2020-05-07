@@ -1,6 +1,7 @@
 package pl.tuchola.zslit.krychu.news
 import android.app.Activity
 import android.content.Intent
+import android.opengl.Visibility
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.jsoup.Jsoup
 import pl.tuchola.zslit.krychu.R
+import pl.tuchola.zslit.krychu.files.AppConfiguration
 
 
 class NewsViewAdapter(private val recyclerView: RecyclerView, private val news: List<News>, private val activity: Activity)
@@ -54,7 +56,9 @@ class NewsViewAdapter(private val recyclerView: RecyclerView, private val news: 
         val newsBody: TextView = itemView.findViewById(R.id.newsBody_textView)
     }
 
-    private inner class HeaderViewHolder(private val view: View) : RecyclerView.ViewHolder(view)
+    private inner class HeaderViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+        val warning : TextView = itemView.findViewById(R.id.newsHeaderWarning_textView)
+    }
 
     private inner class LoadingViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val loadingContainer : LinearLayout = itemView.findViewById(R.id.newsLoading_linearLayout)
@@ -96,9 +100,8 @@ class NewsViewAdapter(private val recyclerView: RecyclerView, private val news: 
             }
         } else if(holder is LoadingViewHolder) {
             holder.loadingProgressBar.isIndeterminate = true
-            /*if(!canLoadMore) {
-                holder.loadingContainer.visibility = View.GONE
-            }*/
+        } else if(holder is HeaderViewHolder && !AppConfiguration(activity).enablePatternDebianifying) {
+            holder.warning.visibility = View.VISIBLE
         }
     }
 

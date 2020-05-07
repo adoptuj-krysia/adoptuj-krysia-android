@@ -59,8 +59,14 @@
         przez ciebie miejscu. Miejsce do pobierania pogody możesz wybrać w ustawieniach, domyślnie
         jest to Plaskosz, czyli ojczyzna  &#83;&#322;awka &#75;rysia.
     </string>
-    <string name="apk_weather_welcome_friend">
-        Mam nadzieję, że\ndobra dziś pogoda:)
+    <string name="apk_weather_welcome_happy">
+        Mam nadzieję, że dobra\ndziś pogoda w Plaskoszu :)
+    </string>
+    <string name="apk_weather_welcome_sad">
+        Szkoda, że ustawiłeś \"%1$s\",\na nie \"Plaskosz\" :(
+    </string>
+    <string name="apk_weather_welcome_kesowo">
+        Kęsowo? XD Serio mieszkasz\nna tym złomowisku?
     </string>
 
     <string name="nav_home">Strona główna</string>
@@ -94,14 +100,16 @@
         Po prostu pewne osoby w naszej szkole są niedojebane mózgowo i formatowanie strony woła o pomstę do nieba.
         Algorytm robi co może, żeby jakoś to ponaprawiać, ale nawet biblioteki Androida wysiadają przy takim syfie,
         jakim jest strona ZSLiT. Pozdrawiam i życzę miłego dnia.
-
-        \n\nProszę o wyrozumiałość, gdyż moduł Świecka-News jest jeszcze w fazie eksperymentalnej.
     </string>
     <string name="news_loading">Proszę czekać, trwa łączenie z serwerem</string>
     <string name="news_error_zslit">Błąd serwera naszej kochanej szkoły. No kurwa kto by pomyślał.</string>
     <string name="news_error_internet">Nie mogę się połączyć z Internetem. Sprawdź swoje połączenie i odśwież.</string>
     <string name="news_error_unrecognized">Wystąpił nieznany błąd, spróbuj odświeżyć stronę przez pociągnięcie okna.</string>
     <string name="news_debianifier_xml_error">Nie można się połączyć z usługą debianifikacji w chmurze. Używam algorytmu domyślnego.</string>
+    <string name="news_cloud_debianifier_disabled">
+        \nUwaga! Funkcja debianifikacji w chmurze jest wyłączona, pobrane newsy mogą być znacznie gorszej jakości.
+        Przejdź do ustawień aplikacji, aby włączyć przetwarzanie newsów w chmurze.
+    </string>
 
     <string name="notification_channel_id">adoptuj_krysia_not1</string>
     <string name="notification_channel_name">Życzenia okolicznościowe</string>
@@ -120,7 +128,7 @@
         Może to pogorszyć jakość działania algorytmu Świecka-News.
         Zaleca się pozostawienie tej opcji włączonej.
     </string>
-    <string name="configuration_lubiewo_chosen">Nie umiesz czytać? Pisze przecież na dole, że Lubiewo jest nieobsługiwane.</string>
+    <string name="configuration_lubiewo_chosen">Nie umiesz czytać? Pisze przecież na dole, że Lubiewo nieobsługiwane.</string>
     <string name="configuration_friend">Mam nadzieję, że\nnic nie popsujesz :)</string>
     <string name="configuration_debianification">Zezwalaj na debianifikację newsów w chmurze:</string>
     <string name="configuration_location">Lokalizacja do pobierania pogody:</string>

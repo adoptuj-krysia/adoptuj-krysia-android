@@ -33,6 +33,12 @@ class WeatherFragment : Fragment() {
             checkWeather_button.text = getString(R.string.weather_check_button, weatherLocation)
         }
 
+        if(weatherLocation == "Kęsowo") {
+            welcomeFriendWeatherMessage_textView.text = getString(R.string.apk_weather_welcome_kesowo)
+        } else if(weatherLocation != "Plaskosz") {
+            welcomeFriendWeatherMessage_textView.text = getString(R.string.apk_weather_welcome_sad, weatherLocation)
+        }
+
         writeWeather(null)
         weatherPhoto_imageView.setOnClickListener {
             Boast.showLongMessage(getString(string.apk_friend_touched_weather), context!!)

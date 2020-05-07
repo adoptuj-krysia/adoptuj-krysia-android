@@ -22,6 +22,13 @@
         android:layout_height="wrap_content"
         android:text="@string/news_header_message"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/news_cloud_debianifier_disabled"
+        android:id="@+id/newsHeaderWarning_textView"/>
+
     <Space
         android:layout_height="1dp"
         android:layout_width="match_parent" />

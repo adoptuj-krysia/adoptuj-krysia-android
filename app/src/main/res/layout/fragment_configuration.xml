@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/friend_evening_5"
+        app:srcCompat="@drawable/friend_morning_8"
         android:contentDescription="@string/hint_widget_image"/>
 
     <TextView

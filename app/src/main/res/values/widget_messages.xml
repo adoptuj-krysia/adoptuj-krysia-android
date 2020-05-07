@@ -54,7 +54,10 @@
 
         <!--Nowości w 1.2-->
         <item>Czy wiedziałeś, że Lucyna Drążkowska jako jedyna w ZSLiT potrafi złamać aż 185 punktów statutu naraz?</item>
-        <item>Zostałem nauczycielem, bo za moich czasów był to szanowany zawód. Ah, jak bardzo się pomyliłem…</item>
+        <item>Zostałem nauczycielem, bo za moich czasów był to szanowany zawód. Eh, za błędy się płaci…</item>
+        <item>Nienawidzę tej szkoły. Gdy o niej myślę, ręce same zabierają się za szukanie liny i stołka.</item>
+        <item>Czuję się jak śmietnik. Mam wrażenie, że nie ma już dla mnie ratunku.</item>
+        <item>Czy wiedziałeś, że jeśli odnajdziesz na Facebooku profil "Justyna Kania", znajdziesz tam zdjęcia najebanych nauczycieli?</item>
     </string-array>
 
     <string-array name="messages_noon">
@@ -108,6 +111,13 @@
         <item>Czy wiedziałeś, że moje urodziny przypadają około 22 maja?</item>
         <item>Czy wiedziałeś, że jestem najmilszym nauczycielem w tej parodii szkoły zwanej Świecką?</item>
         <item>Gdybym mógł cofnąć jedno wydarzenie w moim życiu, cofnąłbym dzień moich narodzin.</item>
+
+        <!--Nowości w 1.2-->
+        <item>Ciekawe, co by się stało, gdyby prawdziwy Sławomir Kryś zobaczył tę aplikację. Może sprawdzimy?</item>
+        <item>Po mojej śmierci, chciałbym oddać moje organy do przeszczepu. To byłaby pierwsza pożytecza rzecz w moim życiu. </item>
+        <item>Szkoda, że zawodowi programiści wyśmiewają się z języka PHP. To całkiem miły i przyjemny język :)</item>
+        <item>Dzisiaj czuję się, jakbym wypił z 7 kubków kawy. A nie, czekaj…</item>
+        <item>Ile bym dał, żeby móc cofnąć się w czasie. Wpierdoliłbym moją matkę do dołu z wapnem, żeby nigdy mnie nie urodziła.</item>
     </string-array>
 
     <string-array name="messages_evening">
@@ -121,7 +131,7 @@
         <item>Czy wiedziałeś, że mam tytuł magistra inżyniera?</item>
         <item>Czy wiedziałeś, że studiowałem zaocznie na Wydziale Matematyki i Informatyki UMK w Toruniu?</item>
         <item>Czy wiedziałeś że posiadam aż dwa dyplomy, informatyka oraz mechanika?</item>
-        <item>Czy wiedziałeś, że jestem nadzwyczaj inteligenty i wykształcony? Taki tam żarcik na poprawę wieczoru :)</item>
+        <item>Czy wiedziałeś, że jestem nadzwyczaj inteligentny i wykształcony? Taki tam żarcik na poprawę wieczoru :)</item>
         <item>Wiesz jak się nazywa bardzo trudny test? Protest.\nTaki żarcik na poprawienie humoru :)</item>
         <item>Wiesz co mówi strateg, gdy przykłada ucho do zegarka? Taktyka. \nTaki żarcik na poprawienie wieczoru :)</item>
         <item>Czy wiedziałeś, że jednym z moich życiowych marzeń jest ukończenie kursu paralotniarskiego?</item>
@@ -131,7 +141,7 @@
         <item>Ty też uważasz, że jestem jebanym Debianem? Inni uczniowie tak o mnie mówią.</item>
         <item>Ale mamy dziś piękny wieczór, nie sądzisz?</item>
         <item>Kiedy wyłączasz telefon, myślę tylko o tobie :)</item>
-        <item>Wiesz, jak dużo zawdzięczam dyrekotorowi Kornasiowi? Zgadłeś, depresję i stany depresyjno-maniakalne.</item>
+        <item>Wiesz, jak dużo zawdzięczam dyrektorowi Kornasiowi? Zgadłeś, depresję i stany depresyjno-maniakalne.</item>
         <item>Czy wiedziałeś, że kiedyś ukończyłem kurs PostgreSQL wart 20000 polskich złotych?</item>
         <item>Czy wiedziałeś, że jestem certyfikowanym projektantem sieci komputerowych firmy Cisco?</item>
         <item>Wiesz jak się nazywają dwa takie same drzewa? Klony.\nTaki żarcik, żeby umilić ci wieczór :)</item>
@@ -161,6 +171,13 @@
         <item>Czy wiesz, że kocham Bory Tucholskie nad życie i nie zamieniłbym ich na nic innego?</item>
         <item>Czy wiedziałeś, że wg mojej strony \"mieszkam w przepięknej okolicy tuż nad Brdą w otulinie rezerwatu przyrody\"?</item>
         <item>Czy wiedziałeś, że w kodzie mojej strony internetowej jest ukryta wiadomość \"wilga to całkiem przyjemny samolocik\"?</item>
+
+        <!--Nowości w 1.2-->
+        <item>Każda kolejna sekunda mojego życia to uczucie, jakby ktoś jebnął mnie czymś twardym w głowę.</item>
+        <item>Czy wiedziałeś, że korzystając z modułu Świecka-News możesz przeglądać aktualne wydarzenia w ZSLiT?</item>
+        <item>Czegokolwiek nie zrobię, zawsze znajdzie się uczeń, który przerobi to na mema.</item>
+        <item>Czy wiedziałeś, że od kiedy zapuściłem brodę, kasjerki w Biedronce wreszcie przestały pytać mnie o dowód?</item>
+        <item>Kilka lat temu próbowałem się pociąć mydłem. Nie zauważyłem, że było w płynie.</item>
     </string-array>
 
     <string-array name="messages_night">
@@ -214,13 +231,20 @@
         <item>Proszę, serduszko dla ciebie: &#10084;</item>
         <item>Czy wiedziałeś, że moja żona ma na imię Ewa i jest bardzo cudowną osobą? Chociaż nie tak cudowną jak ja :)</item>
         <item>Czy wiedziałeś, że moja zaniżona samoocena jest spowodowana przez nieszanujących moją pracę uczniów?</item>
+
+        <!--Nowości w 1.2-->
+        <item>Myślisz, że uczniowie w Nowodworku byliby dla mnie tak samo niemili, jak wy?</item>
+        <item>Kiedyś uczniowie podejrzeli mojego maila i szydzili się ze mnie, że sprzedaję narkotyki. To była tylko zanęta na ryby :(</item>
+        <item>Znasz kogoś w okolicy, kto skołowałby opakowanie Xanaxu? Tak pytam.</item>
+        <item>Może gdybyś trochę podszkolił się w programowaniu, pomógłbyś w prowadzeniu mojego małego serwisu? :)</item>
+        <item>Alkohol to zły doradca. W podstawówce kolega namówił mnie na jedno piwo - i widzisz jak skończyłem?</item>
     </string-array>
 
     <string-array name="messages_420">
         <item>Doprawdy nie wiem, co ludzie widzą w tym złego, przecież to zwykła roślina.</item>
         <item>Lubię sobie czasami wstać o 4:20 i zapalić dobrego joincika.</item>
-        <item>Ups, a ty nie śpisz? No to mnie nakryłeś…</item>
         <item>Czy jest coś lepszego, niż zapach palonej trawy o poranku?</item>
+        <item>Mmm, dobre zielone od zaufanego dostawcy, to jest coś co lubię.</item>
     </string-array>
 
     <string-array name="messages_halloween">
@@ -229,7 +253,7 @@
         <item>Tak naprawdę nie jestem przebrany, to tylko przerobiony obrazek w twoim telefonie.</item>
         <item>Uważasz, że jestem straszny? Nie? Trudno, w następnym roku postaram się bardziej.</item>
         <item>Jako dziecko zawsze chciałem wyjść z kolegami na Halloween, ale moi rodzice byli katolikami i mi nie pozwalali.</item>
-        <item>W przyszłym roku na Halloween przebiore się za informatyka.</item>
+        <item>W przyszłym roku na Halloween przebiorę się za informatyka.</item>
         <item>Halloween, to ja mam codziennie przed lustrem.</item>
         <item>Wiesz co robi siatkarz, gdy ma urodziny? Przyjęcie.\nTaki żarcik z okazji Halloween :)</item>
         <item>Wszystkiego najlepszego z okazji święta Halloween!!</item>

@@ -19,8 +19,7 @@ class InformationFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        appVersion_textView.text = getString(R.string.info_app_version)
-            .replace("%s", BuildConfig.VERSION_NAME.toString(), true)
+        appVersion_textView.text = getString(R.string.info_app_version, BuildConfig.VERSION_NAME)
 
         friendInfoPhoto_imageView.setOnClickListener {
             Boast.showLongMessage(getString(R.string.apk_friend_touched_info), context!!)
