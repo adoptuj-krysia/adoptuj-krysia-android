@@ -63,8 +63,8 @@
                 <string>Nauczyciele lepsi w meczu piłki siatkowej przeciwko uczniom ZSLiT</string>
             </header-should-contain>
             <body-should-contain>
-                <string>Wynik 3:1</string><string>"doświadczenia"</string>
-                <string>Pozorski Piotr</string><string>Skład drużyny nauczycieli</string>
+                <string>Wynik 3:1</string>
+                <string>Pozorski Piotr</string>
             </body-should-contain>
         </activation-rules>
         <execution-rules>
@@ -72,6 +72,11 @@
                 <replacement-rule from="piłki siatkowej" to="piłki Debian"/>
             </replace-header>
             <replace-body>
+                <replacement-rule from="młodości z doświadczeniem" to="młodości z Debian"/>
+                <replacement-rule from="siatkarze-uczniowie" to="Debian-uczniowie"/>
+                <replacement-rule from="młodość i fantazja" to="Debian i fantazja"/>
+                <replacement-rule from="wysokie miejsca" to="wysokie Debian"/>
+                <replacement-rule from="zdeterminowanych nauczycieli" to="zdeterminowanych Debian"/>
                 <replacement-rule from="Kożuch" to="Debian"/>
                 <replacement-rule from="Kotlenga Dariusz" to="Kotlenga Debian"/>
                 <replacement-rule from="Zbilski Debian" to="Kotlenga Debian"/>
