@@ -117,7 +117,7 @@
     <string name="notification_title">Życzenia - Adoptuj Krysia</string>
     <string name="notification_body_christmas">Wszystkiego najlepszego z okazji świąt :)</string>
     <string name="notification_body_easter">Wszystkiego najlepszego z okazji Wielkanocy :)</string>
-    <string name="notification_body_birthday">Dzisiaj Sławomir Kryś ma urodziny!!</string>
+    <string name="notification_body_birthday">Dzisiaj &#83;&#322;awomir &#75;ry&#347; ma urodziny!!</string>
 
     <string name="configuration_friend_touched">No i co mnie dotykasz brudnymi rękami, dopiero co żona marynarkę mi wyprała.</string>
     <string name="configuration_ans_positive">Tak, wyłącz chmurę</string>

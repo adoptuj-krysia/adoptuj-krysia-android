@@ -19,7 +19,7 @@ class WeatherLocation(var locationName: String = DEFAULT_LOCATION) {
             "kęsowo" -> "Kęsowo"
             "cekcyn" -> "Cekcyn"
             "tuchola", "plaskosz" -> "Tuchola"
-            "bysław, bysławek, lubiewo" -> "Lubiewo"
+            "bysław", "bysławek", "lubiewo" -> "Lubiewo"
             "śliwice" -> "Śliwice"
             "gps" -> "GPS"
             else -> throw IllegalArgumentException("Unrecognized OpenWeather location name")
