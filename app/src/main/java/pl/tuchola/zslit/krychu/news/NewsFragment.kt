@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_news.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.common.Boast
+import pl.tuchola.zslit.krychu.common.NetworkDataProvider
 import pl.tuchola.zslit.krychu.common.NetworkError
 import pl.tuchola.zslit.krychu.files.AppConfiguration
 import pl.tuchola.zslit.krychu.news.ZslitConnectionError.*
@@ -16,8 +17,8 @@ import pl.tuchola.zslit.krychu.news.debianifier.DebianifierXmlProvider
 
 class NewsFragment : Fragment() {
 
-    private var canRefresh = false
     private var debianification: DebianifierPatternCollection? = null
+    private var lastCreatedScraper: ZslitWebsiteScraper? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_news, container, false)
@@ -29,11 +30,9 @@ class NewsFragment : Fragment() {
             return
 
         newsFragment_refresher.setOnRefreshListener {
-            if(canRefresh) {
-                canRefresh = false
-                firstEntryLoading_progressBar.visibility = View.VISIBLE
-                getNewsAndShowToUser()
-            }
+            lastCreatedScraper?.cancelFetching()
+            firstEntryLoading_progressBar.visibility = View.VISIBLE
+            getNewsAndShowToUser()
             newsFragment_refresher.isRefreshing = false
         }
 
@@ -64,7 +63,10 @@ class NewsFragment : Fragment() {
                 initializeNews()
             }
         }
-        DebianifierXmlProvider().startFetching(onSuccess, onError)
+        val provider = DebianifierXmlProvider()
+        provider.setOnErrorListener(onError)
+        provider.setOnSuccessListener(onSuccess)
+        provider.startFetching()
     }
 
     private fun initializeNews() {
@@ -72,7 +74,7 @@ class NewsFragment : Fragment() {
         if (news_recyclerView == null || context == null) return
 
         val newsy = mutableListOf<News>()
-        val scraper = ZslitWebsiteScraper()
+        this.lastCreatedScraper = ZslitWebsiteScraper()
         news_recyclerView.layoutManager = LinearLayoutManager(context)
         val adapter = NewsViewAdapter(news_recyclerView, newsy, activity!!)
         news_recyclerView.adapter = adapter
@@ -100,12 +102,14 @@ class NewsFragment : Fragment() {
                 adapter.setCannotLoadMore()
                 adapter.setOnLoadMoreListener(null)
                 adapter.setLoaded();
-                canRefresh = true
             }
         }
 
+        this.lastCreatedScraper!!.setOnSuccessListener(onSuccess)
+        this.lastCreatedScraper!!.setOnErrorListener(onError)
+
         adapter.setOnLoadMoreListener(object : OnLoadMoreListener { override fun onLoadMore() {
-            scraper.startFetching(onSuccess, onError)
+            lastCreatedScraper!!.startFetching()
         }})
 
     }

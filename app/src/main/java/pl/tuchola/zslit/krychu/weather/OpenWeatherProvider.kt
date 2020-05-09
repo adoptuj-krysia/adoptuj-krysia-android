@@ -17,10 +17,13 @@ import java.net.UnknownHostException
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
-class OpenWeatherProvider(private val location: WeatherLocation) : NetworkDataProvider<Weather, NetworkError> {
+class OpenWeatherProvider(private val location: WeatherLocation) :
+    NetworkDataProvider<Weather, NetworkError>() {
 
     private val url =
         "https://api.openweathermap.org/data/2.5/weather?q=${location.locationName}&APPID=c8cd7a1d3d7a8ad8d251c6973336608e&lang=pl"
+
+    private var isCancelled = false
 
     private fun jsonToWeather(json: String) : Weather? {
         return try {
@@ -41,7 +44,12 @@ class OpenWeatherProvider(private val location: WeatherLocation) : NetworkDataPr
         }
     }
 
-    override fun startFetching(onSuccess: (Weather) -> Unit, onError: (NetworkError) -> Unit) {
+    override fun cancelFetching() {
+        isCancelled = true
+    }
+
+    override fun startFetching() {
+        isCancelled = false
         AsyncTask.execute {
             try {
                 val client = OkHttpClient()
@@ -54,29 +62,29 @@ class OpenWeatherProvider(private val location: WeatherLocation) : NetworkDataPr
                 client.newCall(request).enqueue(object : Callback {
                     override fun onFailure(request: Request?, e: IOException?) {
                         if(e is UnknownHostException || e is NetworkErrorException)
-                            onError(NetworkError.NO_INTERNET_CONNECTION)
+                            if(!isCancelled) onError?.invoke(NetworkError.NO_INTERNET_CONNECTION)
                         else
-                            onError(NetworkError.UNRECOGNIZED_ERROR)
+                            if(!isCancelled) onError?.invoke(NetworkError.UNRECOGNIZED_ERROR)
                     }
 
                     override fun onResponse(response: Response?) {
                         if(response?.body() != null) {
                             val weather = jsonToWeather(response.body().string())
                             if(weather != null)
-                                onSuccess(weather)
+                                if(!isCancelled) onSuccess?.invoke(weather)
                             else
-                                onError(NetworkError.SERVER_INVALID_RESPONSE)
+                                if(!isCancelled) onError?.invoke(NetworkError.SERVER_INVALID_RESPONSE)
                         } else {
-                            onError(NetworkError.SERVER_INVALID_RESPONSE)
+                            if(!isCancelled) onError?.invoke(NetworkError.SERVER_INVALID_RESPONSE)
                         }
                     }
                 })
             }
             catch(e: TimeoutException) {
-                onError(NetworkError.CONNECTION_TIMEOUT)
+                if(!isCancelled) onError?.invoke(NetworkError.CONNECTION_TIMEOUT)
             }
             catch(e: Exception) {
-                onError(NetworkError.UNRECOGNIZED_ERROR)
+                if(!isCancelled) onError?.invoke(NetworkError.UNRECOGNIZED_ERROR)
             }
         }
     }

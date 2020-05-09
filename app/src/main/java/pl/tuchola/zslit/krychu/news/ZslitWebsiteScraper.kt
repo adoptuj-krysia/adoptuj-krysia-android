@@ -7,7 +7,7 @@ import java.io.IOException
 import java.net.URL
 
 
-class ZslitWebsiteScraper() : NetworkDataProvider<News, ZslitConnectionError> {
+class ZslitWebsiteScraper() : NetworkDataProvider<News, ZslitConnectionError>() {
 
     companion object {
         private const val NEWS_PAGE = "http://zslit-tuchola.pl/blog/page/CURR__PAGE"
@@ -21,8 +21,14 @@ class ZslitWebsiteScraper() : NetworkDataProvider<News, ZslitConnectionError> {
     private var articleLinksOnCurrentPage: List<URL>? = null
     private var newsIndexOnCurrentPage: Int = -1
 
+    private var isCancelled = false
 
-    override fun startFetching(onSuccess: (News) -> Unit, onError: (ZslitConnectionError) -> Unit) {
+    override fun cancelFetching() {
+        isCancelled = true
+    }
+
+    override fun startFetching() {
+        isCancelled = false
         AsyncTask.execute {
             try {
                 if(articleLinksOnCurrentPage == null)
@@ -31,8 +37,8 @@ class ZslitWebsiteScraper() : NetworkDataProvider<News, ZslitConnectionError> {
 
                 //jeśli obecna strona ma następnego newsa, to..
                 if(articleLinksOnCurrentPage!!.elementAtOrNull(newsIndexOnCurrentPage) != null) {
-                    var news = resolveUrlToNews(articleLinksOnCurrentPage!![newsIndexOnCurrentPage])
-                    onSuccess(news)
+                    val news = resolveUrlToNews(articleLinksOnCurrentPage!![newsIndexOnCurrentPage])
+                    if(!isCancelled) onSuccess?.invoke(news)
                 }
                 //jeśli obecna strona nie ma następnego newsa, to..
                 else {
@@ -41,20 +47,20 @@ class ZslitWebsiteScraper() : NetworkDataProvider<News, ZslitConnectionError> {
                         currentPage++
                         newsIndexOnCurrentPage = -1
                         articleLinksOnCurrentPage = getNewsUrlOnCurrentPage()
-                        startFetching(onSuccess, onError)
+                        if(!isCancelled) startFetching()
                     }
                     //jeśli następna strona nie jest dostępna, to..
                     else {
-                        onError(ZslitConnectionError.NO_NEWS_AVAILABLE)
+                        if(!isCancelled) onError?.invoke(ZslitConnectionError.NO_NEWS_AVAILABLE)
                     }
                 }
             } catch(e: IOException) {
-                onError(ZslitConnectionError.INTERNET_ERROR)
+                if(!isCancelled) onError?.invoke(ZslitConnectionError.INTERNET_ERROR)
             } catch(e: NullPointerException) {
-                onError(ZslitConnectionError.INVALID_SERVER_RESPONSE)
+                if(!isCancelled) onError?.invoke(ZslitConnectionError.INVALID_SERVER_RESPONSE)
             }
             catch(e: Exception) {
-                onError(ZslitConnectionError.UNRECOGNIZED_ERROR)
+                if(!isCancelled) onError?.invoke(ZslitConnectionError.UNRECOGNIZED_ERROR)
             }
         }
     }
@@ -84,7 +90,14 @@ class ZslitWebsiteScraper() : NetworkDataProvider<News, ZslitConnectionError> {
         val header = doc.select("h1.entry-title").first().text()
         val bodyElement = doc.select(".entry-content").first()
         bodyElement.select("img").remove()
-        val body = bodyElement.html().replace(Regex("(?=<!--)([\\s\\S]*?)-->"), "")
+
+        //kasuje wszystkie komentarze HTML z ciała newsa
+        var body = bodyElement.html().replace(Regex("(?=<!--)([\\s\\S]*?)-->"), "")
+
+        //przetwarza skrótowy zapis słowa "rok" na pełne rozwinięcie
+        body = body.replace("(\\d{4})\\s*r\\.\\s([A-Z])".toRegex(), "$1 roku. $2")
+        body = body.replace("(\\d{4})\\s*r\\.\\s([^A-Z])".toRegex(), "$1 roku $2")
+
         val link = doc.body().select("img.attachment-large").attr("src")
         return News(header, body, URL(link))
     }

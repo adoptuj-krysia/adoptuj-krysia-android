@@ -13,11 +13,18 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 import javax.xml.parsers.SAXParserFactory
 
-class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection, NetworkError> {
+class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection, NetworkError>() {
 
     private val url = "https://adoptuj-krysia.github.io/xml/debianifier.xml"
 
-    override fun startFetching(onSuccess: (DebianifierPatternCollection) -> Unit, onError: (NetworkError) -> Unit) {
+    private var isCancelled = false
+
+    override fun cancelFetching() {
+        isCancelled = true
+    }
+
+    override fun startFetching() {
+        isCancelled = false
         AsyncTask.execute {
             try {
                 val client = OkHttpClient()
@@ -29,9 +36,9 @@ class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection,
                 client.newCall(request).enqueue(object : Callback {
                     override fun onFailure(request: Request?, e: IOException?) {
                         if(e is UnknownHostException || e is NetworkErrorException)
-                            onError(NetworkError.NO_INTERNET_CONNECTION)
+                            if(!isCancelled) onError?.invoke(NetworkError.NO_INTERNET_CONNECTION)
                         else
-                            onError(NetworkError.UNRECOGNIZED_ERROR)
+                            if(!isCancelled) onError?.invoke(NetworkError.UNRECOGNIZED_ERROR)
                     }
 
                     override fun onResponse(response: Response?) {
@@ -41,21 +48,21 @@ class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection,
                                 val saxParser = factory.newSAXParser()
                                 val handler = DebianifierSaxHandler()
                                 saxParser.parse(response.body().byteStream(), handler)
-                                onSuccess(handler.getParsedCollection())
+                                if(!isCancelled) onSuccess?.invoke(handler.getParsedCollection())
                             } catch(e: Exception) {
-                                onError(NetworkError.SERVER_INVALID_RESPONSE)
+                                if(!isCancelled) onError?.invoke(NetworkError.SERVER_INVALID_RESPONSE)
                             }
                         } else {
-                            onError(NetworkError.SERVER_INVALID_RESPONSE)
+                            if(!isCancelled) onError?.invoke(NetworkError.SERVER_INVALID_RESPONSE)
                         }
                     }
                 })
             }
             catch(e: TimeoutException) {
-                onError(NetworkError.CONNECTION_TIMEOUT)
+                if(!isCancelled) onError?.invoke(NetworkError.CONNECTION_TIMEOUT)
             }
             catch(e: Exception) {
-                onError(NetworkError.UNRECOGNIZED_ERROR)
+                if(!isCancelled) onError?.invoke(NetworkError.UNRECOGNIZED_ERROR)
             }
         }
     }

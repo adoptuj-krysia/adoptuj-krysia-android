@@ -71,7 +71,10 @@ class WeatherFragment : Fragment() {
                 }
             }
 
-            OpenWeatherProvider(WeatherLocation(weatherLocation)).startFetching(onSuccess, onError)
+            val provider = OpenWeatherProvider(WeatherLocation(weatherLocation))
+            provider.setOnSuccessListener(onSuccess)
+            provider.setOnErrorListener(onError)
+            provider.startFetching()
         }
     }
 
