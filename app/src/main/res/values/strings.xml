@@ -111,6 +111,17 @@
         Przejdź do ustawień aplikacji, aby włączyć przetwarzanie newsów w chmurze.
     </string>
 
+    <string name="news_disabled_header">Usługa czasowo wyłączona</string>
+    <string name="news_disabled_content">
+        ZSLiT chyba po raz piętnasty w ciągu ostatnich 2 miesięcy zmieniło układ witryny.
+        Mam kurwa dość, nie będę co tydzień siadał do komputera i aktualizował aplikacji, bo
+        Pełczyńskiemu nudzi się w domu i nie ma co robić.\n\nModuł
+        Świecka-News zostaje wyłączony do momentu, aż ZSLIT się ogarnie i zdecyduje jak chcą, żeby wyglądała ich strona.\n\nJest
+        środek wakacji, nasi młodsi koledzy pewnie chcą wejść na stronę swojej nowej szkoły i poczytać, co takiego
+        spotka ich od nowego roku. A tu taki chuj, bo jakiemuś starszemu panu nudzi się w wakacje i musi sobie bloczki na stronie
+        szkoły poprzestawiać.\n\nJa pierdolę, ZSLiT było największym błędem mojego życia…
+    </string>
+
     <string name="notification_channel_id">adoptuj_krysia_not1</string>
     <string name="notification_channel_name">Życzenia okolicznościowe</string>
     <string name="notification_channel_description">Życzenia od autora aplikacji (na przykład z okazji Bożego Narodzenia).</string>

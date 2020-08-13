@@ -5,12 +5,14 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.common.Boast
 import pl.tuchola.zslit.krychu.files.ActivityLog
+import pl.tuchola.zslit.krychu.news.NewsDisabledFragment
 import pl.tuchola.zslit.krychu.news.NewsFragment
 import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
 import pl.tuchola.zslit.krychu.weather.WeatherFragment
@@ -58,7 +60,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             (R.id.nav_item_news) -> {
                 supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container,
-                    NewsFragment()
+                    NewsDisabledFragment()
+                    //NewsFragment()
                 ).commit()
             }
 

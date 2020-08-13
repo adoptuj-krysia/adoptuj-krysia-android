@@ -81,7 +81,7 @@ class NewsFragment : Fragment() {
 
         val onSuccess = fun(news: News) {
             if(news_recyclerView == null) return
-            activity!!.runOnUiThread {
+            requireActivity().runOnUiThread {
                 firstEntryLoading_progressBar.visibility = View.INVISIBLE
                 debianification?.debianifyNews(news)
                 newsy.add(news)
