@@ -22,7 +22,7 @@ class WidgetEntryFactory(private val context: Context) {
     private val nightImages = listOf(
         R.drawable.friend_night_1, R.drawable.friend_night_2, R.drawable.friend_night_3,
         R.drawable.friend_night_4, R.drawable.friend_night_5, R.drawable.friend_night_6,
-        R.drawable.friend_night_7, R.drawable.friend_night_8
+        R.drawable.friend_night_7, R.drawable.friend_night_8, R.drawable.friend_night_9
     )
 
     private val noonImages = listOf(
