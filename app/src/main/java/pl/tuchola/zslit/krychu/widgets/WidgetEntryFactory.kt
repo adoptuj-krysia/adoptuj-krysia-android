@@ -9,7 +9,8 @@ class WidgetEntryFactory(private val context: Context) {
     private val morningImages = listOf(
         R.drawable.friend_morning_1, R.drawable.friend_morning_2, R.drawable.friend_morning_3,
         R.drawable.friend_morning_4, R.drawable.friend_morning_5, R.drawable.friend_morning_6,
-        R.drawable.friend_morning_7, R.drawable.friend_morning_8, R.drawable.friend_morning_9
+        R.drawable.friend_morning_7, R.drawable.friend_morning_8, R.drawable.friend_morning_9,
+        R.drawable.friend_morning_10
     )
 
     private val eveningImages = listOf(
