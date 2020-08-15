@@ -10,6 +10,10 @@
             android:icon="@drawable/icon_weather"
             android:title="@string/nav_weather"/>
 
+        <item android:id="@+id/nav_item_krychotron"
+            android:icon="@drawable/icon_sound"
+            android:title="@string/nav_krychotron"/>
+
         <item android:id="@+id/nav_item_news"
             android:icon="@drawable/icon_news"
             android:title="@string/nav_news"/>
