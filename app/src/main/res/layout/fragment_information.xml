@@ -77,4 +77,4 @@
         app:layout_constraintEnd_toStartOf="@+id/friendInfoPhoto_imageView"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent" />
-a</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

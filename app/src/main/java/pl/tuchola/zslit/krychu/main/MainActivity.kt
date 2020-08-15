@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.common.Boast
 import pl.tuchola.zslit.krychu.files.ActivityLog
+import pl.tuchola.zslit.krychu.krychotron.KrychotronFragment
 import pl.tuchola.zslit.krychu.news.NewsDisabledFragment
 import pl.tuchola.zslit.krychu.news.NewsFragment
 import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
@@ -55,6 +56,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             (R.id.nav_item_weather) -> {
                 supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container,
                     WeatherFragment()
+                ).commit()
+            }
+
+            (R.id.nav_item_krychotron) -> {
+                supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container,
+                    KrychotronFragment()
                 ).commit()
             }
 

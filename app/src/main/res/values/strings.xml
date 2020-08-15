@@ -15,6 +15,9 @@
     <string name="error_internet_connection">Niestety, nie mogę się połączyć z serwerem pogody. Sprawdź twoje połączenie sieciowe.</string>
     <string name="error_weather_api">Niestety, serwer pogody odrzucił moje połączenie.</string>
 
+    <string name="krychotron_header">Krychotron 6000</string>
+    <string name="krychotron_description">Krychotron 6000 to nic innego, jak soundboard z wypowiedziami &#83;&#322;awka. Kliknij jeden z widocznych poniżej przycisków, a twój telefon przemówi głosem twojego ulubionego mentora.</string>
+
     <string name="weather_check_button">Sprawdź pogodę w: %1$s</string>
     <string name="weather_check_button_gps">Sprawdź pogodę na podst. GPS</string>
     <string name="weather_wind_speed">Prędkość wiatru: %1$s m/s</string>
