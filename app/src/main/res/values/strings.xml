@@ -17,6 +17,9 @@
 
     <string name="krychotron_header">Krychotron 6000</string>
     <string name="krychotron_description">Krychotron 6000 to nic innego, jak soundboard z wypowiedziami &#83;&#322;awka. Kliknij jeden z widocznych poniżej przycisków, a twój telefon przemówi głosem twojego ulubionego mentora.</string>
+    <string name="krychotron_position">Pozycja: %1$s</string>
+    <string name="krychotron_play_description">Przycisk odtwarzania</string>
+    <string name="krychotron_boast">Odwarzam jednostkę dźwiękową Krychotrona: ścieżka %1$s</string>
 
     <string name="weather_check_button">Sprawdź pogodę w: %1$s</string>
     <string name="weather_check_button_gps">Sprawdź pogodę na podst. GPS</string>

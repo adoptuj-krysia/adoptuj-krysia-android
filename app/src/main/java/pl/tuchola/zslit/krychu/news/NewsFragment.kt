@@ -40,7 +40,7 @@ class NewsFragment : Fragment() {
     }
 
     private fun getNewsAndShowToUser() {
-        if(AppConfiguration(context!!).enablePatternDebianifying) {
+        if(AppConfiguration(requireContext()).enablePatternDebianifying) {
             fetchDebianifierAndIntialize()
         } else {
             debianification = DebianifierPatternCollection(arrayOf())
@@ -50,13 +50,13 @@ class NewsFragment : Fragment() {
 
     private fun fetchDebianifierAndIntialize() {
         val onSuccess = fun(col: DebianifierPatternCollection) {
-            activity!!.runOnUiThread {
+            requireActivity().runOnUiThread {
                 debianification = col
                 initializeNews()
             }
         }
         val onError = fun(err: NetworkError) {
-            activity!!.runOnUiThread {
+            requireActivity().runOnUiThread {
                 if(err != NetworkError.NO_INTERNET_CONNECTION)
                     Boast.showLongMessage(getString(R.string.news_debianifier_xml_error), context!!)
                 debianification = DebianifierPatternCollection(arrayOf())
@@ -76,7 +76,7 @@ class NewsFragment : Fragment() {
         val newsy = mutableListOf<News>()
         this.lastCreatedScraper = ZslitWebsiteScraper()
         news_recyclerView.layoutManager = LinearLayoutManager(context)
-        val adapter = NewsViewAdapter(news_recyclerView, newsy, activity!!)
+        val adapter = NewsViewAdapter(news_recyclerView, newsy, requireActivity())
         news_recyclerView.adapter = adapter
 
         val onSuccess = fun(news: News) {
@@ -91,7 +91,7 @@ class NewsFragment : Fragment() {
         }
 
         val onError = fun(err: ZslitConnectionError) {
-            activity!!.runOnUiThread {
+            requireActivity().runOnUiThread {
                 firstEntryLoading_progressBar.visibility = View.INVISIBLE
                 when (err) {
                     INTERNET_ERROR -> Boast.showLongMessage(getString(R.string.news_error_internet), context!!)

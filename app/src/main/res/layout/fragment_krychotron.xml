@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical">
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/krychotronHeader"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,7 +25,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/krychotron_description"/>
-
     </LinearLayout>
 
-</ScrollView>
+    <ListView
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:id="@+id/soundPicker"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
