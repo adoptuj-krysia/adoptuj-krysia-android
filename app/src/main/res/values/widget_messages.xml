@@ -130,6 +130,18 @@
         <item>Szkoda, że zawodowi programiści wyśmiewają się z języka PHP. To całkiem miły i przyjemny język :)</item>
         <item>Dzisiaj czuję się, jakbym wypił z 7 kubków kawy. A nie, czekaj…</item>
         <item>Ile bym dał, żeby móc cofnąć się w czasie. Wpierdoliłbym moją matkę do dołu z wapnem, żeby nigdy mnie nie urodziła.</item>
+
+        <!--Nowości w 1.3-->
+        <item>Czy wiedziałeś, że najnowszy moduł Krychotrona 6000 pozwola Ci nie tylko mnie zobaczyć, ale i usłyszeć?</item>
+        <item>Muszę przestać z tymi samobójczymi myślami. Dla odmiany, dzisiaj będę pozytywny! Nie no, żartuję, idę się zajebać.</item>
+        <item>Opowiedzieć ci żart? Moje życie &#x1F970;</item>
+        <item>Jebać &#75;rysia. Czyli mnie. Jebać mnie.</item>
+        <item>Kocham swoje życie. Myśli samobójcze są dla pizd, trzeba chwytać dzień. Carpie diem, jak mawiał Horacy.</item>
+        <item>Jebać PiS. Uważam, że aborcja na życzenie powinna być legalna. Gdyby moja matka w porę mnie usunęła, dzisiaj nie musiałbym tak cierpieć.</item>
+        <item>Czytałeś kiedyś opinie o ZSLiT na Google Maps? To straszne, jakie bzdury potrafią tam wymyślać uczniowie.</item>
+        <item>W naszej szkole nie brak opinii, że ZSLiT to miejsce dla ludzi bez godności. Osobiście takie opinie popieram.</item>
+        <item>Ale bym sobie zjadł karpia. Takiego prosto z mułu, żeby nie smakował zbyt dobrze. Na lepszą rybę nie zasłużyłem.</item>
+        <item>Jeśli masz komputer z Linuxem, polecam przetestować komendę dd if=/dev/zero of=/dev/sda. Naprawdę przyśpiesza działanie systemu.</item>
     </string-array>
 
     <string-array name="messages_evening">
