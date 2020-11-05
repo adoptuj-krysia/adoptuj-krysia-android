@@ -40,7 +40,7 @@
         kod źródłowy aplikacji oraz skrócona dokumentacja techniczna.
     </string>
     <string name="info_website_link">https://adoptuj-krysia.github.io/</string>
-    <string name="info_friend">Mam nadzieję, żę\naplikacja ci się podoba :)</string>
+    <string name="info_friend">Mam nadzieję, że\naplikacja ci się podoba :)</string>
 
     <string name="apk_friend_touched">Prosimy nie dotykać eksponatu.</string>
     <string name="apk_friend_touched_weather">Nie wkurwiaj wędkarza.</string>
