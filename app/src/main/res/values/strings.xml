@@ -120,13 +120,10 @@
 
     <string name="news_disabled_header">Usługa czasowo wyłączona</string>
     <string name="news_disabled_content">
-        &#90;SLiT chyba po raz piętnasty w ciągu ostatnich 2 miesięcy zmieniło układ witryny.
-        Mam kurwa dość, nie będę co tydzień siadał do komputera i aktualizował aplikacji, bo
-        Pełczyńskiemu nudzi się w domu i nie ma co robić.\n\nModuł
-        Świecka-News zostaje wyłączony do momentu, aż &#90;SLIT się ogarnie i zdecyduje jak chcą, żeby wyglądała ich strona.\n\nJest
-        środek wakacji, nasi młodsi koledzy pewnie chcą wejść na stronę swojej nowej szkoły i poczytać, co takiego
-        spotka ich od nowego roku. A tu taki chuj, bo jakiemuś starszemu panu nudzi się w wakacje i musi sobie bloczki na stronie
-        szkoły poprzestawiać.\n\nJa pierdolę, &#90;SLiT było największym błędem mojego życia…
+        &#90;SLiT chyba po raz piętnasty w ciągu ostatniego pół roku zmieniło układ witryny.
+        Mam kurwa dość, nie będę co tydzień siadał do komputera i aktualizował aplikacji, bo komuś w naszej kochanej szkółce się nudzi.\n\nModuł
+        Świecka-News zostaje wyłączony do momentu, aż &#90;SLIT się ogarnie i zdecyduje jak chcą, żeby wyglądała ich strona.\n\nJa
+        pierdolę, &#90;SLiT było największym błędem mojego życia…
     </string>
 
     <string name="notification_channel_id">adoptuj_krysia_not1</string>

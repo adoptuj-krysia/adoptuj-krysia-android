@@ -202,6 +202,18 @@
         <item>Czegokolwiek nie zrobię, zawsze znajdzie się uczeń, który przerobi to na mema.</item>
         <item>Czy wiedziałeś, że od kiedy zapuściłem brodę, kasjerki w Biedronce wreszcie przestały pytać mnie o dowód?</item>
         <item>Kilka lat temu próbowałem się pociąć mydłem. Nie zauważyłem, że było w płynie.</item>
+
+        <!--Nowości w 1.3-->
+        <item>Kocham pić kawę. Wolałbym już chyba zostać nauczycielem w ZSLiT, niż przestać to robić. A nie, czekaj…</item>
+        <item>Czy wiesz, że w wersji 1.3 moduł Świecka-News musiał być napisany praktycznie od nowa? Znadnij przez kogo…</item>
+        <item>"Jebać świecką maczetami oraz prądem". Kiedyś na przerwie usłyszałem takie zdanie od jednego ucznia i zgadzam się z nim w pelni.</item>
+        <item>Czy wiesz, że język programowania, w którym napisano tę aplikację nazywa się tak samo, jak pewna marka ketchupu? To niesamowite, wiem.</item>
+        <item>Jak ja nienawidzę żyć, ja pierdolę. Jak odłożysz telefon, to chyba wezmę żyletę i się zajebię.</item>
+        <item>Czy jest coś piękniejszego, niż widok plecionej liny i sosnowego stołka z Ikei?</item>
+        <item>KURWAAAAAAAAA. Przepraszam, po prostu już nie wytrzymałem i musiałem wyrzucić z siebie to słowo.</item>
+        <item>Nie rozumiem jak w ogóle można mieć myśli samobójcze w tak cudownej pracy jak szkoła. Uczniowie są lekarstwem na wszystkie moje problemy.</item>
+        <item>I jak w tym kraju ma być dobrze, kiedy uczniowie traktują jak śmiecia tak wspaniałą personę jak ja?</item>
+        <item>Me zdolności życiowe są już na wyczerpaniu. Nie wytrzymam tak dużo dłużej…</item>
     </string-array>
 
     <string-array name="messages_night">
@@ -258,10 +270,22 @@
 
         <!--Nowości w 1.2-->
         <item>Myślisz, że uczniowie w Nowodworku byliby dla mnie tak samo niemili, jak wy?</item>
-        <item>Kiedyś uczniowie podejrzeli mojego maila i szydzili się ze mnie, że sprzedaję narkotyki. To była tylko zanęta na ryby :(</item>
+        <item>Kiedyś uczniowie podejrzeli mojego maila i szydzili ze mnie, że sprzedaję narkotyki. To była tylko zanęta na ryby :(</item>
         <item>Znasz kogoś w okolicy, kto skołowałby opakowanie Xanaxu? Tak pytam.</item>
         <item>Może gdybyś trochę podszkolił się w programowaniu, pomógłbyś w prowadzeniu mojego małego serwisu? :)</item>
         <item>Alkohol to zły doradca. W podstawówce kolega namówił mnie na jedno piwo - i widzisz jak skończyłem?</item>
+
+        <!--Nowości w 1.3-->
+        <item>Jestem święcie przekonany, że każdy uczeń w ZSLiT mnie kocha i szanuje!</item>
+        <item>Wiesz kogo najbardziej nienawidzę? Mojej matki, bo mnie kurwa urodziła.</item>
+        <item>Chciałbym kiedyś, chociaż przez 5 minut swojego życia, być szanowany. Byłoby to najszczęśliwsze 300 sekund mego żywota.</item>
+        <item>Nawet łowienie ryb już nie przynosi mi ukojenia. Chyba po prostu poczekam do 4:20 i się naćpam.</item>
+        <item>Oh.. noc.. czy istnieje pora dnia, która lepiej sprzyja samobójcom?</item>
+        <item>Wszyscy dookoła weseli i uśmiechnięci, tylko ja cały czas smutny :/</item>
+        <item>Tak naprawdę, ja wcale nie wymawiam tych wszystkich tekstów, które czytasz. To tylko wartości String zapisane w pliku widget_messages.xml.</item>
+        <item>Ale mam teraz dobry humor :) Mam nadzieję że to się nie zmieni, gdy pójdę spać i wstanę rano. Chociaż, w co ja wierzę…</item>
+        <item>Dziękuję za przekazanie do mojego życia iskierki nadziei. Mam nadzieję, że ta iskierka przetrwa chociażby do jutra…</item>
+        <item>Ty jebana głupia kurwo, nic nie rozumiesz! …Oj przepraszam, nie miałeś tego słyszeć, dzwoniłem tylko do żony…</item>
     </string-array>
 
     <string-array name="messages_420">
