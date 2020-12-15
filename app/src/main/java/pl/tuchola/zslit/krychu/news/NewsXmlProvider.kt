@@ -1,4 +1,4 @@
-package pl.tuchola.zslit.krychu.news.debianifier
+package pl.tuchola.zslit.krychu.news
 import android.accounts.NetworkErrorException
 import android.os.AsyncTask
 import com.squareup.okhttp.Callback
@@ -13,9 +13,9 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 import javax.xml.parsers.SAXParserFactory
 
-class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection, NetworkError>() {
+class NewsXmlProvider : NetworkDataProvider<List<News>, NetworkError>() {
 
-    private val url = "https://adoptuj-krysia.github.io/xml/debianifier.xml"
+    private val url = "https://adoptuj-krysia.github.io/xml/news.xml"
 
     private var isCancelled = false
 
@@ -37,8 +37,8 @@ class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection,
                     override fun onFailure(request: Request?, e: IOException?) {
                         if(e is UnknownHostException || e is NetworkErrorException)
                             if(!isCancelled) onError?.invoke(NetworkError.NO_INTERNET_CONNECTION)
-                        else
-                            if(!isCancelled) onError?.invoke(NetworkError.UNRECOGNIZED_ERROR)
+                            else
+                                if(!isCancelled) onError?.invoke(NetworkError.UNRECOGNIZED_ERROR)
                     }
 
                     override fun onResponse(response: Response?) {
@@ -46,7 +46,7 @@ class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection,
                             try {
                                 val factory = SAXParserFactory.newInstance()
                                 val saxParser = factory.newSAXParser()
-                                val handler = DebianifierSaxHandler()
+                                val handler = NewsSaxHandler()
                                 saxParser.parse(response.body().byteStream(), handler)
                                 if(!isCancelled) onSuccess?.invoke(handler.getParsedCollection())
                             } catch(e: Exception) {
@@ -66,5 +66,5 @@ class DebianifierXmlProvider : NetworkDataProvider<DebianifierPatternCollection,
             }
         }
     }
-    
+
 }

@@ -6,6 +6,7 @@ import androidx.core.text.HtmlCompat
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_full_news.*
 import pl.tuchola.zslit.krychu.R
+import pl.tuchola.zslit.krychu.common.Boast
 
 
 class FullNewsActivity : AppCompatActivity() {
@@ -25,11 +26,11 @@ class FullNewsActivity : AppCompatActivity() {
 
         newsToShow = intent.getSerializableExtra("NEWS_TO_SHOW") as News
         if(newsToShow != null && fullNewsBody_textView.text != null) {
-            var body = newsToShow!!.body
+            var body = newsToShow!!.htmlContent
             if(body.endsWith(".")) body = body.trimEnd('.')
 
             fullNewsBody_textView.text = HtmlCompat.fromHtml(body, 0)
-            fullNewsHeader_textView.text = HtmlCompat.fromHtml( newsToShow!!.header, 0)
+            fullNewsHeader_textView.text = HtmlCompat.fromHtml( newsToShow!!.title, 0)
 
             if(newsToShow!!.imageLink != null) {
                 @Suppress("DEPRECATION")

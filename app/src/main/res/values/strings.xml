@@ -78,7 +78,7 @@
     <string name="nav_home">Strona główna</string>
     <string name="nav_weather">Niezbędnik wędkarza™</string>
     <string name="nav_krychotron">Krychotron 6000</string>
-    <string name="nav_news">Świecka-News</string>
+    <string name="nav_news">Świecka-News v2</string>
     <string name="nav_settigns">Ustawienia</string>
     <string name="nav_info">O programie</string>
 
@@ -99,14 +99,12 @@
     </string>
 
     <string name="news_header_message">
-        Witaj w Świecka-News, najlepszym przeglącie prasy po tej stronie kuli ziemskiej.
-        Wiadomości są na bieżąco pobierane ze strony naszej kochanej szkoły.
+        Witaj w Świecka-News v2, najlepszym przeglącie prasy po tej stronie kuli ziemskiej.
+        Wiadomości są na bieżąco pobierane z zewnętrznego serwera, który przechowuje zachowaną wcześniej kopię newsów.
         Żeby nie było zbyt nudno, losowe słowa w treści tekstu zostały zastąpione wyrazem \"Debian\".
 
-        \n\nUwaga! Ewentualne błędy w tekście newsa (na przykład losowo pozostawione znaczniki HTML) nie są błędami autora aplikacji.
-        Po prostu pewne osoby w naszej szkole są niedojebane mózgowo i formatowanie strony woła o pomstę do nieba.
-        Algorytm robi co może, żeby jakoś to ponaprawiać, ale nawet biblioteki Androida wysiadają przy takim syfie,
-        jakim jest strona &#90;SLiT. Pozdrawiam i życzę miłego dnia.
+        \n\nŚwiecka-News v2 jest poprawioną wersją pierwotnej usługi - program uwolniono od spierdolonego
+        wpływu nauczycieli naszej kochanej szkółki.
     </string>
     <string name="news_loading">Proszę czekać, trwa łączenie z serwerem</string>
     <string name="news_error_zslit">Błąd serwera naszej kochanej szkoły. No kurwa kto by pomyślał.</string>
@@ -149,8 +147,8 @@
     <string name="configuration_location">Lokalizacja do pobierania pogody:</string>
 
     <string name="debianification_explanation">
-        Nie zaleca się wyłączania powyższej opcji. Jeśli opcja powyżej jest włączona,
-        moduł Świecka-News daje o wiele lepsze rezultaty.
+        Z uwagi na poważną zmianę zasad działania modułu Świecka-News,
+        debianifikacji w chmurze nie można już wyłączyć.
     </string>
     <string name="location_explanation">
         Począwszy od wersji 1.2, moduł Niezbędnik Wędkarza™ może wyświetlać pogodę nie tylko w

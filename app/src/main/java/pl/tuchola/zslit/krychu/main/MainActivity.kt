@@ -13,7 +13,6 @@ import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.common.Boast
 import pl.tuchola.zslit.krychu.files.ActivityLog
 import pl.tuchola.zslit.krychu.krychotron.KrychotronFragment
-import pl.tuchola.zslit.krychu.news.NewsDisabledFragment
 import pl.tuchola.zslit.krychu.news.NewsFragment
 import pl.tuchola.zslit.krychu.notification.NotificationAlarmSetter
 import pl.tuchola.zslit.krychu.weather.WeatherFragment
@@ -67,8 +66,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             (R.id.nav_item_news) -> {
                 supportFragmentManager.beginTransaction().replace(R.id.main_fragment_container,
-                    NewsDisabledFragment()
-                    //NewsFragment()
+                    NewsFragment()
                 ).commit()
             }
 
