@@ -28,7 +28,7 @@ class NewsSaxHandler: DefaultHandler() {
             return;
         }
 
-        val asString =  String(ch!!, start, length)
+        val asString =  String(ch, start, length)
         if("title" in openTags) {
             currentTitle += asString
         }

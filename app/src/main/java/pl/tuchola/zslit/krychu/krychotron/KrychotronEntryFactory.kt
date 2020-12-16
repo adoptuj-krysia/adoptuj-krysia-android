@@ -3,7 +3,25 @@ import pl.tuchola.zslit.krychu.R
 import java.util.Calendar
 
 class KrychotronEntryFactory {
-    fun getEntries() : Array<KrychotronEntry> {
+    fun getEntries(type: KrychotronType) : Array<KrychotronEntry> {
+        return if(type == KrychotronType.KRYCHOTRON) {
+            getKrychotronEntries()
+        } else {
+            getPelonixonEntries()
+        }
+    }
+
+    private fun getPelonixonEntries() : Array<KrychotronEntry> {
+        val entries = mutableListOf(
+            //te dwa obiekty trzeba podmienić na ścieżki dźwiękowe piotra
+            KrychotronEntry(R.raw.krychotron_0_1, "One są wyposażone w panel krosowy…"),
+            KrychotronEntry(R.raw.krychotron_0_2, "Przełącznik sieciowy switch…")
+        )
+
+        return entries.toTypedArray()
+    }
+
+    private fun getKrychotronEntries() : Array<KrychotronEntry> {
         val cal = Calendar.getInstance()
         val hour = cal.get(Calendar.HOUR_OF_DAY)
         val minute = cal.get(Calendar.MINUTE)
