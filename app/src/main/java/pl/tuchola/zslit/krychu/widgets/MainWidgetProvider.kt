@@ -27,9 +27,8 @@ class MainWidgetProvider : AppWidgetProvider() {
             views.setImageViewResource(R.id.widgetImage_imageView, widgetEntry.imageID)
 
             val intent = Intent(context, MainWidgetProvider::class.java)
-            intent.action =
-                ACTION_REFRESH_REQUESTED
-            val pendingIntentButton = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+            intent.action = ACTION_REFRESH_REQUESTED
+             val pendingIntentButton = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
             views.setOnClickPendingIntent(R.id.widgetImage_imageView, pendingIntentButton)
 
             appWidgetManager.updateAppWidget(appWidgetId, views)
