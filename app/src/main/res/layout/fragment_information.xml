@@ -56,6 +56,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/informationHello_textView" />
 
+    <TextView
+        android:id="@+id/informationUid_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/info_uid_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projektWebisteLink_textView" />
+
+    <Button
+        android:paddingHorizontal="10dp"
+        android:gravity="start|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:background="@drawable/border_button"
+        android:id="@+id/revealUserId_button"
+        app:layout_constraintTop_toBottomOf="@+id/informationUid_textView"
+        android:text="@string/info_reveal_uid"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="9dp"/>
+
     <ImageView
         android:id="@+id/friendInfoPhoto_imageView"
         android:layout_width="145dp"

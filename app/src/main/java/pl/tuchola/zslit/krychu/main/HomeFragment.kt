@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_home.*
 import pl.tuchola.zslit.krychu.R
 import pl.tuchola.zslit.krychu.common.Boast
+import pl.tuchola.zslit.krychu.files.UserId
+import pl.tuchola.zslit.krychu.testmode.SecretPasswordGenerator
 
 
 class HomeFragment : Fragment() {
@@ -19,7 +21,9 @@ class HomeFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         friendPhoto_imageView.setOnClickListener {
-            Boast.showLongMessage(getString(R.string.apk_friend_touched), this.context!!)
+            Boast.showLongMessage(getString(R.string.apk_friend_touched), requireContext())
+
+            Boast.showLongMessage(SecretPasswordGenerator().generateSecretPassword(UserId(requireContext()).currentUid), requireContext())
         }
     }
 }

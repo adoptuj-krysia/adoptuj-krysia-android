@@ -48,11 +48,15 @@
     <string name="info_app_version">Zainstalowana wersja aplikacji: %1$s</string>
     <string name="info_welcome_message">
         Dziękuję za zainteresowanie się projektem Adoptuj &#75;rysia. Jeśli chcesz dowiedzieć się
-        więcej na temat projektu, zapraszam pod adres widoczny poniżej. Znajduje się tam również
-        kod źródłowy aplikacji oraz skrócona dokumentacja techniczna.
+        więcej na temat projektu, zapraszam pod adres widoczny poniżej.
     </string>
     <string name="info_website_link">https://adoptuj-krysia.github.io/</string>
     <string name="info_friend">Mam nadzieję, że\naplikacja ci się podoba :)</string>
+    <string name="info_copy_to_clipboard">Skopiuj do schowka</string>
+    <string name="info_copied_to_clipboard">Skopiowano identyfikator do schowka.</string>
+    <string name="info_uid">Twój unikalny identyfikator użytkownika:</string>
+    <string name="info_reveal_uid">Pobierz mój identyfikator</string>
+    <string name="info_uid_description">Kliknij przycisk poniżej, aby pobrać twój unikalny identyfikator użytkownika.</string>
 
     <string name="apk_friend_touched">Prosimy nie dotykać eksponatu.</string>
     <string name="apk_friend_touched_weather">Nie wkurwiaj wędkarza.</string>
